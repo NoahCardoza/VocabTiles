@@ -27,6 +27,7 @@
     "@nuxtjs/proxy": "^2.0.1",
     "@nuxtjs/pwa": "^3.0.2",
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
     "material-icons": "^0.3.1",
     "nuxt": "^2.14.5",
     "vuesax": "^3.12.2"
