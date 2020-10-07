@@ -3,12 +3,25 @@ export default {
   head: {
     title: 'HardDaysNight',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        charset: 'utf-8',
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: '',
+      },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico',
+      },
       {
         rel: 'stylesheet',
         href: 'https://unpkg.com/tachyons@4/css/tachyons.min.css',
@@ -41,7 +54,18 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://github.com/nuxt-community/proxy-module
+    '@nuxtjs/proxy',
   ],
+
+  proxy: {
+    '/api': {
+      target: 'http://127.0.0.1:1337',
+      pathRewrite: {
+        '^/api': '',
+      },
+    },
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
@@ -51,4 +75,4 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
-}
+};
