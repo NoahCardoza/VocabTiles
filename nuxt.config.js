@@ -60,7 +60,9 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/firebase',
   ],
-
+  router: {
+    middleware: ['isAuthenticated'],
+  },
   firebase: {
     config: {
       apiKey: 'AIzaSyBGtskG5mn_rq1TM5dVRd67HxWB7J4T_FY',
