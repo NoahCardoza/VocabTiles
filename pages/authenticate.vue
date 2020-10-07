@@ -127,10 +127,10 @@ export default Vue.extend({
   props: {},
   data() {
     return {
-      email: 'noahcardoza@gmail.com',
-      password: '1234567',
-      firstname: 'Noah',
-      lastname: 'Cardoza',
+      email: '',
+      password: '',
+      firstname: '',
+      lastname: '',
       openTabIndex: 0,
       scanQRCode: false,
     };
