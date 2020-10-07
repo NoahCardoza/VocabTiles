@@ -69,10 +69,12 @@
             <!-- add about popup / github link / dark mode? -->
             <vs-row vs-justify="flex-end">
               <vs-button
+                class="includeIconOnly"
                 type="gradient"
                 color="success"
-                icon="qr_code"
-              ></vs-button>
+              >
+                <iconify-icon class="iconify" icon="qr-scan" />
+              </vs-button>
               <vs-button
                 class="includeIconOnly"
                 color="#24292e"
@@ -80,7 +82,7 @@
                 href="https://github.com/NoahCardoza/VocabTiles"
                 target="_blank"
               >
-                <iconify-icon class="iconify" :icon="icons.github" />
+                <iconify-icon class="iconify" icon="github" />
               </vs-button>
             </vs-row>
           </div>
@@ -93,9 +95,12 @@
 <script lang="js">
 import Vue from 'vue';
 import IconifyIcon from '@iconify/vue';
-import areaChartOutlined from '@iconify/icons-mdi/github';
+import githubIcon from '@iconify/icons-mdi/github';
+import qrCodeScanIcon from '@iconify/icons-mdi/qrcode-scan';
 
-IconifyIcon.addIcon('chart', areaChartOutlined);
+IconifyIcon.addIcon('github', githubIcon);
+IconifyIcon.addIcon('qr-scan', qrCodeScanIcon);
+
 
 
 export default Vue.extend({
@@ -107,11 +112,7 @@ export default Vue.extend({
       password: '1234567',
       firstname: 'Noah',
       lastname: 'Cardoza',
-      openTabIndex: 0,
-      icons: {
-                github: areaChartOutlined,
-            },
-
+      openTabIndex: 0
     };
   },
   computed: {
