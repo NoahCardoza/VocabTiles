@@ -99,6 +99,13 @@
 </template>
 
 <script lang="js">
+
+/*
+ TODO:
+  remove login page and only allow
+  admin user to create accounts
+*/
+
 import Vue from 'vue';
 import IconifyIcon from '@iconify/vue';
 import githubIcon from '@iconify/icons-mdi/github';
@@ -106,8 +113,6 @@ import qrCodeScanIcon from '@iconify/icons-mdi/qrcode-scan';
 
 IconifyIcon.addIcon('github', githubIcon);
 IconifyIcon.addIcon('qr-scan', qrCodeScanIcon);
-
-
 
 export default Vue.extend({
   components: {
@@ -138,8 +143,6 @@ export default Vue.extend({
 
         this.email = email
         this.password = password
-
-        console.log(email, password);
 
         this.loginUser()
       } catch (e) {
