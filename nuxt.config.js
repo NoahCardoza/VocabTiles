@@ -26,6 +26,10 @@ export default {
         rel: 'stylesheet',
         href: 'https://unpkg.com/tachyons@4/css/tachyons.min.css',
       },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+      },
     ],
   },
 
