@@ -32,10 +32,12 @@
     "express": "^4.17.1",
     "@nuxtjs/firebase": "^6.1.1",
     "@nuxtjs/pwa": "^3.0.2",
+    "@types/md5": "^2.2.0",
     "core-js": "^3.6.5",
     "firebase": "^7.22.1",
     "firebase-admin": "^9.2.0",
     "material-icons": "^0.3.1",
+    "md5": "^2.3.0",
     "nuxt": "^2.14.5",
     "rm-cli": "^1.4.2",
     "vuesax": "^3.12.2"
