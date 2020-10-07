@@ -28,6 +28,7 @@
     "core-js": "^3.6.5",
     "material-icons": "^0.3.1",
     "nuxt": "^2.14.5",
+    "rm-cli": "^1.4.2",
     "vuesax": "^3.12.2"
   },
   "devDependencies": {
