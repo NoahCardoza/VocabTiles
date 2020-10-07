@@ -126,6 +126,14 @@ export default Vue.extend({
     submit(){
       [this.loginUser, this.createUser][this.openTabIndex]()
     },
+    loading(container){
+      this.$vs.loading({
+        container,
+      })
+      return {
+        close: () => this.$vs.loading.close(container)
+      }
+    },
     async createUser() {
       try {
         const { user } = await this.$fireAuth.createUserWithEmailAndPassword(
@@ -151,6 +159,7 @@ export default Vue.extend({
       }
     },
     async loginUser() {
+      const loader = this.loading(this.$refs.loginBox.$el)
       try {
         const { user } = await this.$fireAuth.signInWithEmailAndPassword(
           this.email,
@@ -164,12 +173,14 @@ export default Vue.extend({
         // it seems trying to push the path too soon get's blocked by the
         // auth gaurd middleware
         setTimeout(() => {
+           loader.close()
           this.$router.push({ path: '/' });
         }, 1000);
       } catch (e) {
         // TODO: handle these errors with notifications
         alert(e);
       }
+      loader.close()
     },
   },
 });
