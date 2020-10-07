@@ -62,4 +62,10 @@ export const getters = {
     }
     return `https://s.gravatar.com/avatar/${md5(user.email)}?s=120`;
   },
+  userDisplayName: ({ user }) => {
+    if (user === null) {
+      return 'Unknown';
+    }
+    return user.displayName;
+  },
 };
