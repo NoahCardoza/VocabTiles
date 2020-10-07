@@ -146,7 +146,13 @@ export default Vue.extend({
 
         this.loginUser()
       } catch (e) {
-        // notify user that the qr code is invalid
+        this.$vs.notify({
+          title: 'Error',
+          text: 'This QR Code was unabled to be scanned.',
+          color: 'warning',
+          position: 'top-right',
+          icon: 'error',
+        });
       }
     },
     submit(){
@@ -180,8 +186,13 @@ export default Vue.extend({
 
         await this.loginUser();
       } catch (e) {
-        // TODO: handle these errors with notifications
-        alert(e);
+        this.$vs.notify({
+          title: 'Error',
+          text: e.message,
+          color: 'warning',
+          position: 'top-right',
+          icon: 'error',
+        });
       }
     },
     async loginUser() {
@@ -203,8 +214,13 @@ export default Vue.extend({
           this.$router.push({ path: '/' });
         }, 1000);
       } catch (e) {
-        // TODO: handle these errors with notifications
-        alert(e);
+        this.$vs.notify({
+          title: 'Error',
+          text: e.message,
+          color: 'warning',
+          position: 'top-right',
+          icon: 'error',
+        });
       }
       loader.close()
     },
