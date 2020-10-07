@@ -10,7 +10,14 @@
         vs-w="4"
       >
         <vs-card ref="loginBox">
-          <div>
+          <div class="ph2 pt2">
+            <div v-show="scanQRCode" class="vs-card--header">
+              <h3>QR Scanner</h3>
+            </div>
+            <div v-show="scanQRCode">
+              Hold up your phone to your camera to scan the QR code your teacher
+              gave you.
+            </div>
             <vs-tabs v-show="!scanQRCode" v-model="openTabIndex">
               <vs-tab label="Login">
                 <vs-input
@@ -98,8 +105,7 @@
   </div>
 </template>
 
-<script lang="js">
-
+<script>
 /*
  TODO:
   remove login page and only allow
@@ -116,7 +122,7 @@ IconifyIcon.addIcon('qr-scan', qrCodeScanIcon);
 
 export default Vue.extend({
   components: {
-    IconifyIcon
+    IconifyIcon,
   },
   props: {},
   data() {
@@ -126,7 +132,7 @@ export default Vue.extend({
       firstname: 'Noah',
       lastname: 'Cardoza',
       openTabIndex: 0,
-      scanQRCode: false
+      scanQRCode: false,
     };
   },
   computed: {
@@ -137,14 +143,19 @@ export default Vue.extend({
   mounted() {},
   beforeDestroy() {},
   methods: {
-    onQRDecode (message) {
+    onQRDecode(message) {
+      // ignore false positives
+      if (!message) {
+        return;
+      }
+
       try {
-        const [ email, password ] = JSON.parse(message)
+        const [email, password] = JSON.parse(message);
 
-        this.email = email
-        this.password = password
+        this.email = email;
+        this.password = password;
 
-        this.loginUser()
+        this.loginUser();
       } catch (e) {
         this.$vs.notify({
           title: 'Error',
@@ -155,16 +166,16 @@ export default Vue.extend({
         });
       }
     },
-    submit(){
-      [this.loginUser, this.createUser][this.openTabIndex]()
+    submit() {
+      [this.loginUser, this.createUser][this.openTabIndex]();
     },
-    loading(container){
+    loading(container) {
       this.$vs.loading({
         container,
-      })
+      });
       return {
-        close: () => this.$vs.loading.close(container)
-      }
+        close: () => this.$vs.loading.close(container),
+      };
     },
     async createUser() {
       try {
@@ -179,7 +190,6 @@ export default Vue.extend({
 
         await user.updateProfile({
           displayName: `${this.firstname} ${this.lastname}`,
-          // photoURL: `https://s.gravatar.com/avatar/${md5(this.email)}`,
         });
 
         await this.$fireAuth.signOut();
@@ -196,7 +206,7 @@ export default Vue.extend({
       }
     },
     async loginUser() {
-      const loader = this.loading(this.$refs.loginBox.$el)
+      const loader = this.loading(this.$refs.loginBox.$el);
       try {
         const { user } = await this.$fireAuth.signInWithEmailAndPassword(
           this.email,
@@ -210,7 +220,7 @@ export default Vue.extend({
         // it seems trying to push the path too soon get's blocked by the
         // auth gaurd middleware
         setTimeout(() => {
-           loader.close()
+          loader.close();
           this.$router.push({ path: '/' });
         }, 1000);
       } catch (e) {
@@ -222,7 +232,7 @@ export default Vue.extend({
           icon: 'error',
         });
       }
-      loader.close()
+      loader.close();
     },
   },
 });
@@ -239,8 +249,13 @@ export default Vue.extend({
   transform: translateY(-50%);
 }
 
+.vs-card--header,
 .vs-tabs--content {
   padding: 0;
+}
+
+.vs-card--header {
+  padding-bottom: 10px;
 }
 
 .con-ul-tabs .vs-button,
