@@ -24,6 +24,7 @@
     "@nuxt/content": "^1.8.1",
     "@nuxt/typescript-runtime": "^2.0.0",
     "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/proxy": "^2.0.1",
     "@nuxtjs/pwa": "^3.0.2",
     "core-js": "^3.6.5",
     "material-icons": "^0.3.1",
