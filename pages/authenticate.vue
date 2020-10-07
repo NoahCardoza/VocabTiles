@@ -9,9 +9,9 @@
         vs-align="center"
         vs-w="4"
       >
-        <vs-card>
+        <vs-card ref="loginBox">
           <div>
-            <vs-tabs v-model="openTabIndex">
+            <vs-tabs v-show="!scanQRCode" v-model="openTabIndex">
               <vs-tab label="Login">
                 <vs-input
                   v-model="email"
@@ -59,11 +59,16 @@
                 />
               </vs-tab>
             </vs-tabs>
-            <div class="ph3">
-              <vs-button class="w-100" @click="submit">
+            <div>
+              <vs-button v-show="!scanQRCode" class="w-100" @click="submit">
                 {{ buttonText }}
               </vs-button>
             </div>
+            <qrcode-stream
+              v-show="scanQRCode"
+              class="mt3 br4 overflow-hidden shadow-1"
+              @decode="onQRDecode"
+            ></qrcode-stream>
           </div>
           <div slot="footer">
             <!-- add about popup / github link / dark mode? -->
@@ -72,6 +77,7 @@
                 class="includeIconOnly"
                 type="gradient"
                 color="success"
+                @click="scanQRCode = !scanQRCode"
               >
                 <iconify-icon class="iconify" icon="qr-scan" />
               </vs-button>
@@ -104,7 +110,9 @@ IconifyIcon.addIcon('qr-scan', qrCodeScanIcon);
 
 
 export default Vue.extend({
-  components: {IconifyIcon},
+  components: {
+    IconifyIcon
+  },
   props: {},
   data() {
     return {
@@ -112,7 +120,8 @@ export default Vue.extend({
       password: '1234567',
       firstname: 'Noah',
       lastname: 'Cardoza',
-      openTabIndex: 0
+      openTabIndex: 0,
+      scanQRCode: false
     };
   },
   computed: {
@@ -123,6 +132,20 @@ export default Vue.extend({
   mounted() {},
   beforeDestroy() {},
   methods: {
+    onQRDecode (message) {
+      try {
+        const [ email, password ] = JSON.parse(message)
+
+        this.email = email
+        this.password = password
+
+        console.log(email, password);
+
+        this.loginUser()
+      } catch (e) {
+        // notify user that the qr code is invalid
+      }
+    },
     submit(){
       [this.loginUser, this.createUser][this.openTabIndex]()
     },
@@ -195,6 +218,10 @@ export default Vue.extend({
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.vs-tabs--content {
+  padding: 0;
 }
 
 .con-ul-tabs .vs-button,
