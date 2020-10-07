@@ -41,6 +41,7 @@
     "md5": "^2.3.0",
     "nuxt": "^2.14.5",
     "rm-cli": "^1.4.2",
+    "vue-qrcode-reader": "^2.3.13",
     "vuesax": "^3.12.2"
   },
   "devDependencies": {
