@@ -103,8 +103,8 @@ dist
 # TernJS port file
 .tern-port
 
-static/sw.js
 
 postgres/database/
-
 postgres/init/init.sql
+static/sw.js
+static/firebase-auth-sw.js

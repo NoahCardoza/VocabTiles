@@ -26,14 +26,24 @@ export default {
         rel: 'stylesheet',
         href: 'https://unpkg.com/tachyons@4/css/tachyons.min.css',
       },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+      },
     ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['vuesax/dist/vuesax.css'],
+  css: ['vuesax/dist/vuesax.css', './styles/index.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['@/plugins/vuesax'],
+  plugins: [
+    '@/plugins/vuesax',
+    {
+      src: '@/plugins/qrcode-streamer',
+      mode: 'client',
+    },
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -56,7 +66,34 @@ export default {
     '@nuxt/content',
     // https://github.com/nuxt-community/proxy-module
     '@nuxtjs/proxy',
+    // https://firebase.nuxtjs.org/tutorials/ssr/
+    '@nuxtjs/pwa',
+    '@nuxtjs/firebase',
   ],
+  router: {
+    middleware: ['isAuthenticated'],
+  },
+  firebase: {
+    config: {
+      apiKey: 'AIzaSyBGtskG5mn_rq1TM5dVRd67HxWB7J4T_FY',
+      authDomain: 'harddaysnight-bd33c.firebaseapp.com',
+      databaseURL: 'https://harddaysnight-bd33c.firebaseio.com',
+      projectId: 'harddaysnight-bd33c',
+      storageBucket: 'harddaysnight-bd33c.appspot.com',
+      messagingSenderId: '99469010859',
+      appId: '1:99469010859:web:403a4000d1e3b456f994ee',
+      measurementId: 'G-M6C1EXP82F',
+    },
+    services: {
+      auth: {
+        persistence: 'local',
+        initialize: {
+          onAuthStateChangedAction: 'onAuthStateChangedAction',
+        },
+        ssr: true,
+      },
+    },
+  },
 
   proxy: {
     '/api': {
@@ -64,6 +101,24 @@ export default {
       pathRewrite: {
         '^/api': '',
       },
+    },
+  },
+
+  pwa: {
+    // disable the modules you don't need
+    meta: false,
+    icon: false,
+    // if you omit a module key form configuration sensible defaults will be applied
+    // manifest: false,
+
+    workbox: {
+      importScripts: [
+        // ...
+        '/firebase-auth-sw.js',
+      ],
+      // by default the workbox module will not install the service worker in dev environment to avoid conflicts with HMR
+      // only set this true for testing and remember to always clear your browser cache in development
+      dev: true,
     },
   },
 

@@ -25,7 +25,9 @@
     },
     "types": [
       "@types/node",
-      "@nuxt/types"
+      "@types/md5",
+      "@nuxt/types",
+      "@nuxtjs/firebase"
     ]
   },
   "exclude": [
