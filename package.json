@@ -10,7 +10,8 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "npm run lint:js && npm run lint:style",
-    "db:start": "cd postgres && docker-compose --env-file ../.env up",
+    "db:sql-compose": "node ./bin/file-compose.js ./postgres/init/tables ./postgres/init/inserts .sql ./postgres/init/init.sql",
+    "db:start": "npm run db:sql-compose && cd postgres && docker-compose --env-file ../.env up",
     "db:wipe": "cd postgres && rm-cli -r database && docker-compose rm -f"
   },
   "lint-staged": {
