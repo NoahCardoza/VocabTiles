@@ -3,19 +3,19 @@ A vocabulary game/quiz app.
 
 ### Start screen
 
-![Start screen](/assets/Vocab Tiles sketches/Start screen.png)
+![Start screen](assets/Vocab Tiles sketches/Start screen.png)
 
 ### Menu
 
-![iPhone 8 - Menu](/assets/Vocab Tiles sketches/iPhone 8 - Menu.png)
+![iPhone 8 - Menu](assets/Vocab Tiles sketches/iPhone 8 - Menu.png)
 
 ### Easy game
 
-![iPhone 8 - Easy](/assets/Vocab Tiles sketches/iPhone 8 - Easy.png)
+![iPhone 8 - Easy](assets/Vocab Tiles sketches/iPhone 8 - Easy.png)
 
 ### Hard game
 
-![iPhone 8 - Hard](/assets/Vocab Tiles sketches/iPhone 8 - Hard.png)
+![iPhone 8 - Hard](assets/Vocab Tiles sketches/iPhone 8 - Hard.png)
 
 # Stack
 
