@@ -3,19 +3,19 @@ A vocabulary game/quiz app.
 
 ### Start screen
 
-![Start screen](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/Vocab Tiles sketches/Start screen.png)
+![Start screen](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/VocabTilessketches/Startscreen.png)
 
-### Menu
+###Menu
 
-![iPhone 8 - Menu](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/Vocab Tiles sketches/iPhone 8 - Menu.png)
+![iPhone 8 - Menu](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/VocabTilessketches/iPhone8-Menu.png)
 
 ### Easy game
 
-![iPhone 8 - Easy](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/Vocab Tiles sketches/iPhone 8 - Easy.png)
+![iPhone 8 - Easy](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/VocabTilessketches/iPhone8-Easy.png)
 
 ### Hard game
 
-![iPhone 8 - Hard](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/Vocab Tiles sketches/iPhone 8 - Hard.png)
+![iPhone 8 - Hard](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/VocabTilessketches/iPhone8-Hard.png)
 
 # Stack
 
