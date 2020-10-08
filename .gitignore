@@ -106,3 +106,5 @@ dist
 static/sw.js
 
 postgres/database/
+
+postgres/init/init.sql
