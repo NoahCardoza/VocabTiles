@@ -104,3 +104,7 @@ dist
 .tern-port
 
 static/sw.js
+
+postgres/database/
+
+postgres/init/init.sql
