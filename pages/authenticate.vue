@@ -1,41 +1,34 @@
 <template>
-  <div class="login-card-parent">
-    <vs-row>
-      <vs-col
-        class="login-card"
-        vs-offset="4"
-        vs-type="flex"
-        vs-justify="center"
-        vs-align="center"
-        vs-w="4"
-      >
-        <vs-card ref="loginBox">
-          <div class="ph2 pt2">
-            <div v-show="scanQRCode" class="vs-card--header">
-              <h3>QR Scanner</h3>
-            </div>
-            <div v-show="scanQRCode">
-              Hold up your phone to your camera to scan the QR code your teacher
-              gave you.
-            </div>
-            <vs-tabs v-show="!scanQRCode" v-model="openTabIndex">
-              <vs-tab label="Login">
-                <vs-input
-                  v-model="email"
-                  block
-                  size="large"
-                  placeholder="Email"
-                  class="pt3"
-                />
-                <vs-input
-                  v-model="password"
-                  block
-                  size="large"
-                  placeholder="Password"
-                  class="pt3 pb3"
-                />
-              </vs-tab>
-              <vs-tab label="Sign Up">
+  <div class="flex flex-column justify-center items-center vh-100 vw-100">
+    <h1 class="title">Vocab Tiles</h1>
+    <div class="ph3 w-100" style="max-width: 600px">
+      <vs-card ref="loginBox">
+        <div class="ph2 pt2">
+          <div v-show="scanQRCode" class="vs-card--header">
+            <h3>QR Scanner</h3>
+          </div>
+          <div v-show="scanQRCode">
+            Hold up your phone to your camera to scan the QR code your teacher
+            gave you.
+          </div>
+          <vs-tabs v-show="!scanQRCode" v-model="openTabIndex">
+            <vs-tab label="Login">
+              <vs-input
+                v-model="email"
+                block
+                size="large"
+                placeholder="Email"
+                class="pt3"
+              />
+              <vs-input
+                v-model="password"
+                block
+                size="large"
+                placeholder="Password"
+                class="pt3 pb3"
+              />
+            </vs-tab>
+            <!-- <vs-tab label="Sign Up">
                 <vs-input
                   v-model="firstname"
                   block
@@ -64,44 +57,43 @@
                   placeholder="Password"
                   class="pt3 pb3"
                 />
-              </vs-tab>
-            </vs-tabs>
-            <div>
-              <vs-button v-show="!scanQRCode" class="w-100" @click="submit">
-                {{ buttonText }}
-              </vs-button>
-            </div>
-            <qrcode-stream
-              v-show="scanQRCode"
-              class="mt3 br4 overflow-hidden shadow-1"
-              @decode="onQRDecode"
-            ></qrcode-stream>
+              </vs-tab> -->
+          </vs-tabs>
+          <div>
+            <vs-button v-show="!scanQRCode" class="w-100" @click="submit">
+              {{ buttonText }}
+            </vs-button>
           </div>
-          <div slot="footer">
-            <!-- add about popup / github link / dark mode? -->
-            <vs-row vs-justify="flex-end">
-              <vs-button
-                class="includeIconOnly"
-                type="gradient"
-                color="success"
-                @click="scanQRCode = !scanQRCode"
-              >
-                <iconify-icon class="iconify" icon="qr-scan" />
-              </vs-button>
-              <vs-button
-                class="includeIconOnly"
-                color="#24292e"
-                color-text="white"
-                href="https://github.com/NoahCardoza/VocabTiles"
-                target="_blank"
-              >
-                <iconify-icon class="iconify" icon="github" />
-              </vs-button>
-            </vs-row>
-          </div>
-        </vs-card>
-      </vs-col>
-    </vs-row>
+          <qrcode-stream
+            v-show="scanQRCode"
+            class="mt3 br4 overflow-hidden shadow-1"
+            @decode="onQRDecode"
+          ></qrcode-stream>
+        </div>
+        <div slot="footer">
+          <!-- add about popup / github link / dark mode? -->
+          <vs-row vs-justify="flex-end">
+            <vs-button
+              class="includeIconOnly"
+              type="gradient"
+              color="success"
+              @click="scanQRCode = !scanQRCode"
+            >
+              <iconify-icon class="iconify" icon="qr-scan" />
+            </vs-button>
+            <vs-button
+              class="includeIconOnly"
+              color="#24292e"
+              color-text="white"
+              href="https://github.com/NoahCardoza/VocabTiles"
+              target="_blank"
+            >
+              <iconify-icon class="iconify" icon="github" />
+            </vs-button>
+          </vs-row>
+        </div>
+      </vs-card>
+    </div>
   </div>
 </template>
 
@@ -239,16 +231,6 @@ export default Vue.extend({
 </script>
 
 <style lang="css" scoped>
-.login-card-parent {
-  position: relative;
-  height: 100vh;
-}
-.login-card {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .vs-card--header,
 .vs-tabs--content {
   padding: 0;
@@ -259,8 +241,8 @@ export default Vue.extend({
 }
 
 .con-ul-tabs .vs-button,
-.login-card input,
-.login-card .vs-input {
+input,
+.vs-input {
   width: 100%;
 }
 </style>
