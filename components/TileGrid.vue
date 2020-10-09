@@ -1,5 +1,6 @@
 <template>
   <div :disabled="disabled">
+    <div>{{ currentTileName }}</div>
     <div v-for="row in rows" :key="row" class="flex justify-center">
       <div
         v-for="col in columns"
@@ -14,14 +15,17 @@
           :is="type"
           v-if="!disabled && tile(row, col)"
           v-bind="tile(row, col)"
-        ></component>
+          @click.native="onTileClick($event, tile(row, col))"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// %
+import shuffle from 'lodash/shuffle';
+import cloneDeep from 'lodash/cloneDeep';
+
 const SIZE_OPTIONS = ['sm', 'md', 'lg'];
 const SIZE_MULTIPLIERS = {
   sm: 5,
@@ -57,8 +61,15 @@ export default {
     },
   },
   data() {
+    // don't resuffle after SSR
+    const tiles =
+      this.localTiles || (this.tiles && shuffle(cloneDeep(this.tiles))) || null;
     return {
       type: 'color',
+      localTiles: tiles,
+      progress: 0,
+      tileOrder: tiles && tiles.map((t) => t.name),
+      animating: false,
     };
   },
   computed: {
@@ -80,17 +91,88 @@ export default {
     boxScale() {
       return 100 / this.sizeMultiplyer / this.mode;
     },
+    currentTileName() {
+      return this.tileOrder && this.tileOrder[this.progress];
+    },
   },
   methods: {
+    shuffle() {
+      const tiles = shuffle(this.localTiles);
+      const requiredTileIndex = tiles.findIndex(
+        (tile) => tile.name === this.currentTileName
+      );
+      if (this.numberOfBoxes <= requiredTileIndex) {
+        const swapIndex = Math.floor(Math.random() * this.numberOfBoxes);
+        [tiles[requiredTileIndex], tiles[swapIndex]] = [
+          tiles[swapIndex],
+          tiles[requiredTileIndex],
+        ];
+      }
+      this.localTiles = tiles;
+    },
+
     tile(row, col) {
       const start = (row - 1) * this.columns;
-      return this.tiles && this.tiles[start + col - 1];
+      return (this.localTiles && this.localTiles[start + col - 1]) || null;
+    },
+
+    onTileClick({ target }, tile) {
+      if (this.animating) return;
+      const animationClass =
+        this.currentTileName === tile.name ? 'pulse-success' : 'pulse-danger';
+      this.animating = true;
+      target.parentElement.classList.add(animationClass);
+      setTimeout(() => {
+        this.progress++;
+        if (!this.currentTileName) {
+          this.$router.push({ path: '/' });
+        }
+        this.shuffle();
+        target.parentElement.classList.remove(animationClass);
+        this.animating = false;
+      }, 1300);
     },
   },
 };
 </script>
 
 <style scoped>
+@keyframes pulse-success {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px 5px rgba(0, 156, 52, 0.5);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+  }
+}
+
+@keyframes pulse-danger {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px 5px rgba(255, 1, 13, 0.5);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+  }
+}
+
+.pulse-success {
+  background: rgba(0, 156, 52, 0.5);
+  box-shadow: 0 0 0 0 rgba(0, 156, 52, 0.5);
+  animation: pulse-success 1.3s;
+}
+
+.pulse-danger {
+  background: rgba(255, 1, 13, 0.5);
+  box-shadow: 0 0 0 0 rgba(255, 1, 13, 0.5);
+  animation: pulse-danger 1.3s;
+}
+
 .tile-box {
   cursor: pointer;
   border-radius: 10%;
