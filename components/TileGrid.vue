@@ -1,6 +1,6 @@
 <template>
   <div :disabled="disabled">
-    <div>{{ currentTileName }}</div>
+    <div>{{ currentTileText }}</div>
     <div v-for="row in rows" :key="row" class="flex justify-center">
       <div
         v-for="col in columns"
@@ -78,7 +78,7 @@ export default {
       type: 'color',
       localTiles: tiles,
       progress: 0,
-      tileOrder: tiles && tiles.map((t) => t.name),
+      tileOrder: tiles && tiles.map((t) => t.text),
       animating: false,
     };
   },
@@ -101,7 +101,7 @@ export default {
     boxScale() {
       return 100 / this.sizeMultiplyer / this.mode;
     },
-    currentTileName() {
+    currentTileText() {
       return this.tileOrder && this.tileOrder[this.progress];
     },
   },
@@ -109,7 +109,7 @@ export default {
     shuffle() {
       const tiles = shuffle(this.localTiles);
       const requiredTileIndex = tiles.findIndex(
-        (tile) => tile.name === this.currentTileName
+        (tile) => tile.title === this.currentTileText
       );
       if (this.numberOfBoxes <= requiredTileIndex) {
         const swapIndex = Math.floor(Math.random() * this.numberOfBoxes);
@@ -129,12 +129,12 @@ export default {
     onTileClick({ target }, tile) {
       if (this.animating) return;
       const animationClass =
-        this.currentTileName === tile.name ? 'pulse-success' : 'pulse-danger';
+        this.currentTileText === tile.text ? 'pulse-success' : 'pulse-danger';
       this.animating = true;
       target.parentElement.classList.add(animationClass);
       setTimeout(() => {
         this.progress++;
-        if (!this.currentTileName) {
+        if (!this.currentTileText) {
           this.$router.push({ path: '/' });
         }
         this.shuffle();

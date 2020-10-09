@@ -2,7 +2,7 @@
   <div
     class="w-100 h-100"
     :style="{
-      'background-color': hex,
+      'background-color': color,
     }"
   ></div>
 </template>
@@ -12,7 +12,7 @@ export default {
   name: 'Color',
   components: {},
   props: {
-    hex: {
+    color: {
       required: true,
       type: String,
     },
