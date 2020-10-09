@@ -60,10 +60,20 @@ export default {
       type: Array,
     },
   },
+  serverPrefetch() {
+    // use store to pass SSR rendered order of tiles
+    this.$store.commit('SET_PRESHUFFLE', this.localTiles);
+  },
   data() {
-    // don't resuffle after SSR
-    const tiles =
-      this.localTiles || (this.tiles && shuffle(cloneDeep(this.tiles))) || null;
+    // don't resuffle right after SSR
+    let { tiles } = this.$store.state;
+
+    if (!tiles) {
+      tiles = (this.tiles && shuffle(cloneDeep(this.tiles))) || null;
+    } else {
+      this.$store.commit('UNSET_PRESHUFFLE');
+    }
+
     return {
       type: 'color',
       localTiles: tiles,
