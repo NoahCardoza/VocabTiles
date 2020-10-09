@@ -1,6 +1,7 @@
-let userDB = require('../schema/usersDB');
-let quizzesDB = require('../schema/quizzesDB');
-let scoreDB = require('../schema/quiz-scoresDB');
+// const { Pool } = require('pg');
+let userDB = {}; // require('../schema/usersDB');
+let quizzesDB = {}; // require('../schema/quizzesDB');
+let scoreDB = {}; // require('../schema/quiz-scoresDB');
 
 const dbRouter = {
   // GETTERS
