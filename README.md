@@ -3,27 +3,21 @@ A vocabulary game/quiz app.
 
 ### Menu
 
-![iPhone 8 - Menu](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/VocabTilessketches/iPhone8-Menu.png)
 
 ### Easy game
 
-![iPhone 8 - Easy](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/VocabTilessketches/iPhone8-Easygamestart.png)
 
 #### 	10 seconds left
 
-![iPhone 8 - Easy, 10 seconds left](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/VocabTilessketches/iPhone8-Easygame10seconds.png)
 
 #### 	3 seconds left
 
-![iPhone 8 - Easy, 3 seconds left](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/VocabTilessketches/iPhone8-Easygame3seconds.png)
 
 #### 	1 second left
 
-![iPhone 8 - Easy, 1 second left](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/VocabTilessketches/iPhone8-Easygame1second.png)
 
 ### Hard game
 
-![iPhone 8 - Hard](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/VocabTilessketches/iPhone8-Hardgamestart.png)
 
 # Stack
 
