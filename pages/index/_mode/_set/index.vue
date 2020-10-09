@@ -24,11 +24,11 @@ export default {
       tiles: [
         {
           name: 'white',
-          hex: '#000',
+          hex: 'white',
         },
         {
           name: 'black',
-          hex: '#fff',
+          hex: 'black',
         },
         {
           name: 'red',
@@ -69,9 +69,6 @@ export default {
     mode() {
       return this.modes[this.modeIndex];
     },
-  },
-  mounted() {
-    console.log(this.modes, this.tiles);
   },
   beforeDestroy() {},
   methods: {},
