@@ -30,6 +30,34 @@ export default {
           name: 'black',
           hex: '#fff',
         },
+        {
+          name: 'red',
+          hex: 'red',
+        },
+        {
+          name: 'yellow',
+          hex: 'yellow',
+        },
+        {
+          name: 'green',
+          hex: 'green',
+        },
+        {
+          name: 'purple',
+          hex: 'purple',
+        },
+        {
+          name: 'blue',
+          hex: 'blue',
+        },
+        {
+          name: 'orange',
+          hex: 'orange',
+        },
+        {
+          name: 'pink',
+          hex: 'pink',
+        },
       ],
     };
   },
