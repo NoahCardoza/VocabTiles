@@ -108,3 +108,5 @@ postgres/database/
 postgres/init/init.sql
 static/sw.js
 static/firebase-auth-sw.js
+
+.vscode/settings.json
