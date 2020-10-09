@@ -1,10 +1,6 @@
 # Vocab Tiles
 A vocabulary game/quiz app.
 
-### Start screen
-
-![Start screen](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/VocabTilessketches/Startscreen.png)
-
 ### Menu
 
 ![iPhone 8 - Menu](https://github.com/NoahCardoza/VocabTiles/blob/2-add-tile-types/assets/VocabTilessketches/iPhone8-Menu.png)
