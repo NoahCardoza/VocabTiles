@@ -1,7 +1,5 @@
-import Vue from 'vue'
-import Vuesax from 'vuesax'
-import 'vuesax/dist/vuesax.css'
-import 'material-icons/iconfont/material-icons.css'
+import Vue from 'vue';
+import Vuesax from 'vuesax';
 
 /* 
   TODO: while global imports are fine for a hackathon, we should make sure
@@ -9,4 +7,4 @@ import 'material-icons/iconfont/material-icons.css'
   to configure webpack to do this but I can't remember at the moment.
 */
 
-Vue.use(Vuesax)
+Vue.use(Vuesax);

@@ -1,6 +1,12 @@
 <template>
   <div class="container">
     <div>
+      <vs-avatar
+        :text="userDisplayName"
+        size="120px"
+        :src="userPhotoURL"
+        @click="$fireAuth.signOut()"
+      />
       <header class="content-logos">
         <logo />
         <span class="plus">+</span>
@@ -8,9 +14,11 @@
       </header>
       <h1 class="title">Nuxt.js + Vuesax</h1>
       <h2 class="subtitle">
-        <a href="https://vuesax.com/">Vuesax</a> is a framework of ui components
-        for <a href="https://vuejs.org/">Vuejs</a>, It was created to make new
-        interfaces that have a new trend and are visually beautiful
+        <a href="https://vuesax.com/">Vuesax</a>
+        is a framework of ui components for
+        <a href="https://vuejs.org/">Vuejs</a>
+        , It was created to make new interfaces that have a new trend and are
+        visually beautiful
       </h2>
       <div class="links">
         <h3 class="h3">Vuesax</h3>
@@ -63,15 +71,17 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuesaxLogo from '~/components/VuesaxLogo.vue'
+import { mapGetters } from 'vuex';
+import Logo from '~/components/Logo.vue';
+import VuesaxLogo from '~/components/VuesaxLogo.vue';
 
 export default {
   components: {
     Logo,
     VuesaxLogo,
   },
-}
+  computed: mapGetters(['userPhotoURL', 'userDisplayName']),
+};
 </script>
 
 <style>
@@ -133,5 +143,9 @@ export default {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
   margin: 10px;
+}
+
+.vs-avatar--text {
+  font-size: 3rem;
 }
 </style>
