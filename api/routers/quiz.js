@@ -43,15 +43,6 @@ router.get('/:id/scores', (req, res) => {
   }
 });
 
-router.post('/', (req, res) => {
-  const newQuiz = req.body;
-  if (verifyJSON('quizzes', newQuiz)) {
-    res.json(db.addQuiz(newQuiz));
-  } else {
-    res.status(400).json({ msg: `sent data does not match schema` });
-  }
-});
-
 router.put('/:id', (req, res) => {
   const updatedQuiz = req.body;
   if (verifyJSON('quizzes', updatedQuiz)) {
