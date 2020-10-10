@@ -4,7 +4,7 @@ A vocabulary game/quiz app.
 ### Menu
 
 
-### Easy game
+### Menu
 
 
 #### 	10 seconds left
