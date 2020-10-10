@@ -1,887 +1,887 @@
 {
-  "quizzes":[
+  "quizzes": [
     {
-      "type":"color",
-      "title":"Colors",
-      "tiles":[
+      "type": "color",
+      "title": "Colors",
+      "tiles": [
         {
-          "audio":"/audio/colors/black.wav",
-          "text":"black",
-          "color":"black"
+          "audio": "/audio/colors/black.wav",
+          "text": "black",
+          "color": "black"
         },
         {
-          "audio":"/audio/colors/white.wav",
-          "text":"white",
-          "color":"white"
+          "audio": "/audio/colors/white.wav",
+          "text": "white",
+          "color": "white"
         },
         {
-          "audio":"/audio/colors/red.wav",
-          "text":"red",
-          "color":"red"
+          "audio": "/audio/colors/red.wav",
+          "text": "red",
+          "color": "red"
         },
         {
-          "audio":"/audio/colors/yellow.wav",
-          "text":"yellow",
-          "color":"yellow"
+          "audio": "/audio/colors/yellow.wav",
+          "text": "yellow",
+          "color": "yellow"
         },
         {
-          "audio":"/audio/colors/green.wav",
-          "text":"green",
-          "color":"green"
+          "audio": "/audio/colors/green.wav",
+          "text": "green",
+          "color": "green"
         },
         {
-          "audio":"/audio/colors/purple.wav",
-          "text":"purple",
-          "color":"purple"
+          "audio": "/audio/colors/purple.wav",
+          "text": "purple",
+          "color": "purple"
         },
         {
-          "audio":"/audio/colors/blue.wav",
-          "text":"blue",
-          "color":"blue"
+          "audio": "/audio/colors/blue.wav",
+          "text": "blue",
+          "color": "blue"
         },
         {
-          "audio":"/audio/colors/orange.wav",
-          "text":"orange",
-          "color":"orange"
+          "audio": "/audio/colors/orange.wav",
+          "text": "orange",
+          "color": "orange"
         },
         {
-          "audio":"/audio/colors/pink.wav",
-          "text":"pink",
-          "color":"pink"
+          "audio": "/audio/colors/pink.wav",
+          "text": "pink",
+          "color": "pink"
         }
       ]
     },
     {
-      "type":"image",
-      "title":"Shapes",
-      "tiles":[
+      "type": "image",
+      "title": "Shapes",
+      "tiles": [
         {
-          "audio":"/audio/shapes/circle.wav",
-          "text":"circle",
-          "image":"/images/shapes/circle.png"
+          "audio": "/audio/shapes/circle.wav",
+          "text": "circle",
+          "image": "/images/shapes/circle.png"
         },
         {
-          "audio":"/audio/shapes/square.wav",
-          "text":"square",
-          "image":"/images/shapes/square.png"
+          "audio": "/audio/shapes/square.wav",
+          "text": "square",
+          "image": "/images/shapes/square.png"
         },
         {
-          "audio":"/audio/shapes/triangle.wav",
-          "text":"triangle",
-          "image":"/images/shapes/triangle.png"
+          "audio": "/audio/shapes/triangle.wav",
+          "text": "triangle",
+          "image": "/images/shapes/triangle.png"
         },
         {
-          "audio":"/audio/shapes/rectangle.wav",
-          "text":"rectangle",
-          "image":"/images/shapes/rectangle.png"
+          "audio": "/audio/shapes/rectangle.wav",
+          "text": "rectangle",
+          "image": "/images/shapes/rectangle.png"
         },
-				{
-					"audio": "/assets/audio/shapes/arrow.wav",
+        {
+          "audio": "/assets/audio/shapes/arrow.wav",
           "text": "arrow",
           "image": "/assets/images/shapes/arrow.png"
         },
         {
-					"audio": "/assets/audio/shapes/star.wav",
+          "audio": "/assets/audio/shapes/star.wav",
           "text": "star",
           "image": "/assets/images/shapes/star.png"
-				},
-				{
-					"audio": "/assets/audio/shapes/cross.wav",
+        },
+        {
+          "audio": "/assets/audio/shapes/cross.wav",
           "text": "cross",
           "image": "/assets/images/shapes/cross.png"
-				},
-				{
-					"audio": "/assets/audio/shapes/diamond.wav",
+        },
+        {
+          "audio": "/assets/audio/shapes/diamond.wav",
           "text": "diamond",
           "image": "/assets/images/shapes/diamond.png"
         },
         {
-					"audio": "/assets/audio/shapes/heart.wav",
+          "audio": "/assets/audio/shapes/heart.wav",
           "text": "heart",
           "image": "/assets/images/shapes/heart.png"
-				},
-				{
-					"audio": "/assets/audio/shapes/hexagon.wav",
+        },
+        {
+          "audio": "/assets/audio/shapes/hexagon.wav",
           "text": "hexagon",
           "image": "/assets/images/shapes/hexagon.png"
-				},
-				{
-					"audio": "/assets/audio/shapes/moon.wav",
+        },
+        {
+          "audio": "/assets/audio/shapes/moon.wav",
           "text": "moon",
           "image": "/assets/images/shapes/moon.png"
         },
         {
-					"audio": "/assets/audio/shapes/pentagon.wav",
+          "audio": "/assets/audio/shapes/pentagon.wav",
           "text": "pentagon",
           "image": "/assets/images/shapes/pentagon.png"
-				},
-				{
-					"audio": "/assets/audio/shapes/octagon.wav",
+        },
+        {
+          "audio": "/assets/audio/shapes/octagon.wav",
           "text": "octagon",
           "image": "/assets/images/shapes/octagon.png"
-				},
-				{
-					"audio": "/assets/audio/shapes/oval.wav",
+        },
+        {
+          "audio": "/assets/audio/shapes/oval.wav",
           "text": "oval",
           "image": "/assets/images/shapes/oval.png"
         },
         {
-					"audio": "/assets/audio/shapes/parallelogram.wav",
+          "audio": "/assets/audio/shapes/parallelogram.wav",
           "text": "parallelogram",
           "image": "/assets/images/shapes/parallelogram.png"
-				},
-				{
-					"audio": "/assets/audio/shapes/trapezoid.wav",
+        },
+        {
+          "audio": "/assets/audio/shapes/trapezoid.wav",
           "text": "trapezoid",
           "image": "/assets/images/shapes/trapezoid.png"
-				}
-      ]
-    },
-    {
-      "type":"text",
-      "title":"Numbers",
-      "tiles":[
-        {
-          "audio":"/audio/numbers/zero.wav",
-          "text":"0"
-        },
-        {
-          "audio":"/audio/numbers/one.wav",
-          "text":"1"
-        },
-        {
-          "audio":"/audio/numbers/two.wav",
-          "text":"1"
-        },
-        {
-          "audio":"/audio/numbers/three.wav",
-          "text":"3"
-        },
-        {
-          "audio":"/audio/numbers/four.wav",
-          "text":"4"
-        },
-        {
-          "audio":"/audio/numbers/five.wav",
-          "text":"5"
-        },
-        {
-          "audio":"/audio/numbers/six.wav",
-          "text":"6"
-        },
-        {
-          "audio":"/audio/numbers/eleven.wav",
-          "text":"11"
-        },
-        {
-          "audio":"/audio/numbers/twentyone.wav",
-          "text":"21"
-        },
-        {
-          "audio":"/audio/numbers/ninetynine.wav",
-          "text":"99"
-        },
-        {
-          "audio":"/audio/numbers/onehundred.wav",
-          "text":"100"
-        },
-        {
-          "audio":"/audio/numbers/onethousand.wav",
-          "text":"1000"
-        },
-        {
-          "audio":"/audio/numbers/tenthousand.wav",
-          "text":"10,000"
-        },
-        {
-          "audio":"/audio/numbers/onehundredthousand.wav",
-          "text":"100,000"
-        },
-        {
-          "audio":"/audio/numbers/onemillion.wav",
-          "text":"1,000,000"
-        },
-        {
-          "audio":"/audio/numbers/onebillion.wav",
-          "text":"1,000,000,000"
-        },
-        {
-          "audio":"/audio/numbers/1234567890.wav",
-          "text":"1,234,567,890"
         }
       ]
     },
     {
-      "type":"image",
-      "title":"Food: Fruit",
-      "tiles":[
+      "type": "text",
+      "title": "Numbers",
+      "tiles": [
         {
-          "audio":"/audio/food/fruit/apple.wav",
-          "text":"apple",
-          "image":"/images/food/fruit/apple.jpg"
+          "audio": "/audio/numbers/zero.wav",
+          "text": "0"
         },
         {
-          "audio":"/audio/food/fruit/banana.wav",
-          "text":"banana",
-          "image":"/images/food/fruit/banana.jpg"
+          "audio": "/audio/numbers/one.wav",
+          "text": "1"
         },
         {
-          "audio":"/audio/food/fruit/coconut.wav",
-          "text":"coconut",
-          "image":"/images/food/fruit/coconut.jpg"
+          "audio": "/audio/numbers/two.wav",
+          "text": "2"
         },
         {
-          "audio":"/audio/food/fruit/lemon.wav",
-          "text":"lemon",
-          "image":"/images/food/fruit/lemon.jpg"
+          "audio": "/audio/numbers/three.wav",
+          "text": "3"
         },
         {
-          "audio":"/audio/food/fruit/pineapple.wav",
-          "text":"pineapple",
-          "image":"/images/food/fruit/pineapple.jpg"
+          "audio": "/audio/numbers/four.wav",
+          "text": "4"
         },
         {
-          "audio":"/audio/food/fruit/strawberry.wav",
-          "text":"strawberry",
-          "image":"/images/food/fruit/strawberry.jpg"
+          "audio": "/audio/numbers/five.wav",
+          "text": "5"
         },
         {
-          "audio":"/audio/food/fruit/watermelon.wav",
-          "text":"watermelon",
-          "image":"/images/food/fruit/watermelon.jpg"
+          "audio": "/audio/numbers/six.wav",
+          "text": "6"
+        },
+        {
+          "audio": "/audio/numbers/eleven.wav",
+          "text": "11"
+        },
+        {
+          "audio": "/audio/numbers/twentyone.wav",
+          "text": "21"
+        },
+        {
+          "audio": "/audio/numbers/ninetynine.wav",
+          "text": "99"
+        },
+        {
+          "audio": "/audio/numbers/onehundred.wav",
+          "text": "100"
+        },
+        {
+          "audio": "/audio/numbers/onethousand.wav",
+          "text": "1000"
+        },
+        {
+          "audio": "/audio/numbers/tenthousand.wav",
+          "text": "10,000"
+        },
+        {
+          "audio": "/audio/numbers/onehundredthousand.wav",
+          "text": "100,000"
+        },
+        {
+          "audio": "/audio/numbers/onemillion.wav",
+          "text": "1,000,000"
+        },
+        {
+          "audio": "/audio/numbers/onebillion.wav",
+          "text": "1,000,000,000"
+        },
+        {
+          "audio": "/audio/numbers/1234567890.wav",
+          "text": "1,234,567,890"
         }
       ]
     },
     {
-      "type":"image",
-      "title":"Food: Vegetables",
-      "tiles":[
+      "type": "image",
+      "title": "Food: Fruit",
+      "tiles": [
         {
-          "audio":"/audio/food/vegetables/asparagus.wav",
-          "text":"asparagus",
-          "image":"/images/food/vegetables/asparagus.jpg"
+          "audio": "/audio/food/fruit/apple.wav",
+          "text": "apple",
+          "image": "/images/food/fruit/apple.jpg"
         },
         {
-          "audio":"/audio/food/vegetables/bellpepper.wav",
-          "text":"bellpepper",
-          "image":"/images/food/vegetables/bellpepper.jpg"
+          "audio": "/audio/food/fruit/banana.wav",
+          "text": "banana",
+          "image": "/images/food/fruit/banana.jpg"
         },
         {
-          "audio":"/audio/food/vegetables/broccoli.wav",
-          "text":"broccoli",
-          "image":"/images/food/vegetables/broccoli.jpg"
+          "audio": "/audio/food/fruit/coconut.wav",
+          "text": "coconut",
+          "image": "/images/food/fruit/coconut.jpg"
         },
         {
-          "audio":"/audio/food/vegetables/cabbage.wav",
-          "text":"cabbage",
-          "image":"/images/food/vegetables/cabbage.jpg"
+          "audio": "/audio/food/fruit/lemon.wav",
+          "text": "lemon",
+          "image": "/images/food/fruit/lemon.jpg"
         },
         {
-          "audio":"/audio/food/vegetables/cauliflower.wav",
-          "text":"cauliflower",
-          "image":"/images/food/vegetables/cauliflower.jpg"
+          "audio": "/audio/food/fruit/pineapple.wav",
+          "text": "pineapple",
+          "image": "/images/food/fruit/pineapple.jpg"
         },
         {
-          "audio":"/audio/food/vegetables/greenbeans.wav",
-          "text":"greenbeans",
-          "image":"/images/food/vegetables/greenbeans.jpg"
+          "audio": "/audio/food/fruit/strawberry.wav",
+          "text": "strawberry",
+          "image": "/images/food/fruit/strawberry.jpg"
         },
         {
-          "audio":"/audio/food/vegetables/onion.wav",
-          "text":"onion",
-          "image":"/images/food/vegetables/onion.jpg"
-        },
-        {
-          "audio":"/audio/food/vegetables/spinach.wav",
-          "text":"spinach",
-          "image":"/images/food/vegetables/spinach.jpg"
-        },
-        {
-          "audio":"/audio/food/vegetables/tomato.wav",
-          "text":"tomato",
-          "image":"/images/food/vegetables/tomato.jpg"
+          "audio": "/audio/food/fruit/watermelon.wav",
+          "text": "watermelon",
+          "image": "/images/food/fruit/watermelon.jpg"
         }
       ]
     },
     {
-      "type":"image",
-      "title":"Activities",
-      "tiles":[
+      "type": "image",
+      "title": "Food: Vegetables",
+      "tiles": [
         {
-          "audio":"/audio/activities/sleep.wav",
-          "text":"sleep",
-          "image":"/images/activities/sleep.jpg"
+          "audio": "/audio/food/vegetables/asparagus.wav",
+          "text": "asparagus",
+          "image": "/images/food/vegetables/asparagus.jpg"
         },
         {
-          "audio":"/audio/activities/eat.wav",
-          "text":"eat",
-          "image":"/images/activities/eat.jpg"
+          "audio": "/audio/food/vegetables/bellpepper.wav",
+          "text": "bellpepper",
+          "image": "/images/food/vegetables/bellpepper.jpg"
         },
         {
-          "audio":"/audio/activities/drink.wav",
-          "text":"drink",
-          "image":"/images/activities/drink.jpg"
+          "audio": "/audio/food/vegetables/broccoli.wav",
+          "text": "broccoli",
+          "image": "/images/food/vegetables/broccoli.jpg"
         },
         {
-          "audio":"/audio/activities/walk.wav",
-          "text":"walk",
-          "image":"/images/activities/walk.jpg"
+          "audio": "/audio/food/vegetables/cabbage.wav",
+          "text": "cabbage",
+          "image": "/images/food/vegetables/cabbage.jpg"
         },
         {
-          "audio":"/audio/activities/run.wav",
-          "text":"run",
-          "image":"/images/activities/run.jpg"
+          "audio": "/audio/food/vegetables/cauliflower.wav",
+          "text": "cauliflower",
+          "image": "/images/food/vegetables/cauliflower.jpg"
         },
         {
-          "audio":"/audio/activities/jump.wav",
-          "text":"jump",
-          "image":"/images/activities/jump.jpg"
+          "audio": "/audio/food/vegetables/greenbeans.wav",
+          "text": "greenbeans",
+          "image": "/images/food/vegetables/greenbeans.jpg"
         },
         {
-          "audio":"/audio/activities/sit.wav",
-          "text":"sit",
-          "image":"/images/activities/sit.jpg"
+          "audio": "/audio/food/vegetables/onion.wav",
+          "text": "onion",
+          "image": "/images/food/vegetables/onion.jpg"
         },
         {
-          "audio":"/audio/activities/stand.wav",
-          "text":"stand",
-          "image":"/images/activities/stand.jpg"
+          "audio": "/audio/food/vegetables/spinach.wav",
+          "text": "spinach",
+          "image": "/images/food/vegetables/spinach.jpg"
         },
         {
-          "audio":"/audio/activities/look.wav",
-          "text":"look",
-          "image":"/images/activities/look-see.jpg"
-        },
-        {
-          "audio":"/audio/activities/see.wav",
-          "text":"see",
-          "image":"/images/activities/look-see.jpg"
-        },
-        {
-          "audio":"/audio/activities/listen.wav",
-          "text":"listen",
-          "image":"/images/activities/listen-hear.jpg"
-        },
-        {
-          "audio":"/audio/activities/hear.wav",
-          "text":"hear",
-          "image":"/images/activities/listen-hear.jpg"
-        },
-        {
-          "audio":"/audio/activities/speak.wav",
-          "text":"speak",
-          "image":"/images/activities/speak-talk-say.jpg"
-        },
-        {
-          "audio":"/audio/activities/talk.wav",
-          "text":"talk",
-          "image":"/images/activities/speak-talk-say.jpg"
-        },
-        {
-          "audio":"/audio/activities/say.wav",
-          "text":"say",
-          "image":"/images/activities/speak-talk-say.jpg"
+          "audio": "/audio/food/vegetables/tomato.wav",
+          "text": "tomato",
+          "image": "/images/food/vegetables/tomato.jpg"
         }
       ]
     },
     {
-      "type":"text",
-      "title":"Days",
-      "tiles":[
+      "type": "image",
+      "title": "Activities",
+      "tiles": [
         {
-          "audio":"/audio/days/Sunday.wav",
-          "text":"Sunday"
+          "audio": "/audio/activities/sleep.wav",
+          "text": "sleep",
+          "image": "/images/activities/sleep.jpg"
         },
         {
-          "audio":"/audio/days/Monday.wav",
-          "text":"Monday"
+          "audio": "/audio/activities/eat.wav",
+          "text": "eat",
+          "image": "/images/activities/eat.jpg"
         },
         {
-          "audio":"/audio/days/Tuesday.wav",
-          "text":"Tuesday"
+          "audio": "/audio/activities/drink.wav",
+          "text": "drink",
+          "image": "/images/activities/drink.jpg"
         },
         {
-          "audio":"/audio/days/Wednesday.wav",
-          "text":"Wednesday"
+          "audio": "/audio/activities/walk.wav",
+          "text": "walk",
+          "image": "/images/activities/walk.jpg"
         },
         {
-          "audio":"/audio/days/Thursday.wav",
-          "text":"Thursday"
+          "audio": "/audio/activities/run.wav",
+          "text": "run",
+          "image": "/images/activities/run.jpg"
         },
         {
-          "audio":"/audio/days/Friday.wav",
-          "text":"Friday"
+          "audio": "/audio/activities/jump.wav",
+          "text": "jump",
+          "image": "/images/activities/jump.jpg"
         },
         {
-          "audio":"/audio/days/Saturday.wav",
-          "text":"Saturday"
+          "audio": "/audio/activities/sit.wav",
+          "text": "sit",
+          "image": "/images/activities/sit.jpg"
+        },
+        {
+          "audio": "/audio/activities/stand.wav",
+          "text": "stand",
+          "image": "/images/activities/stand.jpg"
+        },
+        {
+          "audio": "/audio/activities/look.wav",
+          "text": "look",
+          "image": "/images/activities/look-see.jpg"
+        },
+        {
+          "audio": "/audio/activities/see.wav",
+          "text": "see",
+          "image": "/images/activities/look-see.jpg"
+        },
+        {
+          "audio": "/audio/activities/listen.wav",
+          "text": "listen",
+          "image": "/images/activities/listen-hear.jpg"
+        },
+        {
+          "audio": "/audio/activities/hear.wav",
+          "text": "hear",
+          "image": "/images/activities/listen-hear.jpg"
+        },
+        {
+          "audio": "/audio/activities/speak.wav",
+          "text": "speak",
+          "image": "/images/activities/speak-talk-say.jpg"
+        },
+        {
+          "audio": "/audio/activities/talk.wav",
+          "text": "talk",
+          "image": "/images/activities/speak-talk-say.jpg"
+        },
+        {
+          "audio": "/audio/activities/say.wav",
+          "text": "say",
+          "image": "/images/activities/speak-talk-say.jpg"
         }
       ]
     },
     {
-      "type":"text",
-      "title":"Months",
-      "tiles":[
+      "type": "text",
+      "title": "Days",
+      "tiles": [
         {
-          "audio":"/audio/months/January.wav",
-          "text":"January"
+          "audio": "/audio/days/Sunday.wav",
+          "text": "Sunday"
         },
         {
-          "audio":"/audio/months/February.wav",
-          "text":"February"
+          "audio": "/audio/days/Monday.wav",
+          "text": "Monday"
         },
         {
-          "audio":"/audio/months/March.wav",
-          "text":"March"
+          "audio": "/audio/days/Tuesday.wav",
+          "text": "Tuesday"
         },
         {
-          "audio":"/audio/months/April.wav",
-          "text":"April"
+          "audio": "/audio/days/Wednesday.wav",
+          "text": "Wednesday"
         },
         {
-          "audio":"/audio/months/May.wav",
-          "text":"May"
+          "audio": "/audio/days/Thursday.wav",
+          "text": "Thursday"
         },
         {
-          "audio":"/audio/months/June.wav",
-          "text":"June"
+          "audio": "/audio/days/Friday.wav",
+          "text": "Friday"
         },
         {
-          "audio":"/audio/months/July.wav",
-          "text":"July"
-        },
-        {
-          "audio":"/audio/months/August.wav",
-          "text":"August"
-        },
-        {
-          "audio":"/audio/months/September.wav",
-          "text":"September"
-        },
-        {
-          "audio":"/audio/months/October.wav",
-          "text":"October"
-        },
-        {
-          "audio":"/audio/shapes/November.wav",
-          "text":"November"
-        },
-        {
-          "audio":"/audio/shapes/December.wav",
-          "text":"December"
+          "audio": "/audio/days/Saturday.wav",
+          "text": "Saturday"
         }
       ]
     },
     {
-      "type":"text",
-      "title":"Seasons",
-      "tiles":[
+      "type": "text",
+      "title": "Months",
+      "tiles": [
         {
-          "audio":"/audio/seasons-temp-weather/spring.wav",
-          "text":"spring"
+          "audio": "/audio/months/January.wav",
+          "text": "January"
         },
         {
-          "audio":"/audio/seasons-temp-weather/summer.wav",
-          "text":"summer"
+          "audio": "/audio/months/February.wav",
+          "text": "February"
         },
         {
-          "audio":"/audio/seasons-temp-weather/autumn.wav",
-          "text":"autumn"
+          "audio": "/audio/months/March.wav",
+          "text": "March"
         },
         {
-          "audio":"/audio/seasons-temp-weather/winter.wav",
-          "text":"winter"
+          "audio": "/audio/months/April.wav",
+          "text": "April"
+        },
+        {
+          "audio": "/audio/months/May.wav",
+          "text": "May"
+        },
+        {
+          "audio": "/audio/months/June.wav",
+          "text": "June"
+        },
+        {
+          "audio": "/audio/months/July.wav",
+          "text": "July"
+        },
+        {
+          "audio": "/audio/months/August.wav",
+          "text": "August"
+        },
+        {
+          "audio": "/audio/months/September.wav",
+          "text": "September"
+        },
+        {
+          "audio": "/audio/months/October.wav",
+          "text": "October"
+        },
+        {
+          "audio": "/audio/shapes/November.wav",
+          "text": "November"
+        },
+        {
+          "audio": "/audio/shapes/December.wav",
+          "text": "December"
         }
       ]
     },
     {
-      "type":"text",
-      "title":"Weather",
-      "tiles":[
+      "type": "text",
+      "title": "Seasons",
+      "tiles": [
         {
-          "audio":"/audio/seasons-temp-weather/sunny.wav",
-          "text":"sunny"
+          "audio": "/audio/seasons-temp-weather/spring.wav",
+          "text": "spring"
         },
         {
-          "audio":"/audio/seasons-temp-weather/cloudy.wav",
-          "text":"cloudy"
+          "audio": "/audio/seasons-temp-weather/summer.wav",
+          "text": "summer"
         },
         {
-          "audio":"/audio/seasons-temp-weather/foggy.wav",
-          "text":"foggy"
+          "audio": "/audio/seasons-temp-weather/autumn.wav",
+          "text": "autumn"
         },
         {
-          "audio":"/audio/seasons-temp-weather/smoggy.wav",
-          "text":"smoggy"
-        },
-        {
-          "audio":"/audio/seasons-temp-weather/rainy.wav",
-          "text":"rainy"
-        },
-        {
-          "audio":"/audio/seasons-temp-weather/windy.wav",
-          "text":"windy"
-        },
-        {
-          "audio":"/audio/seasons-temp-weather/snowy.wav",
-          "text":"snowy"
+          "audio": "/audio/seasons-temp-weather/winter.wav",
+          "text": "winter"
         }
       ]
     },
     {
-      "type":"text",
-      "title":"Temperature",
-      "tiles":[
+      "type": "text",
+      "title": "Weather",
+      "tiles": [
         {
-          "audio":"/audio/seasons-temp-weather/hot.wav",
-          "text":"hot"
+          "audio": "/audio/seasons-temp-weather/sunny.wav",
+          "text": "sunny"
         },
         {
-          "audio":"/audio/seasons-temp-weather/warm.wav",
-          "text":"warm"
+          "audio": "/audio/seasons-temp-weather/cloudy.wav",
+          "text": "cloudy"
         },
         {
-          "audio":"/audio/seasons-temp-weather/cool.wav",
-          "text":"cool"
+          "audio": "/audio/seasons-temp-weather/foggy.wav",
+          "text": "foggy"
         },
         {
-          "audio":"/audio/seasons-temp-weather/cold.wav",
-          "text":"cold"
+          "audio": "/audio/seasons-temp-weather/smoggy.wav",
+          "text": "smoggy"
+        },
+        {
+          "audio": "/audio/seasons-temp-weather/rainy.wav",
+          "text": "rainy"
+        },
+        {
+          "audio": "/audio/seasons-temp-weather/windy.wav",
+          "text": "windy"
+        },
+        {
+          "audio": "/audio/seasons-temp-weather/snowy.wav",
+          "text": "snowy"
         }
       ]
     },
     {
-      "type":"text",
-      "title":"Math",
-      "tiles":[
+      "type": "text",
+      "title": "Temperature",
+      "tiles": [
         {
-          "audio":"/audio/math/2plus3.wav",
-          "text":"2 + 3"
+          "audio": "/audio/seasons-temp-weather/hot.wav",
+          "text": "hot"
         },
         {
-          "audio":"/audio/math/2plus4.wav",
-          "text":"2 + 4"
+          "audio": "/audio/seasons-temp-weather/warm.wav",
+          "text": "warm"
         },
         {
-          "audio":"/audio/math/2plus5.wav",
-          "text":"2 + 5"
+          "audio": "/audio/seasons-temp-weather/cool.wav",
+          "text": "cool"
         },
         {
-          "audio":"/audio/math/2plus6.wav",
-          "text":"2 + 6"
-        },
-        {
-          "audio":"/audio/math/2plus7.wav",
-          "text":"2 + 7"
-        },
-        {
-          "audio":"/audio/math/2plus8.wav",
-          "text":"2 + 8"
-        },
-        {
-          "audio":"/audio/math/2plus9.wav",
-          "text":"2 + 9"
-        },
-        {
-          "audio":"/audio/math/2plus10.wav",
-          "text":"2 + 10"
-        },
-        {
-          "audio":"/audio/math/2plus11.wav",
-          "text":"2 + 11"
-        },
-        {
-          "audio":"/audio/math/2plus13.wav",
-          "text":"2 + 13"
-        },
-        {
-          "audio":"/audio/math/2plus14.wav",
-          "text":"2 + 14"
-        },
-        {
-          "audio":"/audio/math/2plus15.wav",
-          "text":"2 + 15"
-        },
-        {
-          "audio":"/audio/math/2plus16.wav",
-          "text":"2 + 16"
-        },
-        {
-          "audio":"/audio/math/2plus18.wav",
-          "text":"2 + 18"
-        },
-        {
-          "audio":"/audio/math/2plus19.wav",
-          "text":"2 + 19"
-        },
-        {
-          "audio":"/audio/math/19plus3.wav",
-          "text":"19 + 3"
-        },
-        {
-          "audio":"/audio/math/90plus3.wav",
-          "text":"90 + 3"
+          "audio": "/audio/seasons-temp-weather/cold.wav",
+          "text": "cold"
         }
       ]
     },
     {
-      "type":"image",
-      "title":"Money",
-      "tiles":[
+      "type": "text",
+      "title": "Math",
+      "tiles": [
         {
-          "audio":"/audio/money/penny.wav",
-          "text":"penny",
-          "image":"/images/money/penny.jpg"
+          "audio": "/audio/math/2plus3.wav",
+          "text": "2 + 3"
         },
         {
-          "audio":"/audio/money/nickel.wav",
-          "text":"nickel",
-          "image":"/images/money/nickel.jpg"
+          "audio": "/audio/math/2plus4.wav",
+          "text": "2 + 4"
         },
         {
-          "audio":"/audio/money/dime.wav",
-          "text":"dime",
-          "image":"/images/money/dime.jpg"
+          "audio": "/audio/math/2plus5.wav",
+          "text": "2 + 5"
         },
         {
-          "audio":"/audio/money/quarter.wav",
-          "text":"quarter",
-          "image":"/images/money/quarter.jpg"
+          "audio": "/audio/math/2plus6.wav",
+          "text": "2 + 6"
         },
         {
-          "audio":"/audio/money/halfdollar.wav",
-          "text":"half-dollar",
-          "image":"/images/money/halfdollar.jpg"
+          "audio": "/audio/math/2plus7.wav",
+          "text": "2 + 7"
         },
         {
-          "audio":"/audio/money/dollarcoins.wav",
-          "text":"dollar coins",
-          "image":"/images/money/dollarcoins.jpg"
+          "audio": "/audio/math/2plus8.wav",
+          "text": "2 + 8"
         },
         {
-          "audio":"/audio/money/dollarbill.wav",
-          "text":"dollar bill",
-          "image":"/images/money/dollarbill.jpg"
+          "audio": "/audio/math/2plus9.wav",
+          "text": "2 + 9"
+        },
+        {
+          "audio": "/audio/math/2plus10.wav",
+          "text": "2 + 10"
+        },
+        {
+          "audio": "/audio/math/2plus11.wav",
+          "text": "2 + 11"
+        },
+        {
+          "audio": "/audio/math/2plus13.wav",
+          "text": "2 + 13"
+        },
+        {
+          "audio": "/audio/math/2plus14.wav",
+          "text": "2 + 14"
+        },
+        {
+          "audio": "/audio/math/2plus15.wav",
+          "text": "2 + 15"
+        },
+        {
+          "audio": "/audio/math/2plus16.wav",
+          "text": "2 + 16"
+        },
+        {
+          "audio": "/audio/math/2plus18.wav",
+          "text": "2 + 18"
+        },
+        {
+          "audio": "/audio/math/2plus19.wav",
+          "text": "2 + 19"
+        },
+        {
+          "audio": "/audio/math/19plus3.wav",
+          "text": "19 + 3"
+        },
+        {
+          "audio": "/audio/math/90plus3.wav",
+          "text": "90 + 3"
         }
       ]
     },
     {
-      "type":"text",
-      "title":"The Alphabet: Capital Letters",
-      "tiles":[
+      "type": "image",
+      "title": "Money",
+      "tiles": [
         {
-          "audio":"/audio/alphabet/CapA.wav",
-          "text":"A"
+          "audio": "/audio/money/penny.wav",
+          "text": "penny",
+          "image": "/images/money/penny.jpg"
         },
         {
-          "audio":"/audio/alphabet/CapB.wav",
-          "text":"B"
+          "audio": "/audio/money/nickel.wav",
+          "text": "nickel",
+          "image": "/images/money/nickel.jpg"
         },
         {
-          "audio":"/audio/alphabet/CapC.wav",
-          "text":"C"
+          "audio": "/audio/money/dime.wav",
+          "text": "dime",
+          "image": "/images/money/dime.jpg"
         },
         {
-          "audio":"/audio/alphabet/CapD.wav",
-          "text":"D"
+          "audio": "/audio/money/quarter.wav",
+          "text": "quarter",
+          "image": "/images/money/quarter.jpg"
         },
         {
-          "audio":"/audio/alphabet/CapE.wav",
-          "text":"E"
+          "audio": "/audio/money/halfdollar.wav",
+          "text": "half-dollar",
+          "image": "/images/money/halfdollar.jpg"
         },
         {
-          "audio":"/audio/alphabet/CapF.wav",
-          "text":"F"
+          "audio": "/audio/money/dollarcoins.wav",
+          "text": "dollar coins",
+          "image": "/images/money/dollarcoins.jpg"
         },
         {
-          "audio":"/audio/alphabet/CapG.wav",
-          "text":"G"
-        },
-        {
-          "audio":"/audio/alphabet/CapH.wav",
-          "text":"H"
-        },
-        {
-          "audio":"/audio/alphabet/CapI.wav",
-          "text":"I"
-        },
-        {
-          "audio":"/audio/alphabet/CapJ.wav",
-          "text":"J"
-        },
-        {
-          "audio":"/audio/alphabet/CapK.wav",
-          "text":"K"
-        },
-        {
-          "audio":"/audio/alphabet/CapL.wav",
-          "text":"L"
-        },
-        {
-          "audio":"/audio/alphabet/CapM.wav",
-          "text":"M"
-        },
-        {
-          "audio":"/audio/alphabet/CapN.wav",
-          "text":"N"
-        },
-        {
-          "audio":"/audio/alphabet/CapO.wav",
-          "text":"O"
-        },
-        {
-          "audio":"/audio/alphabet/CapP.wav",
-          "text":"P"
-        },
-        {
-          "audio":"/audio/alphabet/CapQ.wav",
-          "text":"Q"
-        },
-        {
-          "audio":"/audio/alphabet/CapR.wav",
-          "text":"R"
-        },
-        {
-          "audio":"/audio/alphabet/CapS.wav",
-          "text":"S"
-        },
-        {
-          "audio":"/audio/alphabet/CapT.wav",
-          "text":"T"
-        },
-        {
-          "audio":"/audio/alphabet/CapU.wav",
-          "text":"U"
-        },
-        {
-          "audio":"/audio/alphabet/CapV.wav",
-          "text":"V"
-        },
-        {
-          "audio":"/audio/alphabet/CapW.wav",
-          "text":"W"
-        },
-        {
-          "audio":"/audio/alphabet/CapX.wav",
-          "text":"X"
-        },
-        {
-          "audio":"/audio/alphabet/CapY.wav",
-          "text":"Y"
-        },
-        {
-          "audio":"/audio/alphabet/CapZ.wav",
-          "text":"Z"
+          "audio": "/audio/money/dollarbill.wav",
+          "text": "dollar bill",
+          "image": "/images/money/dollarbill.jpg"
         }
       ]
     },
     {
-      "type":"text",
-      "title":"The Alphabet: Small Letters",
-      "tiles":[
+      "type": "text",
+      "title": "The Alphabet: Capital Letters",
+      "tiles": [
         {
-          "audio":"/audio/alphabet/smalla.wav",
-          "text":"a"
+          "audio": "/audio/alphabet/CapA.wav",
+          "text": "A"
         },
         {
-          "audio":"/audio/alphabet/smallb.wav",
-          "text":"b"
+          "audio": "/audio/alphabet/CapB.wav",
+          "text": "B"
         },
         {
-          "audio":"/audio/alphabet/smallc.wav",
-          "text":"c"
+          "audio": "/audio/alphabet/CapC.wav",
+          "text": "C"
         },
         {
-          "audio":"/audio/alphabet/smalld.wav",
-          "text":"d"
+          "audio": "/audio/alphabet/CapD.wav",
+          "text": "D"
         },
         {
-          "audio":"/audio/alphabet/smalle.wav",
-          "text":"e"
+          "audio": "/audio/alphabet/CapE.wav",
+          "text": "E"
         },
         {
-          "audio":"/audio/alphabet/smallf.wav",
-          "text":"f"
+          "audio": "/audio/alphabet/CapF.wav",
+          "text": "F"
         },
         {
-          "audio":"/audio/alphabet/smallg.wav",
-          "text":"g"
+          "audio": "/audio/alphabet/CapG.wav",
+          "text": "G"
         },
         {
-          "audio":"/audio/alphabet/smallh.wav",
-          "text":"h"
+          "audio": "/audio/alphabet/CapH.wav",
+          "text": "H"
         },
         {
-          "audio":"/audio/alphabet/smalli.wav",
-          "text":"i"
+          "audio": "/audio/alphabet/CapI.wav",
+          "text": "I"
         },
         {
-          "audio":"/audio/alphabet/smallj.wav",
-          "text":"j"
+          "audio": "/audio/alphabet/CapJ.wav",
+          "text": "J"
         },
         {
-          "audio":"/audio/alphabet/smallk.wav",
-          "text":"k"
+          "audio": "/audio/alphabet/CapK.wav",
+          "text": "K"
         },
         {
-          "audio":"/audio/alphabet/smalll.wav",
-          "text":"l"
+          "audio": "/audio/alphabet/CapL.wav",
+          "text": "L"
         },
         {
-          "audio":"/audio/alphabet/smallm.wav",
-          "text":"m"
+          "audio": "/audio/alphabet/CapM.wav",
+          "text": "M"
         },
         {
-          "audio":"/audio/alphabet/smalln.wav",
-          "text":"n"
+          "audio": "/audio/alphabet/CapN.wav",
+          "text": "N"
         },
         {
-          "audio":"/audio/alphabet/smallo.wav",
-          "toxt":"o"
+          "audio": "/audio/alphabet/CapO.wav",
+          "text": "O"
         },
         {
-          "audio":"/audio/alphabet/smallp.wav",
-          "text":"p"
+          "audio": "/audio/alphabet/CapP.wav",
+          "text": "P"
         },
         {
-          "audio":"/audio/alphabet/smallq.wav",
-          "text":"q"
+          "audio": "/audio/alphabet/CapQ.wav",
+          "text": "Q"
         },
         {
-          "audio":"/audio/alphabet/smallr.wav",
-          "text":"r"
+          "audio": "/audio/alphabet/CapR.wav",
+          "text": "R"
         },
         {
-          "audio":"/audio/alphabet/smalls.wav",
-          "text":"s"
+          "audio": "/audio/alphabet/CapS.wav",
+          "text": "S"
         },
         {
-          "audio":"/audio/alphabet/smallt.wav",
-          "text":"t"
+          "audio": "/audio/alphabet/CapT.wav",
+          "text": "T"
         },
         {
-          "audio":"/audio/alphabet/smallu.wav",
-          "toxt":"u"
+          "audio": "/audio/alphabet/CapU.wav",
+          "text": "U"
         },
         {
-          "audio":"/audio/alphabet/smallv.wav",
-          "text":"v"
+          "audio": "/audio/alphabet/CapV.wav",
+          "text": "V"
         },
         {
-          "audio":"/audio/alphabet/smallw.wav",
-          "text":"w"
+          "audio": "/audio/alphabet/CapW.wav",
+          "text": "W"
         },
         {
-          "audio":"/audio/alphabet/smallx.wav",
-          "text":"x"
+          "audio": "/audio/alphabet/CapX.wav",
+          "text": "X"
         },
         {
-          "audio":"/audio/alphabet/smally.wav",
-          "text":"y"
+          "audio": "/audio/alphabet/CapY.wav",
+          "text": "Y"
         },
         {
-          "audio":"/audio/alphabet/smallz.wav",
-          "text":"z"
+          "audio": "/audio/alphabet/CapZ.wav",
+          "text": "Z"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "The Alphabet: Small Letters",
+      "tiles": [
+        {
+          "audio": "/audio/alphabet/smalla.wav",
+          "text": "a"
+        },
+        {
+          "audio": "/audio/alphabet/smallb.wav",
+          "text": "b"
+        },
+        {
+          "audio": "/audio/alphabet/smallc.wav",
+          "text": "c"
+        },
+        {
+          "audio": "/audio/alphabet/smalld.wav",
+          "text": "d"
+        },
+        {
+          "audio": "/audio/alphabet/smalle.wav",
+          "text": "e"
+        },
+        {
+          "audio": "/audio/alphabet/smallf.wav",
+          "text": "f"
+        },
+        {
+          "audio": "/audio/alphabet/smallg.wav",
+          "text": "g"
+        },
+        {
+          "audio": "/audio/alphabet/smallh.wav",
+          "text": "h"
+        },
+        {
+          "audio": "/audio/alphabet/smalli.wav",
+          "text": "i"
+        },
+        {
+          "audio": "/audio/alphabet/smallj.wav",
+          "text": "j"
+        },
+        {
+          "audio": "/audio/alphabet/smallk.wav",
+          "text": "k"
+        },
+        {
+          "audio": "/audio/alphabet/smalll.wav",
+          "text": "l"
+        },
+        {
+          "audio": "/audio/alphabet/smallm.wav",
+          "text": "m"
+        },
+        {
+          "audio": "/audio/alphabet/smalln.wav",
+          "text": "n"
+        },
+        {
+          "audio": "/audio/alphabet/smallo.wav",
+          "text": "o"
+        },
+        {
+          "audio": "/audio/alphabet/smallp.wav",
+          "text": "p"
+        },
+        {
+          "audio": "/audio/alphabet/smallq.wav",
+          "text": "q"
+        },
+        {
+          "audio": "/audio/alphabet/smallr.wav",
+          "text": "r"
+        },
+        {
+          "audio": "/audio/alphabet/smalls.wav",
+          "text": "s"
+        },
+        {
+          "audio": "/audio/alphabet/smallt.wav",
+          "text": "t"
+        },
+        {
+          "audio": "/audio/alphabet/smallu.wav",
+          "text": "u"
+        },
+        {
+          "audio": "/audio/alphabet/smallv.wav",
+          "text": "v"
+        },
+        {
+          "audio": "/audio/alphabet/smallw.wav",
+          "text": "w"
+        },
+        {
+          "audio": "/audio/alphabet/smallx.wav",
+          "text": "x"
+        },
+        {
+          "audio": "/audio/alphabet/smally.wav",
+          "text": "y"
+        },
+        {
+          "audio": "/audio/alphabet/smallz.wav",
+          "text": "z"
         }
       ]
     }
