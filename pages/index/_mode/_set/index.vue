@@ -1,16 +1,23 @@
 <template>
   <div class="ph3 w-100" style="max-width: 800px">
-    <TileGrid :mode="modeIndex + 1" size="lg" :tiles="tiles" />
+    <TileGrid
+      ref="quiz"
+      :mode="modeIndex + 1"
+      size="lg"
+      :tiles="tiles"
+      @complete="onComplete"
+    />
   </div>
 </template>
 
 <script>
 import TileGrid from '@/components/TileGrid';
 import toSlug from '@/utils/toSlug';
-
+import loaderMixin from '@/mixins/loader';
 export default {
   name: 'Game',
   components: { TileGrid },
+  mixins: [loaderMixin],
   props: {},
   async asyncData({ route, $content }) {
     const { modes } = await $content('/modes').fetch();
@@ -43,7 +50,22 @@ export default {
       return this.modes[this.modeIndex];
     },
   },
-  beforeDestroy() {},
-  methods: {},
+  methods: {
+    async onComplete(answers) {
+      console.log(this.$refs.quiz.$el);
+      const loading = this.$loader(this.$refs.quiz.$el);
+      try {
+        await this.$axios.put('/api/quiz', answers);
+      } catch (e) {
+        // TODO: notify the user that the quiz failed to save
+        // TODO: save to local storage and upload later?
+      }
+
+      loading.close();
+
+      // TODO: show user thier stats
+      this.$router.push({ path: '/' });
+    },
+  },
 };
 </script>
