@@ -186,6 +186,7 @@ export default {
 
 .tile-box {
   cursor: pointer;
+  background-color: #fff;
   border-radius: 10%;
   box-shadow: 2px 2px 2px 0px rgba(169, 169, 169, 0.74118);
   overflow: hidden;
