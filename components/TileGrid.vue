@@ -13,10 +13,9 @@
         @click="onTileClick($event, tile(row, col))"
       >
         <component
-          :is="tile(row, col).type"
+          :is="`vt-${tile(row, col).type}`"
           v-if="!disabled && tile(row, col)"
           v-bind="tile(row, col)"
-          @click.native="onTileClick($event, tile(row, col))"
         />
       </div>
     </div>
@@ -36,7 +35,8 @@ const SIZE_MULTIPLIERS = {
 
 export default {
   components: {
-    color: () => import('@/components/tiles/Color'),
+    'vt-color': () => import('@/components/tiles/Color'),
+    'vt-text': () => import('@/components/tiles/Text'),
   },
   props: {
     mode: {
