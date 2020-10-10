@@ -4,12 +4,8 @@ const isAuthenticatedGuard = require('./middleware/isAuthenticated');
 const app = express();
 
 app.use(isAuthenticatedGuard);
-app.use('/users', require('./routers/users'));
-app.use('/quizzes', require('./routers/quizzes'));
-
-app.get('/', (_req, res) => {
-  res.send('Hello World!');
-});
+app.use('/user', require('./routers/user'));
+app.use('/quiz', require('./routers/quiz'));
 
 const port = 1337;
 app.listen(port, () => {
