@@ -43,6 +43,7 @@
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.20",
     "md5": "^2.3.0",
+    "morgan": "^1.10.0",
     "nuxt": "^2.14.5",
     "rm-cli": "^1.4.2",
     "vue-qrcode-reader": "^2.3.13",
