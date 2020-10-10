@@ -1,23 +1,6 @@
 # Vocab Tiles
+
 A vocabulary game/quiz app.
-
-### Menu
-
-
-### Easy game
-
-
-#### 	10 seconds left
-
-
-#### 	3 seconds left
-
-
-#### 	1 second left
-
-
-### Hard game
-
 
 # Stack
 
