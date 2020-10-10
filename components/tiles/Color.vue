@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'Color',
+  name: 'VtColor',
   components: {},
   props: {
     color: {
