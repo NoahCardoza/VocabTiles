@@ -10,6 +10,7 @@
         :style="{
           width: boxScale + '%',
         }"
+        @click="onTileClick($event, tile(row, col))"
       >
         <component
           :is="tile(row, col).type"
