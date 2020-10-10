@@ -14,9 +14,9 @@ export default {
   props: {},
   async asyncData({ route, $content }) {
     const { modes } = await $content('/modes').fetch();
-    const { quizes } = await $content('/quizes').fetch();
+    const { quizzes } = await $content('/quizzes').fetch();
     const selection = route.params.set.split(',');
-    const tiles = quizes
+    const tiles = quizzes
       .filter(({ title }) => selection.includes(toSlug(title)))
       .reduce(
         (collecter, { type, tiles }) => [
