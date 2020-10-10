@@ -10,18 +10,11 @@
 <script>
 export default {
   name: 'VtColor',
-  components: {},
   props: {
     color: {
       required: true,
       type: String,
     },
   },
-  data() {
-    return {};
-  },
-  mounted() {},
-  beforeDestroy() {},
-  methods: {},
 };
 </script>

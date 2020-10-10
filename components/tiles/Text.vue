@@ -14,22 +14,17 @@
 <script>
 export default {
   name: 'VtText',
-  components: {},
   props: {
     text: {
       required: true,
       type: String,
     },
   },
-  mounted() {},
-  beforeDestroy() {},
-  methods: {},
 };
 </script>
 
 <style scoped>
 .tile--text {
-  /* font-size: 3vw; */
   box-shadow: rgb(0 0 0 / 25%) 0px 0px 10px inset;
 }
 </style>

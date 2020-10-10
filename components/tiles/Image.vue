@@ -7,16 +7,12 @@
 <script>
 export default {
   name: 'VtImage',
-  components: {},
   props: {
     image: {
       required: true,
       type: String,
     },
   },
-  mounted() {},
-  beforeDestroy() {},
-  methods: {},
 };
 </script>
 
