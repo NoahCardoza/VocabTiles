@@ -19,7 +19,11 @@ module.exports = (req, res, next) => {
   const token = authorization.slice(7);
 
   try {
-    payload = jwt.verify(token, firebasePublicKey);
+    if (process.env.NODE_ENV !== 'development') {
+      payload = jwt.verify(token, firebasePublicKey);
+    } else {
+      payload = jwt.decode(token);
+    }
   } catch (e) {
     return res.status(403).send();
   }
