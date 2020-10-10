@@ -118,7 +118,6 @@ export default Vue.extend({
     IconifyIcon,
   },
   mixins: [loaderMixin],
-  props: {},
   data() {
     return {
       email: '',
@@ -134,8 +133,6 @@ export default Vue.extend({
       return !this.openTabIndex ? 'Sign In' : 'Register';
     },
   },
-  mounted() {},
-  beforeDestroy() {},
   methods: {
     onQRDecode(message) {
       // ignore false positives

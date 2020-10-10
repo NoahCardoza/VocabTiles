@@ -106,6 +106,14 @@ export default {
 </script>
 
 <style scoped>
+.subtext {
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #526488;
+  word-spacing: 2px;
+  max-width: 600px;
+}
+
 .con-vs-popup >>> .vs-popup {
   max-width: 300px;
 }

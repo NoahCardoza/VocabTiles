@@ -18,7 +18,6 @@ export default {
   name: 'Game',
   components: { TileGrid },
   mixins: [loaderMixin],
-  props: {},
   async asyncData({ route, $content }) {
     const { modes } = await $content('/modes').fetch();
     const { quizzes } = await $content('/quizzes').fetch();
@@ -52,7 +51,6 @@ export default {
   },
   methods: {
     async onComplete(answers) {
-      console.log(this.$refs.quiz.$el);
       const loading = this.$loader(this.$refs.quiz.$el);
       try {
         await this.$axios.put('/api/quiz', answers);
