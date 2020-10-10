@@ -137,6 +137,7 @@ export default {
       setTimeout(() => {
         this.progress++;
         if (!this.currentTileText) {
+          this.progress = 0;
           this.$router.push({ path: '/' });
         }
         this.shuffle();
