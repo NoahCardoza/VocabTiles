@@ -6,13 +6,11 @@ const verifyJSON = require('../schema/verifyJSON');
 router.use(express.json());
 
 router.get('/', (_req, res) => {
-  // console.log(`GET users request`);
   res.json(db.getAllUsers());
 });
 
 router.get('/:id', (req, res) => {
   const id = parseInt(req.params.id);
-  // console.log(`GET request with id: ${id}`);
   const data = db.getOneUserByID(id);
   if (data.length === 0) {
     res.status(400).json({ msg: `No user with id ${id}` });
@@ -23,7 +21,6 @@ router.get('/:id', (req, res) => {
 
 router.get('/:id/scores', (req, res) => {
   const id = parseInt(req.params.id);
-  // console.log(`GET scores for user ${id}`);
   const data = db.getScoresByUser(id);
   if (data.length === 0) {
     if (db.getOneUserByID(id).some((user) => user.id === id)) {
@@ -38,7 +35,6 @@ router.get('/:id/scores', (req, res) => {
 
 router.post('/', (req, res) => {
   const newUser = req.body;
-  // console.log(`POST new user with id ${newUser.id} and name ${newUser.name}`);
   const valid = verifyJSON('users', newUser);
   if (valid) {
     res.json(db.addUser(newUser));
@@ -49,9 +45,6 @@ router.post('/', (req, res) => {
 
 router.post('/:id/scores', (req, res) => {
   const newScore = req.body;
-  // console.log(
-  //   `POST new score with user id ${newScore.user_id}, quiz id ${newScore.quiz_id}, and score of ${newScore.score}`
-  // );
   if (verifyJSON('scores', newScore)) {
     if (parseInt(req.params.id) === newScore.user_id) {
       res.json(db.addScore(newScore));
@@ -67,7 +60,6 @@ router.post('/:id/scores', (req, res) => {
 
 router.put('/:id', (req, res) => {
   const user = req.body;
-  // console.log(`PUT request to update user id ${user.id}`);
   if (verifyJSON('users', user)) {
     if (parseInt(req.params.id) === user.id) {
       res.json(db.updateUser(user));
@@ -83,9 +75,6 @@ router.put('/:id', (req, res) => {
 
 router.put('/:id/scores', (req, res) => {
   const newScore = req.body;
-  // console.log(
-  //   `PUT request to change user id ${newScore.user_id}'s quiz ${newScore.quiz_id} score to ${newScore.score}`
-  // );
   if (verifyJSON('scores', newScore)) {
     if (parseInt(req.params.id) === newScore.user_id) {
       res.json(db.updateScore(newScore));

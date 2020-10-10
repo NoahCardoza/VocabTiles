@@ -6,13 +6,11 @@ const verifyJSON = require('../schema/verifyJSON');
 router.use(express.json());
 
 router.get('/', (_req, res) => {
-  // console.log('GET quizzes request');
   res.json(db.getAllQuizzes());
 });
 
 router.get('/:id', (req, res) => {
   const id = parseInt(req.params.id);
-  // console.log(`GET quizzes request with id ${id}`);
   const data = db.getOneQuizByID(id);
   if (data.length === 0) {
     res.status(400).json({ msg: `No user with is ${id}` });
@@ -23,7 +21,6 @@ router.get('/:id', (req, res) => {
 
 router.get('/:id/scores', (req, res) => {
   const id = parseInt(req.params.id);
-  // console.log(`GET scores for quiz ${id}`);
   const data = db.getScoresByQuiz(id);
   if (data.length === 0) {
     if (db.getOneQuizByID(id).some((quiz) => quiz.id === id)) {
@@ -38,9 +35,6 @@ router.get('/:id/scores', (req, res) => {
 
 router.post('/', (req, res) => {
   const newQuiz = req.body;
-  // console.log(
-  //   `POST new quiz with id ${newQuiz.id} and name ${newQuiz.name} and difficulty ${newQuiz.difficulty}`
-  // );
   if (verifyJSON('quizzes', newQuiz)) {
     res.json(db.addQuiz(newQuiz));
   } else {
@@ -50,7 +44,6 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   const updatedQuiz = req.body;
-  // console.log(`PUT request to update quiz id ${updatedQuiz.id}`);
   if (verifyJSON('quizzes', updatedQuiz)) {
     if (parseInt(req.params.id) === updatedQuiz.id) {
       res.json(db.updateQuiz(updatedQuiz));
