@@ -109,10 +109,11 @@ export default {
     shuffle() {
       const tiles = shuffle(this.localTiles);
       const requiredTileIndex = tiles.findIndex(
-        (tile) => tile.title === this.currentTileText
+        (tile) => tile.text === this.currentTileText
       );
-      if (this.numberOfBoxes <= requiredTileIndex) {
+      if (this.numberOfBoxes < requiredTileIndex) {
         const swapIndex = Math.floor(Math.random() * this.numberOfBoxes);
+        console.log(tiles[requiredTileIndex].text, tiles[swapIndex].text);
         [tiles[requiredTileIndex], tiles[swapIndex]] = [
           tiles[swapIndex],
           tiles[requiredTileIndex],
