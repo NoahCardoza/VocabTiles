@@ -12,7 +12,7 @@
         }"
       >
         <component
-          :is="type"
+          :is="tile(row, col).type"
           v-if="!disabled && tile(row, col)"
           v-bind="tile(row, col)"
           @click.native="onTileClick($event, tile(row, col))"
