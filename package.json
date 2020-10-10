@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "api:start": "node ./api/index.js",
+    "api:dev": "nodemon -w .env -w ./api --exec dotenv node ./api/index.js",
+    "api:start": "dotenv node ./api/index.js",
     "ui:dev": "nuxt-ts",
     "ui:build": "nuxt-ts build",
     "ui:start": "nuxt-ts start",
