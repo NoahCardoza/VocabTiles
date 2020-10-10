@@ -1,6 +1,6 @@
 const express = require('express');
 const db = require('../DBrouters/dbRouter');
-const verifyJSON = require('../schema/verifyJSON');
+const verifyJSON = require('../_schema/verifyJSON');
 
 const router = express.Router();
 
