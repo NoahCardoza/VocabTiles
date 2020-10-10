@@ -137,7 +137,7 @@ export default {
     },
 
     onTileClick({ target }, tile) {
-      if (this.animating) return;
+      if (this.disabled || this.animating) return;
       const isCorrect = this.currentTileText === tile.text;
       const animationClass = isCorrect ? 'pulse-success' : 'pulse-danger';
       this.answers[isCorrect ? 'correct' : 'incorrect'].push({
