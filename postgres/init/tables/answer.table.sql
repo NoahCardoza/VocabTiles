@@ -3,5 +3,6 @@ CREATE TABLE IF NOT EXISTS "Answer" (
 	"quiz_id" integer,
 	"category" text,
 	"text" text,
+	"correct" boolean,
 	PRIMARY KEY( id )
 );
