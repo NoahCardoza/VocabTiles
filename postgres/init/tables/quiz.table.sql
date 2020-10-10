@@ -1,7 +1,6 @@
-CREATE TABLE IF NOT EXISTS "quiz" (
+CREATE TABLE IF NOT EXISTS "Quiz" (
 	"id" serial,
 	"user_id" integer,
-	"actual_score" smallint,
-	"max_score" smallint,
+	"mode" smallint,
 	PRIMARY KEY( id )
 );
