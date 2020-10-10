@@ -37,6 +37,7 @@ export default {
   components: {
     'vt-color': () => import('@/components/tiles/Color'),
     'vt-text': () => import('@/components/tiles/Text'),
+    'vt-image': () => import('@/components/tiles/Image'),
   },
   props: {
     mode: {
