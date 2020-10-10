@@ -74,7 +74,67 @@
           "audio":"/audio/shapes/rectangle.wav",
           "text":"rectangle",
           "image":"/images/shapes/rectangle.png"
-        }
+        },
+				{
+					"audio": "/assets/audio/shapes/arrow.wav",
+          "text": "arrow",
+          "image": "/assets/images/shapes/arrow.png"
+        },
+        {
+					"audio": "/assets/audio/shapes/star.wav",
+          "text": "star",
+          "image": "/assets/images/shapes/star.png"
+				},
+				{
+					"audio": "/assets/audio/shapes/cross.wav",
+          "text": "cross",
+          "image": "/assets/images/shapes/cross.png"
+				},
+				{
+					"audio": "/assets/audio/shapes/diamond.wav",
+          "text": "diamond",
+          "image": "/assets/images/shapes/diamond.png"
+        },
+        {
+					"audio": "/assets/audio/shapes/heart.wav",
+          "text": "heart",
+          "image": "/assets/images/shapes/heart.png"
+				},
+				{
+					"audio": "/assets/audio/shapes/hexagon.wav",
+          "text": "hexagon",
+          "image": "/assets/images/shapes/hexagon.png"
+				},
+				{
+					"audio": "/assets/audio/shapes/moon.wav",
+          "text": "moon",
+          "image": "/assets/images/shapes/moon.png"
+        },
+        {
+					"audio": "/assets/audio/shapes/pentagon.wav",
+          "text": "pentagon",
+          "image": "/assets/images/shapes/pentagon.png"
+				},
+				{
+					"audio": "/assets/audio/shapes/octagon.wav",
+          "text": "octagon",
+          "image": "/assets/images/shapes/octagon.png"
+				},
+				{
+					"audio": "/assets/audio/shapes/oval.wav",
+          "text": "oval",
+          "image": "/assets/images/shapes/oval.png"
+        },
+        {
+					"audio": "/assets/audio/shapes/parallelogram.wav",
+          "text": "parallelogram",
+          "image": "/assets/images/shapes/parallelogram.png"
+				},
+				{
+					"audio": "/assets/audio/shapes/trapezoid.wav",
+          "text": "trapezoid",
+          "image": "/assets/images/shapes/trapezoid.png"
+				}
       ]
     },
     {
