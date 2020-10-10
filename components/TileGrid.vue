@@ -80,8 +80,12 @@ export default {
       type: 'color',
       localTiles: tiles,
       progress: 0,
-      tileOrder: tiles && tiles.map((t) => t.text),
+      tileOrder: tiles,
       animating: false,
+      answers: {
+        correct: [],
+        incorrect: [],
+      },
     };
   },
   computed: {
@@ -103,8 +107,12 @@ export default {
     boxScale() {
       return 100 / this.sizeMultiplyer / this.mode;
     },
+    currentTile() {
+      return (this.tileOrder && this.tileOrder[this.progress]) || null;
+    },
     currentTileText() {
-      return this.tileOrder && this.tileOrder[this.progress];
+      const tile = this.currentTile;
+      return (tile && tile.text) || null;
     },
   },
   methods: {
@@ -130,15 +138,18 @@ export default {
 
     onTileClick({ target }, tile) {
       if (this.animating) return;
-      const animationClass =
-        this.currentTileText === tile.text ? 'pulse-success' : 'pulse-danger';
+      const isCorrect = this.currentTileText === tile.text;
+      const animationClass = isCorrect ? 'pulse-success' : 'pulse-danger';
+      this.answers[isCorrect ? 'correct' : 'incorrect'].push({
+        text: this.currentTileText,
+        category: this.currentTile.type,
+      });
       this.animating = true;
       target.parentElement.classList.add(animationClass);
       setTimeout(() => {
         this.progress++;
         if (!this.currentTileText) {
-          this.progress = 0;
-          this.$router.push({ path: '/' });
+          return this.$emit('complete', this.answers);
         }
         this.shuffle();
         target.parentElement.classList.remove(animationClass);
