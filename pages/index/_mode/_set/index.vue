@@ -16,17 +16,20 @@ export default {
     const { modes } = await $content('/modes').fetch();
     const { quizzes } = await $content('/quizzes').fetch();
     const selection = route.params.set.split(',');
-    const tiles = quizzes
-      .filter(({ title }) => selection.includes(toSlug(title)))
-      .reduce(
-        (collecter, { type, tiles }) => [
-          ...collecter,
-          ...tiles.map((tile) => ({ type, ...tile })),
-        ],
-        []
-      );
+    const sections = quizzes.filter(({ title }) =>
+      selection.includes(toSlug(title))
+    );
+    const quizSets = sections.map((s) => s.title);
+    const tiles = sections.reduce(
+      (collecter, { type, tiles }) => [
+        ...collecter,
+        ...tiles.map((tile) => ({ type, ...tile })),
+      ],
+      []
+    );
     return {
       modes,
+      quizSets,
       modeSlugs: modes.map(toSlug),
       tiles,
     };
