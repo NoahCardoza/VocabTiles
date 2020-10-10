@@ -1,9 +1,8 @@
 const express = require('express');
-const router = express.Router();
 const db = require('../DBrouters/dbRouter');
 const verifyJSON = require('../schema/verifyJSON');
 
-router.use(express.json());
+const router = express.Router();
 
 router.get('/', (_req, res) => {
   res.json(db.getAllQuizzes());
