@@ -46,6 +46,7 @@
     "md5": "^2.3.0",
     "morgan": "^1.10.0",
     "nuxt": "^2.14.5",
+    "pg": "^8.4.1",
     "rm-cli": "^1.4.2",
     "vue-qrcode-reader": "^2.3.13",
     "vue-resize-text": "^0.1.1",
