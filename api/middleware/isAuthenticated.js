@@ -2,6 +2,8 @@ const fs = require('fs');
 const jwt = require('jsonwebtoken');
 const { pick } = require('lodash');
 
+const { selectUserFromFirebaseId } = require('../db/user');
+
 const { FIREBASE_PROJECT_NAME } = process.env;
 const firebasePublicKey = fs.readFileSync('./api/firebase.pub');
 
@@ -26,13 +28,11 @@ module.exports = (req, res, next) => {
     return res.status(403).send();
   }
 
-  req.user = pick(payload, [
-    'user_id',
-    'name',
-    'email',
-    'email_verified',
-    'picture',
-  ]);
+  req.user = {
+    firebase_id: payload.user_id,
+    ...pick(payload, ['name', 'email', 'email_verified', 'picture']),
+    id: () => selectUserFromFirebaseId(payload.user_id),
+  };
 
   return next();
 };
