@@ -1,5 +1,29 @@
 <template>
   <div class="ph3" style="width: 50vh; max-width: 800px">
+    <vs-popup
+      title="Which sets would you like to practice?"
+      :active.sync="isPopupOpen"
+    >
+      <div>
+        <div v-for="quizSet in quizSets" :key="quizSet">
+          <vs-checkbox
+            v-model="selectedQuizSets"
+            :vs-value="quizSet"
+            style="justify-content: normal"
+          >
+            {{ quizSet }}
+          </vs-checkbox>
+        </div>
+        <vs-button
+          color="success"
+          type="filled"
+          class="mv3 w-100"
+          @click="onStartQuiz"
+        >
+          Start
+        </vs-button>
+      </div>
+    </vs-popup>
     <div class="vs-component vs-con-table stripe vs-table-primary">
       <table class="vs-con-table vs-table vs-table--tbody-table">
         <thead class="vs-table--thead">
@@ -47,8 +71,18 @@ export default {
   components: { TileGrid },
   async asyncData({ $content }) {
     const { modes } = await $content('/modes').fetch();
+    const { quizzes } = await $content('/quizzes').fetch();
+
     return {
       modes,
+      quizSets: quizzes.map(({ title }) => title),
+    };
+  },
+  data() {
+    return {
+      isPopupOpen: false,
+      modeSlug: null,
+      selectedQuizSets: null,
     };
   },
   methods: {
@@ -56,9 +90,15 @@ export default {
       return index === 1 ? 2 : index;
     },
     playMode(index) {
-      const slug = toSlug(this.modes[index]);
+      this.modeSlug = toSlug(this.modes[index]);
+      this.selectedQuizSets = [this.quizSets[0]];
+      this.isPopupOpen = true;
+    },
+    onStartQuiz() {
+      // TODO: verify the list isn't empty
+      const sets = this.selectedQuizSets.map(toSlug).join(',');
       this.$router.push({
-        path: `/${slug}/colors`,
+        path: `/${this.modeSlug}/${sets}`,
       });
     },
   },
@@ -66,6 +106,9 @@ export default {
 </script>
 
 <style scoped>
+.con-vs-popup >>> .vs-popup {
+  max-width: 300px;
+}
 .vs-con-table >>> .vs-table--tbody-table {
   min-width: 0px !important;
 }

@@ -2,26 +2,19 @@
   <div
     class="w-100 h-100"
     :style="{
-      'background-color': hex,
+      'background-color': color,
     }"
   ></div>
 </template>
 
 <script>
 export default {
-  name: 'Color',
-  components: {},
+  name: 'VtColor',
   props: {
-    hex: {
+    color: {
       required: true,
       type: String,
     },
   },
-  data() {
-    return {};
-  },
-  mounted() {},
-  beforeDestroy() {},
-  methods: {},
 };
 </script>

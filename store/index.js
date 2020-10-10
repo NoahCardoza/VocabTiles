@@ -3,6 +3,7 @@ import md5 from 'md5';
 
 export const state = () => ({
   user: null,
+  tiles: null,
 });
 
 export const mutations = {
@@ -11,6 +12,12 @@ export const mutations = {
   },
   UNSET_USER: (state) => {
     state.user = null;
+  },
+  SET_PRESHUFFLE: (state, tiles) => {
+    state.tiles = tiles;
+  },
+  UNSET_PRESHUFFLE: (state) => {
+    state.tiles = null;
   },
 };
 

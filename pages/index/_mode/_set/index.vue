@@ -12,25 +12,26 @@ export default {
   name: 'Game',
   components: { TileGrid },
   props: {},
-  async asyncData({ $content }) {
+  async asyncData({ route, $content }) {
     const { modes } = await $content('/modes').fetch();
+    const { quizzes } = await $content('/quizzes').fetch();
+    const selection = route.params.set.split(',');
+    const sections = quizzes.filter(({ title }) =>
+      selection.includes(toSlug(title))
+    );
+    const quizSets = sections.map((s) => s.title);
+    const tiles = sections.reduce(
+      (collecter, { type, tiles }) => [
+        ...collecter,
+        ...tiles.map((tile) => ({ type, ...tile })),
+      ],
+      []
+    );
     return {
       modes,
+      quizSets,
       modeSlugs: modes.map(toSlug),
-    };
-  },
-  data() {
-    return {
-      tiles: [
-        {
-          name: 'white',
-          hex: '#000',
-        },
-        {
-          name: 'black',
-          hex: '#fff',
-        },
-      ],
+      tiles,
     };
   },
   computed: {
@@ -41,9 +42,6 @@ export default {
     mode() {
       return this.modes[this.modeIndex];
     },
-  },
-  mounted() {
-    console.log(this.modes, this.tiles);
   },
   beforeDestroy() {},
   methods: {},
