@@ -40,6 +40,10 @@ export default {
   plugins: [
     '@/plugins/vuesax',
     {
+      src: '@/plugins/resize-text-plugin',
+      mode: 'client',
+    },
+    {
       src: '@/plugins/qrcode-streamer',
       mode: 'client',
     },
