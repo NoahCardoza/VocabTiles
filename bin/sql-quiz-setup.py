@@ -27,7 +27,7 @@ for quiz in quizzes:
         color = f"'{tile['color']}'" if 'color' in tile else 'NULL'
         print(Question.format(
               text=tile['text'],
-              audio=tile['ql_audio'],
+              audio=tile['audio'],
               color=color,
               image=image))
 print('END $$')
