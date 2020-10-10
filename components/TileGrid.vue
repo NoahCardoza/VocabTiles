@@ -113,9 +113,8 @@ export default {
       const requiredTileIndex = tiles.findIndex(
         (tile) => tile.text === this.currentTileText
       );
-      if (this.numberOfBoxes < requiredTileIndex) {
+      if (this.numberOfBoxes <= requiredTileIndex) {
         const swapIndex = Math.floor(Math.random() * this.numberOfBoxes);
-        console.log(tiles[requiredTileIndex].text, tiles[swapIndex].text);
         [tiles[requiredTileIndex], tiles[swapIndex]] = [
           tiles[swapIndex],
           tiles[requiredTileIndex],
