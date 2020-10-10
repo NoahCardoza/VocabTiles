@@ -1,8 +1,19 @@
 const express = require('express');
 const db = require('../DBrouters/dbRouter');
 const verifyJSON = require('../_schema/verifyJSON');
+const { QuizSchema } = require('../schema/quiz');
 
 const router = express.Router();
+
+router.put('/', async (req, res) => {
+  try {
+    const quiz = await QuizSchema.validateAsync(req.body);
+    db.addQuiz(quiz);
+  } catch (e) {
+    return res.status(422).send();
+  }
+  res.status(201).send();
+});
 
 router.get('/', (_req, res) => {
   res.json(db.getAllQuizzes());
