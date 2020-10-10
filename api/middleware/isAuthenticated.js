@@ -11,7 +11,7 @@ module.exports = (req, res, next) => {
   const { authorization } = req.headers;
 
   if (!authorization) {
-    return res.status(403);
+    return res.status(403).send();
   }
 
   const token = authorization.slice(7);
@@ -19,11 +19,11 @@ module.exports = (req, res, next) => {
   try {
     payload = jwt.verify(token, firebasePublicKey);
   } catch (e) {
-    return res.status(403);
+    return res.status(403).send();
   }
 
   if (payload.aud !== FIREBASE_PROJECT_NAME) {
-    return res.status(403);
+    return res.status(403).send();
   }
 
   req.user = pick(payload, [
