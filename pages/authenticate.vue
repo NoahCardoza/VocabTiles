@@ -108,6 +108,7 @@ import Vue from 'vue';
 import IconifyIcon from '@iconify/vue';
 import githubIcon from '@iconify/icons-mdi/github';
 import qrCodeScanIcon from '@iconify/icons-mdi/qrcode-scan';
+import loaderMixin from '@/mixins/loader';
 
 IconifyIcon.addIcon('github', githubIcon);
 IconifyIcon.addIcon('qr-scan', qrCodeScanIcon);
@@ -116,6 +117,7 @@ export default Vue.extend({
   components: {
     IconifyIcon,
   },
+  mixins: [loaderMixin],
   props: {},
   data() {
     return {
@@ -161,14 +163,6 @@ export default Vue.extend({
     submit() {
       [this.loginUser, this.createUser][this.openTabIndex]();
     },
-    loading(container) {
-      this.$vs.loading({
-        container,
-      });
-      return {
-        close: () => this.$vs.loading.close(container),
-      };
-    },
     async createUser() {
       try {
         const { user } = await this.$fireAuth.createUserWithEmailAndPassword(
@@ -198,7 +192,7 @@ export default Vue.extend({
       }
     },
     async loginUser() {
-      const loader = this.loading(this.$refs.loginBox.$el);
+      const loader = this.$loader(this.$refs.loginBox.$el);
       try {
         const { user } = await this.$fireAuth.signInWithEmailAndPassword(
           this.email,
