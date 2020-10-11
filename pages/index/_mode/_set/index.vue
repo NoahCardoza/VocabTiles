@@ -124,12 +124,12 @@ export default {
     async onComplete() {
       const loading = this.$loader(this.$refs.quiz.$el);
       try {
-        const { data } = await this.$axios.post('/api/user/quiz', {
+        const { id } = await this.$axios.$post('/api/user/quiz', {
           mode: this.modeId,
           answers: this.answers,
         });
 
-        this.$router.push({ path: `/quiz/${data.id}` });
+        this.$router.push({ path: `/quiz/${id}` });
       } catch (e) {
         // TODO: notify the user that the quiz failed to save
         // TODO: save to local storage and upload later?
