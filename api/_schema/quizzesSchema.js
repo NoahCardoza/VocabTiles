@@ -4,5 +4,4 @@ const schema = {
   difficulty: 'number',
 };
 
-// module.exports = { quizzes, schema };
 module.exports = schema;

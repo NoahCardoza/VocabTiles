@@ -17,7 +17,11 @@ module.exports = (req, res, next) => {
   const token = authorization.slice(7);
 
   try {
-    payload = jwt.verify(token, firebasePublicKey);
+    if (process.env.NODE_ENV !== 'development') {
+      payload = jwt.verify(token, firebasePublicKey);
+    } else {
+      payload = jwt.decode(token);
+    }
   } catch (e) {
     return res.status(403).send();
   }
@@ -26,13 +30,10 @@ module.exports = (req, res, next) => {
     return res.status(403).send();
   }
 
-  req.user = pick(payload, [
-    'user_id',
-    'name',
-    'email',
-    'email_verified',
-    'picture',
-  ]);
+  req.user = {
+    id: payload.user_id,
+    ...pick(payload, ['name', 'email', 'email_verified', 'picture']),
+  };
 
   return next();
 };
