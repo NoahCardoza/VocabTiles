@@ -1,27 +1,19 @@
 <template>
   <div :disabled="disabled">
-    <overlay v-show="!disabled && isOverlayOpen">
-      <div class="flex justify-center items-center h-100">
-        <div
-          style="
-            height: 100px;
-            background-color: white;
-            box-shadow: 0px 0px 19px 0px #00000070;
-          "
-          class="w-100 flex justify-center items-center"
-        >
+    <client-only>
+      <vs-popup
+        v-if="!disabled"
+        title="Are you ready?"
+        :active.sync="isOverlayOpen"
+      >
+        <div class="flex justify-center items-center h-100">
           <vs-button style="width: 300px" @click="closeOverlay">
             Begin
           </vs-button>
         </div>
-      </div>
-    </overlay>
-    <div
-      v-for="row in rows"
-      v-show="disabled || !isOverlayOpen"
-      :key="row"
-      class="flex justify-center"
-    >
+      </vs-popup>
+    </client-only>
+    <div v-for="row in rows" :key="row" class="flex justify-center">
       <div
         v-for="col in columns"
         :key="col"
@@ -153,10 +145,7 @@ export default {
       }
 
       const audio = audioCache[ql_audio];
-      audio.autoplay = true;
-      audio.muted = true;
       audio.play();
-      audio.muted = false;
     },
     shuffle() {
       const tiles = shuffle(this.localTiles);
