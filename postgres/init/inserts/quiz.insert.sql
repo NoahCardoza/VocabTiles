@@ -1,0 +1,15 @@
+INSERT INTO "Quiz" (user_id, mode) VALUES('asdfghjlk1234567890', 1);
+INSERT INTO "Quiz" (user_id, mode) VALUES('asdfghjlk1234567890', 1);
+INSERT INTO "Quiz" (user_id, mode) VALUES('asdfghjlk1234567890', 1);
+INSERT INTO "Quiz" (user_id, mode) VALUES('1234567890asdfghjlk', 1);
+INSERT INTO "Quiz" (user_id, mode) VALUES('1234567890asdfghjlk', 1);
+INSERT INTO "Quiz" (user_id, mode) VALUES('1234567890asdfghjlk', 1);
+INSERT INTO "Quiz" (user_id, mode) VALUES('1234567890asdfghjlk', 1);
+INSERT INTO "Quiz" (user_id, mode) VALUES('1234567890asdfghjlk', 1);
+INSERT INTO "Quiz" (user_id, mode) VALUES('12345asdfghjlk67890', 1);
+INSERT INTO "Quiz" (user_id, mode) VALUES('12345asdfghjlk67890', 1);
+INSERT INTO "Quiz" (user_id, mode) VALUES('12345asdfghjlk67890', 1);
+INSERT INTO "Quiz" (user_id, mode) VALUES('12345asdfghjlk67890', 1);
+INSERT INTO "Quiz" (user_id, mode) VALUES('asdfghjlk0987654321', 1);
+INSERT INTO "Quiz" (user_id, mode) VALUES('asdfghjlk0987654321', 1);
+INSERT INTO "Quiz" (user_id, mode) VALUES('asdfghjlk0987654321', 1);
