@@ -7,47 +7,56 @@
         {
           "audio": "/audio/colors/black.wav",
           "text": "black",
-          "color": "black"
+          "color": "black",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YmxhY2s&s=7ZwLA-Dh"
         },
         {
           "audio": "/audio/colors/white.wav",
           "text": "white",
-          "color": "white"
+          "color": "white",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=d2hpdGU&s=QT.PyRQh"
         },
         {
           "audio": "/audio/colors/red.wav",
           "text": "red",
-          "color": "red"
+          "color": "red",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cmVk&s=iTuiQOtu"
         },
         {
           "audio": "/audio/colors/yellow.wav",
           "text": "yellow",
-          "color": "yellow"
+          "color": "yellow",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=eWVsbG93&s=ZlXBmNWF"
         },
         {
           "audio": "/audio/colors/green.wav",
           "text": "green",
-          "color": "green"
+          "color": "green",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Z3JlZW4&s=ukGflW9g"
         },
         {
           "audio": "/audio/colors/purple.wav",
           "text": "purple",
-          "color": "purple"
+          "color": "purple",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cHVycGxl&s=8FtWCj5b"
         },
         {
           "audio": "/audio/colors/blue.wav",
           "text": "blue",
-          "color": "blue"
+          "color": "blue",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Ymx1ZQ&s=YWOexj-Y"
         },
         {
           "audio": "/audio/colors/orange.wav",
           "text": "orange",
-          "color": "orange"
+          "color": "orange",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=b3Jhbmdl&s=SlEzyRZI"
         },
         {
           "audio": "/audio/colors/pink.wav",
           "text": "pink",
-          "color": "pink"
+          "color": "pink",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cGluaw&s=XInq7Kr0"
         }
       ]
     },
@@ -58,82 +67,98 @@
         {
           "audio": "/audio/shapes/circle.wav",
           "text": "circle",
-          "image": "/images/shapes/circle.png"
+          "image": "/images/shapes/circle.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Y2lyY2xl&s=2Ic0ytbo"
         },
         {
           "audio": "/audio/shapes/square.wav",
           "text": "square",
-          "image": "/images/shapes/square.png"
+          "image": "/images/shapes/square.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3F1YXJl&s=OVSPnPp1"
         },
         {
           "audio": "/audio/shapes/triangle.wav",
           "text": "triangle",
-          "image": "/images/shapes/triangle.png"
+          "image": "/images/shapes/triangle.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=dHJpYW5nbGU&s=HHVQ7f0C"
         },
         {
           "audio": "/audio/shapes/rectangle.wav",
           "text": "rectangle",
-          "image": "/images/shapes/rectangle.png"
+          "image": "/images/shapes/rectangle.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cmVjdGFuZ2xl&s=y4yOfL4y"
         },
         {
           "audio": "/assets/audio/shapes/arrow.wav",
           "text": "arrow",
-          "image": "/assets/images/shapes/arrow.png"
+          "image": "/assets/images/shapes/arrow.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YXJyb3c&s=wLctKZXD"
         },
         {
           "audio": "/assets/audio/shapes/star.wav",
           "text": "star",
-          "image": "/assets/images/shapes/star.png"
+          "image": "/assets/images/shapes/star.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3Rhcg&s=BSvD2FuO"
         },
         {
           "audio": "/assets/audio/shapes/cross.wav",
           "text": "cross",
-          "image": "/assets/images/shapes/cross.png"
+          "image": "/assets/images/shapes/cross.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Y3Jvc3M&s=.JvPMUvm"
         },
         {
           "audio": "/assets/audio/shapes/diamond.wav",
           "text": "diamond",
-          "image": "/assets/images/shapes/diamond.png"
+          "image": "/assets/images/shapes/diamond.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ZGlhbW9uZA&s=GLZBf5.Y"
         },
         {
           "audio": "/assets/audio/shapes/heart.wav",
           "text": "heart",
-          "image": "/assets/images/shapes/heart.png"
+          "image": "/assets/images/shapes/heart.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=aGVhcnQ&s=3zVIiLMS"
         },
         {
           "audio": "/assets/audio/shapes/hexagon.wav",
           "text": "hexagon",
-          "image": "/assets/images/shapes/hexagon.png"
+          "image": "/assets/images/shapes/hexagon.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=aGV4YWdvbg&s=Nsjenk0r"
         },
         {
           "audio": "/assets/audio/shapes/moon.wav",
           "text": "moon",
-          "image": "/assets/images/shapes/moon.png"
+          "image": "/assets/images/shapes/moon.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bW9vbg&s=U.QJVNj4"
         },
         {
           "audio": "/assets/audio/shapes/pentagon.wav",
           "text": "pentagon",
-          "image": "/assets/images/shapes/pentagon.png"
+          "image": "/assets/images/shapes/pentagon.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cGVudGFnb24&s=kB3cbKd6"
         },
         {
           "audio": "/assets/audio/shapes/octagon.wav",
           "text": "octagon",
-          "image": "/assets/images/shapes/octagon.png"
+          "image": "/assets/images/shapes/octagon.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=b2N0YWdvbg&s=BrOK2MPY"
         },
         {
           "audio": "/assets/audio/shapes/oval.wav",
           "text": "oval",
-          "image": "/assets/images/shapes/oval.png"
+          "image": "/assets/images/shapes/oval.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=b3ZhbA&s=-rV.mYXS"
         },
         {
           "audio": "/assets/audio/shapes/parallelogram.wav",
           "text": "parallelogram",
-          "image": "/assets/images/shapes/parallelogram.png"
+          "image": "/assets/images/shapes/parallelogram.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cGFyYWxsZWxvZ3JhbQ&s=uCftiSN1"
         },
         {
           "audio": "/assets/audio/shapes/trapezoid.wav",
           "text": "trapezoid",
-          "image": "/assets/images/shapes/trapezoid.png"
+          "image": "/assets/images/shapes/trapezoid.png",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=dHJhcGV6b2lk&s=53ehoxzl"
         }
       ]
     },
@@ -143,71 +168,88 @@
       "tiles": [
         {
           "audio": "/audio/numbers/zero.wav",
-          "text": "0"
+          "text": "0",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MA&s=r7M1AADb"
         },
         {
           "audio": "/audio/numbers/one.wav",
-          "text": "1"
+          "text": "1",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MQ&s=0V733b7v"
         },
         {
           "audio": "/audio/numbers/two.wav",
-          "text": "2"
+          "text": "2",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Mg&s=.QxtoYf8"
         },
         {
           "audio": "/audio/numbers/three.wav",
-          "text": "3"
+          "text": "3",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Mw&s=n7Sm9fvf"
         },
         {
           "audio": "/audio/numbers/four.wav",
-          "text": "4"
+          "text": "4",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=NA&s=SS7Tpaoh"
         },
         {
           "audio": "/audio/numbers/five.wav",
-          "text": "5"
+          "text": "5",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=NQ&s=8Ircxc.W"
         },
         {
           "audio": "/audio/numbers/six.wav",
-          "text": "6"
+          "text": "6",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Ng&s=pV8hpKUt"
         },
         {
           "audio": "/audio/numbers/eleven.wav",
-          "text": "11"
+          "text": "11",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MTE&s=hoSh4LCo"
         },
         {
           "audio": "/audio/numbers/twentyone.wav",
-          "text": "21"
+          "text": "21",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MjE&s=-eWi6TBl"
         },
         {
           "audio": "/audio/numbers/ninetynine.wav",
-          "text": "99"
+          "text": "99",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=OTk&s=H9vXoFo2"
         },
         {
           "audio": "/audio/numbers/onehundred.wav",
-          "text": "100"
+          "text": "100",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MTAw&s=AG6wLeVH"
         },
         {
           "audio": "/audio/numbers/onethousand.wav",
-          "text": "1000"
+          "text": "1000",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MTAwMA&s=.2isHaZK"
         },
         {
           "audio": "/audio/numbers/tenthousand.wav",
-          "text": "10,000"
+          "text": "10,000",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MTAsMDAw&s=mnhV0NZB"
         },
         {
           "audio": "/audio/numbers/onehundredthousand.wav",
-          "text": "100,000"
+          "text": "100,000",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MTAwLDAwMA&s=FkqBSgaG"
         },
         {
           "audio": "/audio/numbers/onemillion.wav",
-          "text": "1,000,000"
+          "text": "1,000,000",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MSwwMDAsMDAw&s=fvr0GK3m"
         },
         {
           "audio": "/audio/numbers/onebillion.wav",
-          "text": "1,000,000,000"
+          "text": "1,000,000,000",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MSwwMDAsMDAwLDAwMA&s=6a25yL43"
         },
         {
           "audio": "/audio/numbers/1234567890.wav",
-          "text": "1,234,567,890"
+          "text": "1,234,567,890",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MSwyMzQsNTY3LDg5MA&s=BYi8tPjL"
         }
       ]
     },
@@ -218,37 +260,44 @@
         {
           "audio": "/audio/food/fruit/apple.wav",
           "text": "apple",
-          "image": "/images/food/fruit/apple.jpg"
+          "image": "/images/food/fruit/apple.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YXBwbGU&s=d6IjXeYj"
         },
         {
           "audio": "/audio/food/fruit/banana.wav",
           "text": "banana",
-          "image": "/images/food/fruit/banana.jpg"
+          "image": "/images/food/fruit/banana.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YmFuYW5h&s=WIhF3CEa"
         },
         {
           "audio": "/audio/food/fruit/coconut.wav",
           "text": "coconut",
-          "image": "/images/food/fruit/coconut.jpg"
+          "image": "/images/food/fruit/coconut.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Y29jb251dA&s=WpDKH9qm"
         },
         {
           "audio": "/audio/food/fruit/lemon.wav",
           "text": "lemon",
-          "image": "/images/food/fruit/lemon.jpg"
+          "image": "/images/food/fruit/lemon.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bGVtb24&s=Wa-UppdA"
         },
         {
           "audio": "/audio/food/fruit/pineapple.wav",
           "text": "pineapple",
-          "image": "/images/food/fruit/pineapple.jpg"
+          "image": "/images/food/fruit/pineapple.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cGluZWFwcGxl&s=SwEBlJaL"
         },
         {
           "audio": "/audio/food/fruit/strawberry.wav",
           "text": "strawberry",
-          "image": "/images/food/fruit/strawberry.jpg"
+          "image": "/images/food/fruit/strawberry.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3RyYXdiZXJyeQ&s=Te6cvv.z"
         },
         {
           "audio": "/audio/food/fruit/watermelon.wav",
           "text": "watermelon",
-          "image": "/images/food/fruit/watermelon.jpg"
+          "image": "/images/food/fruit/watermelon.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=d2F0ZXJtZWxvbg&s=ShkWBAT1"
         }
       ]
     },
@@ -259,47 +308,56 @@
         {
           "audio": "/audio/food/vegetables/asparagus.wav",
           "text": "asparagus",
-          "image": "/images/food/vegetables/asparagus.jpg"
+          "image": "/images/food/vegetables/asparagus.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YXNwYXJhZ3Vz&s=31rWPo08"
         },
         {
           "audio": "/audio/food/vegetables/bellpepper.wav",
           "text": "bellpepper",
-          "image": "/images/food/vegetables/bellpepper.jpg"
+          "image": "/images/food/vegetables/bellpepper.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YmVsbHBlcHBlcg&s=r-1OYAex"
         },
         {
           "audio": "/audio/food/vegetables/broccoli.wav",
           "text": "broccoli",
-          "image": "/images/food/vegetables/broccoli.jpg"
+          "image": "/images/food/vegetables/broccoli.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YnJvY2NvbGk&s=-QoMO-jq"
         },
         {
           "audio": "/audio/food/vegetables/cabbage.wav",
           "text": "cabbage",
-          "image": "/images/food/vegetables/cabbage.jpg"
+          "image": "/images/food/vegetables/cabbage.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Y2FiYmFnZQ&s=4Gxb2sFp"
         },
         {
           "audio": "/audio/food/vegetables/cauliflower.wav",
           "text": "cauliflower",
-          "image": "/images/food/vegetables/cauliflower.jpg"
+          "image": "/images/food/vegetables/cauliflower.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Y2F1bGlmbG93ZXI&s=5k7RjF4l"
         },
         {
           "audio": "/audio/food/vegetables/greenbeans.wav",
           "text": "greenbeans",
-          "image": "/images/food/vegetables/greenbeans.jpg"
+          "image": "/images/food/vegetables/greenbeans.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Z3JlZW5iZWFucw&s=C2CYvSSV"
         },
         {
           "audio": "/audio/food/vegetables/onion.wav",
           "text": "onion",
-          "image": "/images/food/vegetables/onion.jpg"
+          "image": "/images/food/vegetables/onion.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=b25pb24&s=GPu7jBJG"
         },
         {
           "audio": "/audio/food/vegetables/spinach.wav",
           "text": "spinach",
-          "image": "/images/food/vegetables/spinach.jpg"
+          "image": "/images/food/vegetables/spinach.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3BpbmFjaA&s=.UQnZMXs"
         },
         {
           "audio": "/audio/food/vegetables/tomato.wav",
           "text": "tomato",
-          "image": "/images/food/vegetables/tomato.jpg"
+          "image": "/images/food/vegetables/tomato.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=dG9tYXRv&s=KAP5pe2u"
         }
       ]
     },
@@ -310,77 +368,92 @@
         {
           "audio": "/audio/activities/sleep.wav",
           "text": "sleep",
-          "image": "/images/activities/sleep.jpg"
+          "image": "/images/activities/sleep.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c2xlZXA&s=l4T9yviX"
         },
         {
           "audio": "/audio/activities/eat.wav",
           "text": "eat",
-          "image": "/images/activities/eat.jpg"
+          "image": "/images/activities/eat.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ZWF0&s=UkzGFhxq"
         },
         {
           "audio": "/audio/activities/drink.wav",
           "text": "drink",
-          "image": "/images/activities/drink.jpg"
+          "image": "/images/activities/drink.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ZHJpbms&s=smeFxjAk"
         },
         {
           "audio": "/audio/activities/walk.wav",
           "text": "walk",
-          "image": "/images/activities/walk.jpg"
+          "image": "/images/activities/walk.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=d2Fsaw&s=jy7cK6Bl"
         },
         {
           "audio": "/audio/activities/run.wav",
           "text": "run",
-          "image": "/images/activities/run.jpg"
+          "image": "/images/activities/run.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cnVu&s=-G8dlTFn"
         },
         {
           "audio": "/audio/activities/jump.wav",
           "text": "jump",
-          "image": "/images/activities/jump.jpg"
+          "image": "/images/activities/jump.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=anVtcA&s=1c5uKNzC"
         },
         {
           "audio": "/audio/activities/sit.wav",
           "text": "sit",
-          "image": "/images/activities/sit.jpg"
+          "image": "/images/activities/sit.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c2l0&s=74h.97.B"
         },
         {
           "audio": "/audio/activities/stand.wav",
           "text": "stand",
-          "image": "/images/activities/stand.jpg"
+          "image": "/images/activities/stand.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3RhbmQ&s=3nyvriLN"
         },
         {
           "audio": "/audio/activities/look.wav",
           "text": "look",
-          "image": "/images/activities/look-see.jpg"
+          "image": "/images/activities/look-see.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bG9vaw&s=wlCzfAFT"
         },
         {
           "audio": "/audio/activities/see.wav",
           "text": "see",
-          "image": "/images/activities/look-see.jpg"
+          "image": "/images/activities/look-see.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c2Vl&s=uRpsdK4-"
         },
         {
           "audio": "/audio/activities/listen.wav",
           "text": "listen",
-          "image": "/images/activities/listen-hear.jpg"
+          "image": "/images/activities/listen-hear.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bGlzdGVu&s=pop5czcY"
         },
         {
           "audio": "/audio/activities/hear.wav",
           "text": "hear",
-          "image": "/images/activities/listen-hear.jpg"
+          "image": "/images/activities/listen-hear.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=aGVhcg&s=VQ.w7.1u"
         },
         {
           "audio": "/audio/activities/speak.wav",
           "text": "speak",
-          "image": "/images/activities/speak-talk-say.jpg"
+          "image": "/images/activities/speak-talk-say.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3BlYWs&s=P2w9fYFx"
         },
         {
           "audio": "/audio/activities/talk.wav",
           "text": "talk",
-          "image": "/images/activities/speak-talk-say.jpg"
+          "image": "/images/activities/speak-talk-say.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=dGFsaw&s=xVKzmR9U"
         },
         {
           "audio": "/audio/activities/say.wav",
           "text": "say",
-          "image": "/images/activities/speak-talk-say.jpg"
+          "image": "/images/activities/speak-talk-say.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c2F5&s=jjDb0x0l"
         }
       ]
     },
@@ -390,31 +463,38 @@
       "tiles": [
         {
           "audio": "/audio/days/Sunday.wav",
-          "text": "Sunday"
+          "text": "Sunday",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=U3VuZGF5&s=D5.TfTWy"
         },
         {
           "audio": "/audio/days/Monday.wav",
-          "text": "Monday"
+          "text": "Monday",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=TW9uZGF5&s=A4t1WtVg"
         },
         {
           "audio": "/audio/days/Tuesday.wav",
-          "text": "Tuesday"
+          "text": "Tuesday",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=VHVlc2RheQ&s=aQOxsiBR"
         },
         {
           "audio": "/audio/days/Wednesday.wav",
-          "text": "Wednesday"
+          "text": "Wednesday",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=V2VkbmVzZGF5&s=tKWOyWRt"
         },
         {
           "audio": "/audio/days/Thursday.wav",
-          "text": "Thursday"
+          "text": "Thursday",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=VGh1cnNkYXk&s=6137raV-"
         },
         {
           "audio": "/audio/days/Friday.wav",
-          "text": "Friday"
+          "text": "Friday",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=RnJpZGF5&s=8y3sSf28"
         },
         {
           "audio": "/audio/days/Saturday.wav",
-          "text": "Saturday"
+          "text": "Saturday",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=U2F0dXJkYXk&s=dNdpoE43"
         }
       ]
     },
@@ -424,51 +504,63 @@
       "tiles": [
         {
           "audio": "/audio/months/January.wav",
-          "text": "January"
+          "text": "January",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=SmFudWFyeQ&s=e6yPaTiI"
         },
         {
           "audio": "/audio/months/February.wav",
-          "text": "February"
+          "text": "February",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=RmVicnVhcnk&s=EbrCuwZ9"
         },
         {
           "audio": "/audio/months/March.wav",
-          "text": "March"
+          "text": "March",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=TWFyY2g&s=xIzJO2YU"
         },
         {
           "audio": "/audio/months/April.wav",
-          "text": "April"
+          "text": "April",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=QXByaWw&s=Z8XqEf9j"
         },
         {
           "audio": "/audio/months/May.wav",
-          "text": "May"
+          "text": "May",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=TWF5&s=JKQ.Qh80"
         },
         {
           "audio": "/audio/months/June.wav",
-          "text": "June"
+          "text": "June",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=SnVuZQ&s=Lv0OdwGI"
         },
         {
           "audio": "/audio/months/July.wav",
-          "text": "July"
+          "text": "July",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=SnVseQ&s=frO9UUI2"
         },
         {
           "audio": "/audio/months/August.wav",
-          "text": "August"
+          "text": "August",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=QXVndXN0&s=OCAvfAZS"
         },
         {
           "audio": "/audio/months/September.wav",
-          "text": "September"
+          "text": "September",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=U2VwdGVtYmVy&s=QXrV8ytZ"
         },
         {
           "audio": "/audio/months/October.wav",
-          "text": "October"
+          "text": "October",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=T2N0b2Jlcg&s=4VHs7-X6"
         },
         {
           "audio": "/audio/shapes/November.wav",
-          "text": "November"
+          "text": "November",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Tm92ZW1iZXI&s=lsIQJVUt"
         },
         {
           "audio": "/audio/shapes/December.wav",
-          "text": "December"
+          "text": "December",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=RGVjZW1iZXI&s=QJqCNXk9"
         }
       ]
     },
@@ -478,19 +570,23 @@
       "tiles": [
         {
           "audio": "/audio/seasons-temp-weather/spring.wav",
-          "text": "spring"
+          "text": "spring",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3ByaW5n&s=suPtWtCP"
         },
         {
           "audio": "/audio/seasons-temp-weather/summer.wav",
-          "text": "summer"
+          "text": "summer",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3VtbWVy&s=OMkOmpOe"
         },
         {
           "audio": "/audio/seasons-temp-weather/autumn.wav",
-          "text": "autumn"
+          "text": "autumn",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YXV0dW1u&s=ZjI-8OTu"
         },
         {
           "audio": "/audio/seasons-temp-weather/winter.wav",
-          "text": "winter"
+          "text": "winter",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=d2ludGVy&s=k4yvBY4A"
         }
       ]
     },
@@ -500,31 +596,38 @@
       "tiles": [
         {
           "audio": "/audio/seasons-temp-weather/sunny.wav",
-          "text": "sunny"
+          "text": "sunny",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3Vubnk&s=ogqLo7mt"
         },
         {
           "audio": "/audio/seasons-temp-weather/cloudy.wav",
-          "text": "cloudy"
+          "text": "cloudy",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Y2xvdWR5&s=MRUfKOF8"
         },
         {
           "audio": "/audio/seasons-temp-weather/foggy.wav",
-          "text": "foggy"
+          "text": "foggy",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Zm9nZ3k&s=mmY58pr6"
         },
         {
           "audio": "/audio/seasons-temp-weather/smoggy.wav",
-          "text": "smoggy"
+          "text": "smoggy",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c21vZ2d5&s=e8iPppSX"
         },
         {
           "audio": "/audio/seasons-temp-weather/rainy.wav",
-          "text": "rainy"
+          "text": "rainy",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cmFpbnk&s=8AQ6v9nW"
         },
         {
           "audio": "/audio/seasons-temp-weather/windy.wav",
-          "text": "windy"
+          "text": "windy",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=d2luZHk&s=DqodMHFM"
         },
         {
           "audio": "/audio/seasons-temp-weather/snowy.wav",
-          "text": "snowy"
+          "text": "snowy",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c25vd3k&s=1Bt-ZrQr"
         }
       ]
     },
@@ -534,19 +637,23 @@
       "tiles": [
         {
           "audio": "/audio/seasons-temp-weather/hot.wav",
-          "text": "hot"
+          "text": "hot",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=aG90&s=cnX5KKde"
         },
         {
           "audio": "/audio/seasons-temp-weather/warm.wav",
-          "text": "warm"
+          "text": "warm",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=d2FybQ&s=ng8SpsvO"
         },
         {
           "audio": "/audio/seasons-temp-weather/cool.wav",
-          "text": "cool"
+          "text": "cool",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Y29vbA&s=W7Z02Q2C"
         },
         {
           "audio": "/audio/seasons-temp-weather/cold.wav",
-          "text": "cold"
+          "text": "cold",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Y29sZA&s=bW4Yeg0P"
         }
       ]
     },
@@ -556,71 +663,88 @@
       "tiles": [
         {
           "audio": "/audio/math/2plus3.wav",
-          "text": "2 + 3"
+          "text": "2 + 3",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDM&s=YbXBjug1"
         },
         {
           "audio": "/audio/math/2plus4.wav",
-          "text": "2 + 4"
+          "text": "2 + 4",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDQ&s=pWYiFOcp"
         },
         {
           "audio": "/audio/math/2plus5.wav",
-          "text": "2 + 5"
+          "text": "2 + 5",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDU&s=VwulJr9k"
         },
         {
           "audio": "/audio/math/2plus6.wav",
-          "text": "2 + 6"
+          "text": "2 + 6",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDY&s=gI75e1rr"
         },
         {
           "audio": "/audio/math/2plus7.wav",
-          "text": "2 + 7"
+          "text": "2 + 7",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDc&s=.RnHJgcm"
         },
         {
           "audio": "/audio/math/2plus8.wav",
-          "text": "2 + 8"
+          "text": "2 + 8",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDg&s=Jhul9SxF"
         },
         {
           "audio": "/audio/math/2plus9.wav",
-          "text": "2 + 9"
+          "text": "2 + 9",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDk&s=yhd7wF-y"
         },
         {
           "audio": "/audio/math/2plus10.wav",
-          "text": "2 + 10"
+          "text": "2 + 10",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDEw&s=ICqYt-WO"
         },
         {
           "audio": "/audio/math/2plus11.wav",
-          "text": "2 + 11"
+          "text": "2 + 11",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDEx&s=F8uR0vfj"
         },
         {
           "audio": "/audio/math/2plus13.wav",
-          "text": "2 + 13"
+          "text": "2 + 13",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDEz&s=Op0m92Z0"
         },
         {
           "audio": "/audio/math/2plus14.wav",
-          "text": "2 + 14"
+          "text": "2 + 14",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDE0&s=fnVzLn7-"
         },
         {
           "audio": "/audio/math/2plus15.wav",
-          "text": "2 + 15"
+          "text": "2 + 15",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDE1&s=oroajR-J"
         },
         {
           "audio": "/audio/math/2plus16.wav",
-          "text": "2 + 16"
+          "text": "2 + 16",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDE2&s=2Ed4rY.-"
         },
         {
           "audio": "/audio/math/2plus18.wav",
-          "text": "2 + 18"
+          "text": "2 + 18",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDE4&s=gMzOSbKV"
         },
         {
           "audio": "/audio/math/2plus19.wav",
-          "text": "2 + 19"
+          "text": "2 + 19",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MiArIDE5&s=P-lo.Vxq"
         },
         {
           "audio": "/audio/math/19plus3.wav",
-          "text": "19 + 3"
+          "text": "19 + 3",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=MTkgKyAz&s=Fz2gbtA8"
         },
         {
           "audio": "/audio/math/90plus3.wav",
-          "text": "90 + 3"
+          "text": "90 + 3",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=OTAgKyAz&s=3rtRWGJK"
         }
       ]
     },
@@ -631,37 +755,44 @@
         {
           "audio": "/audio/money/penny.wav",
           "text": "penny",
-          "image": "/images/money/penny.jpg"
+          "image": "/images/money/penny.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cGVubnk&s=brfm9YZ6"
         },
         {
           "audio": "/audio/money/nickel.wav",
           "text": "nickel",
-          "image": "/images/money/nickel.jpg"
+          "image": "/images/money/nickel.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bmlja2Vs&s=Im9lXDzf"
         },
         {
           "audio": "/audio/money/dime.wav",
           "text": "dime",
-          "image": "/images/money/dime.jpg"
+          "image": "/images/money/dime.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ZGltZQ&s=b6ckrkfM"
         },
         {
           "audio": "/audio/money/quarter.wav",
           "text": "quarter",
-          "image": "/images/money/quarter.jpg"
+          "image": "/images/money/quarter.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cXVhcnRlcg&s=RkhWAA.S"
         },
         {
           "audio": "/audio/money/halfdollar.wav",
           "text": "half-dollar",
-          "image": "/images/money/halfdollar.jpg"
+          "image": "/images/money/halfdollar.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=aGFsZi1kb2xsYXI&s=q5TMUwsw"
         },
         {
           "audio": "/audio/money/dollarcoins.wav",
           "text": "dollar coins",
-          "image": "/images/money/dollarcoins.jpg"
+          "image": "/images/money/dollarcoins.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ZG9sbGFyIGNvaW5z&s=mzZHahAp"
         },
         {
           "audio": "/audio/money/dollarbill.wav",
           "text": "dollar bill",
-          "image": "/images/money/dollarbill.jpg"
+          "image": "/images/money/dollarbill.jpg",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ZG9sbGFyIGJpbGw&s=SZeZt3.6"
         }
       ]
     },
@@ -671,107 +802,133 @@
       "tiles": [
         {
           "audio": "/audio/alphabet/CapA.wav",
-          "text": "A"
+          "text": "A",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=QQ&s=V1yTH95T"
         },
         {
           "audio": "/audio/alphabet/CapB.wav",
-          "text": "B"
+          "text": "B",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Qg&s=.W5089WA"
         },
         {
           "audio": "/audio/alphabet/CapC.wav",
-          "text": "C"
+          "text": "C",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Qw&s=XPi2fo7F"
         },
         {
           "audio": "/audio/alphabet/CapD.wav",
-          "text": "D"
+          "text": "D",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=RA&s=T4A5wd3C"
         },
         {
           "audio": "/audio/alphabet/CapE.wav",
-          "text": "E"
+          "text": "E",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=RQ&s=GfzF1u.g"
         },
         {
           "audio": "/audio/alphabet/CapF.wav",
-          "text": "F"
+          "text": "F",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Rg&s=75pPVrU7"
         },
         {
           "audio": "/audio/alphabet/CapG.wav",
-          "text": "G"
+          "text": "G",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Rw&s=XseuHZsK"
         },
         {
           "audio": "/audio/alphabet/CapH.wav",
-          "text": "H"
+          "text": "H",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=SA&s=x6J9Wxnr"
         },
         {
           "audio": "/audio/alphabet/CapI.wav",
-          "text": "I"
+          "text": "I",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=SQ&s=7.6I4OZ8"
         },
         {
           "audio": "/audio/alphabet/CapJ.wav",
-          "text": "J"
+          "text": "J",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Sg&s=B.hsfGAG"
         },
         {
           "audio": "/audio/alphabet/CapK.wav",
-          "text": "K"
+          "text": "K",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Sw&s=h-bAChjc"
         },
         {
           "audio": "/audio/alphabet/CapL.wav",
-          "text": "L"
+          "text": "L",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=TA&s=RAoCArx."
         },
         {
           "audio": "/audio/alphabet/CapM.wav",
-          "text": "M"
+          "text": "M",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=TQ&s=IZX9v0nv"
         },
         {
           "audio": "/audio/alphabet/CapN.wav",
-          "text": "N"
+          "text": "N",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Tg&s=v3p8LH97"
         },
         {
           "audio": "/audio/alphabet/CapO.wav",
-          "text": "O"
+          "text": "O",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Tw&s=x1BFrBJF"
         },
         {
           "audio": "/audio/alphabet/CapP.wav",
-          "text": "P"
+          "text": "P",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=UA&s=Q7n0Racr"
         },
         {
           "audio": "/audio/alphabet/CapQ.wav",
-          "text": "Q"
+          "text": "Q",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=UQ&s=k3.pb.2a"
         },
         {
           "audio": "/audio/alphabet/CapR.wav",
-          "text": "R"
+          "text": "R",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Ug&s=ispoWAqh"
         },
         {
           "audio": "/audio/alphabet/CapS.wav",
-          "text": "S"
+          "text": "S",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Uw&s=Ue6WR7fz"
         },
         {
           "audio": "/audio/alphabet/CapT.wav",
-          "text": "T"
+          "text": "T",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=VA&s=NeXRzrRf"
         },
         {
           "audio": "/audio/alphabet/CapU.wav",
-          "text": "U"
+          "text": "U",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=VQ&s=ommevOAL"
         },
         {
           "audio": "/audio/alphabet/CapV.wav",
-          "text": "V"
+          "text": "V",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Vg&s=FzxnyVMG"
         },
         {
           "audio": "/audio/alphabet/CapW.wav",
-          "text": "W"
+          "text": "W",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Vw&s=jsWyyA-s"
         },
         {
           "audio": "/audio/alphabet/CapX.wav",
-          "text": "X"
+          "text": "X",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=WA&s=uwfqZkBB"
         },
         {
           "audio": "/audio/alphabet/CapY.wav",
-          "text": "Y"
+          "text": "Y",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=WQ&s=IvpkpJ.i"
         },
         {
           "audio": "/audio/alphabet/CapZ.wav",
-          "text": "Z"
+          "text": "Z",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Wg&s=vKQqelIQ"
         }
       ]
     },
@@ -781,107 +938,133 @@
       "tiles": [
         {
           "audio": "/audio/alphabet/smalla.wav",
-          "text": "a"
+          "text": "a",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YQ&s=F4Z2BsRW"
         },
         {
           "audio": "/audio/alphabet/smallb.wav",
-          "text": "b"
+          "text": "b",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Yg&s=3tPypMLX"
         },
         {
           "audio": "/audio/alphabet/smallc.wav",
-          "text": "c"
+          "text": "c",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Yw&s=yBLDYzuq"
         },
         {
           "audio": "/audio/alphabet/smalld.wav",
-          "text": "d"
+          "text": "d",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ZA&s=LA.sOv3V"
         },
         {
           "audio": "/audio/alphabet/smalle.wav",
-          "text": "e"
+          "text": "e",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ZQ&s=AoxS6bVo"
         },
         {
           "audio": "/audio/alphabet/smallf.wav",
-          "text": "f"
+          "text": "f",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Zg&s=NJ05SXG7"
         },
         {
           "audio": "/audio/alphabet/smallg.wav",
-          "text": "g"
+          "text": "g",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Zw&s=cHfJyL3h"
         },
         {
           "audio": "/audio/alphabet/smallh.wav",
-          "text": "h"
+          "text": "h",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=aA&s=kNEjK6K2"
         },
         {
           "audio": "/audio/alphabet/smalli.wav",
-          "text": "i"
+          "text": "i",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=aQ&s=-Zh8pVZh"
         },
         {
           "audio": "/audio/alphabet/smallj.wav",
-          "text": "j"
+          "text": "j",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ag&s=G-pXp5St"
         },
         {
           "audio": "/audio/alphabet/smallk.wav",
-          "text": "k"
+          "text": "k",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=aw&s=KdP1eH39"
         },
         {
           "audio": "/audio/alphabet/smalll.wav",
-          "text": "l"
+          "text": "l",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bA&s=Y6z8321-"
         },
         {
           "audio": "/audio/alphabet/smallm.wav",
-          "text": "m"
+          "text": "m",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bQ&s=1kMfYEV3"
         },
         {
           "audio": "/audio/alphabet/smalln.wav",
-          "text": "n"
+          "text": "n",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bg&s=Z.iO5fjq"
         },
         {
           "audio": "/audio/alphabet/smallo.wav",
-          "text": "o"
+          "text": "o",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bw&s=aWw2dnV0"
         },
         {
           "audio": "/audio/alphabet/smallp.wav",
-          "text": "p"
+          "text": "p",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cA&s=mtujl1t2"
         },
         {
           "audio": "/audio/alphabet/smallq.wav",
-          "text": "q"
+          "text": "q",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cQ&s=pjS2.ZRM"
         },
         {
           "audio": "/audio/alphabet/smallr.wav",
-          "text": "r"
+          "text": "r",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cg&s=dYR4oONM"
         },
         {
           "audio": "/audio/alphabet/smalls.wav",
-          "text": "s"
+          "text": "s",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cw&s=FIZ36ME."
         },
         {
           "audio": "/audio/alphabet/smallt.wav",
-          "text": "t"
+          "text": "t",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=dA&s=jVV74c0S"
         },
         {
           "audio": "/audio/alphabet/smallu.wav",
-          "text": "u"
+          "text": "u",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=dQ&s=EgYdQMKJ"
         },
         {
           "audio": "/audio/alphabet/smallv.wav",
-          "text": "v"
+          "text": "v",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=dg&s=EuImLCop"
         },
         {
           "audio": "/audio/alphabet/smallw.wav",
-          "text": "w"
+          "text": "w",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=dw&s=EpfupPDp"
         },
         {
           "audio": "/audio/alphabet/smallx.wav",
-          "text": "x"
+          "text": "x",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=eA&s=c-FvdQRf"
         },
         {
           "audio": "/audio/alphabet/smally.wav",
-          "text": "y"
+          "text": "y",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=eQ&s=lBSw5kA1"
         },
         {
           "audio": "/audio/alphabet/smallz.wav",
-          "text": "z"
+          "text": "z",
+          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=eg&s=kEFW8HFC"
         }
       ]
     }
