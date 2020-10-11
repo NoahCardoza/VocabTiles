@@ -122,7 +122,7 @@ INSERT INTO "Answer" (quiz_id, category, text, correct) VALUES(13, 'Money', 'pen
 INSERT INTO "Answer" (quiz_id, category, text, correct) VALUES(11, 'Money', 'nickel', true);
 INSERT INTO "Answer" (quiz_id, category, text, correct) VALUES(13, 'Money', 'dime', false);
 INSERT INTO "Answer" (quiz_id, category, text, correct) VALUES(2, 'Money', 'quarter', true);
-INSERT INTO "Answer" (quiz_id, category, text, correct) VALUES(5 'Money', 'half-dollar', false);
+INSERT INTO "Answer" (quiz_id, category, text, correct) VALUES(5, 'Money', 'half-dollar', false);
 INSERT INTO "Answer" (quiz_id, category, text, correct) VALUES(13, 'Money', 'dollar coins', true);
 INSERT INTO "Answer" (quiz_id, category, text, correct) VALUES(15, 'Money', 'dollar bill', true);
 INSERT INTO "Answer" (quiz_id, category, text, correct) VALUES(14, 'The Alphabet: Capitol Letters', 'A', true);
