@@ -1,6 +1,5 @@
 <template>
   <div :disabled="disabled">
-    <div>{{ currentTileText }}</div>
     <div v-for="row in rows" :key="row" class="flex justify-center">
       <div
         v-for="col in columns"
