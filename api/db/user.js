@@ -1,15 +1,62 @@
 const slugify = require('../../utils/_toSlug');
-const asyncForEach = require('../../utils/asyncForEach');
+const collect = require('../../utils/collect');
 const pool = require('./index');
 
-const selectUserFromFirebaseId = async (firebaseId) => {
-  const {
-    rows,
-  } = await pool.query('SELECT (id) FROM "User" WHERE firebase_id = $1', [
-    firebaseId,
-  ]);
+const getUserStats = async (fbID) => {
+  const quizIds = await pool.query(
+    'SELECT id, mode FROM "Quiz" WHERE user_id = $1 ORDER BY id',
+    [fbID]
+  );
 
-  return (rows[0] && rows[0].id) || null;
+  const allQuizzes = await Promise.all(
+    quizIds.rows.map(({ id, mode }) => getQuizStatsByID(id, mode))
+  );
+
+  return allQuizzes;
+};
+
+const getQuizStatsByID = async (quizID, modeProvided) => {
+  const createEmptyCategoryObject = (title) => {
+    return { title, slug: slugify(title), total: 0, correct: 0 };
+  };
+
+  let mode;
+  if (modeProvided === undefined) {
+    mode = (await pool.query('SELECT mode from "Quiz" WHERE id = $1', [quizID]))
+      .rows[0].mode;
+  } else {
+    mode = modeProvided;
+  }
+
+  const val = await pool.query(
+    'SELECT * FROM "Answer" WHERE quiz_id = $1 ORDER BY id',
+    [quizID]
+  );
+  const allAnswers = val.rows;
+
+  const encounteredCategories = new Map();
+  const answers = [];
+  allAnswers.forEach((ans) => {
+    const { id, category, text, correct } = ans;
+
+    if (!encounteredCategories.has(category)) {
+      encounteredCategories.set(category, createEmptyCategoryObject(category));
+    }
+
+    encounteredCategories.get(category).total += 1;
+    if (correct) {
+      encounteredCategories.get(category).correct += 1;
+    }
+
+    answers.push({ id, category, text, correct });
+  });
+
+  return {
+    id: quizID,
+    mode,
+    categories: collect(encounteredCategories.values()),
+    answers,
+  };
 };
 
 const getAllUsers = async () => {
@@ -17,75 +64,8 @@ const getAllUsers = async () => {
   return res.rows;
 };
 
-const getUserStats = async (fbID) => {
-  let quizzesTaken = await pool.query(
-    'SELECT id, mode FROM "Quiz" WHERE user_id = $1',
-    [fbID]
-  );
-
-  quizzesTaken = quizzesTaken.rows;
-
-  const createEmptyCategoryObj = () => {
-    return {
-      title: '',
-      slug: '',
-      mode: 0,
-      total: 0,
-      correct: 0,
-    };
-  };
-  const categories = [];
-  for (let i = 0; i < quizzesTaken.length; ++i) {
-    categories.push(createEmptyCategoryObj());
-  }
-
-  const correctArr = [];
-  const incorrectArr = [];
-
-  console.log(categories);
-  console.log(quizzesTaken.length);
-
-  await asyncForEach(quizzesTaken, async (quiz, index) => {
-    let answers = await pool.query(
-      'SELECT * FROM "Answer" WHERE quiz_id = $1;',
-      [quiz.id]
-    );
-    answers = answers.rows;
-
-    categories[index].title = answers[0].category;
-    categories[index].slug = slugify(answers[0].category);
-    categories[index].mode = quiz.mode;
-
-    for (const ans of answers) {
-      categories[index].total += 1;
-      const { quiz_id, correct, ...ansData } = ans;
-      if (correct) {
-        categories[index].correct += 1;
-        correctArr.push(ansData);
-      } else {
-        incorrectArr.push(ansData);
-      }
-    }
-  });
-
-  return {
-    categories,
-    correct: correctArr,
-    incorrect: incorrectArr,
-  };
-};
-
-const insertUser = async (newUser) => {
-  const { id, username, firebade_id, literacy_level } = newUser;
-  await pool.query(
-    'INSERT INTO "User" (id, username, firebase_id, literacy_level) VALUES($1, $2, $3, $4)',
-    [id, username, firebade_id, literacy_level]
-  );
-};
-
 module.exports = {
   getAllUsers,
-  selectUserFromFirebaseId,
   getUserStats,
-  insertUser,
+  getQuizStatsByID,
 };

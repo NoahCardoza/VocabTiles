@@ -1,43 +1,37 @@
 const express = require('express');
-const db = require('../DBrouters/dbRouter');
+const validator = require('express-joi-validation').createValidator({});
+const { QuizSchema } = require('../schema/quiz');
+const dbUser = require('../db/user');
+const dbQuiz = require('../db/quiz');
 
 const router = express.Router();
 
-router.get('/', async (req, res) => {
+router.post('/quiz', validator.query(QuizSchema), async (req, res) => {
   try {
-    await res.json(db.getUserByID(parseInt(await req.user.id())));
-  } catch (err) {
-    console.log(err);
-    res.status(400).json(err);
+    const quizId = await dbQuiz.insertNewQuiz(await req.user.id, req.body);
+    res.status(201).send({ id: quizId });
+  } catch (e) {
+    return res.status(422).send();
   }
 });
 
-router.get('/all', async (_req, res) => {
+router.get('/quiz/:id', async (req, res) => {
   try {
-    await res.json(db.getAllUsers());
+    res.json(await dbUser.getQuizStatsByID(parseInt(req.params.id)));
   } catch (err) {
     console.log(err);
-    res.status(400).json(err);
+    return res.status(422).json({ msg: err });
   }
 });
 
-router.get('/stats/', async (req, res) => {
-  const userId = parseInt(await req.user.id());
+router.get('/stats', async (req, res) => {
   try {
-    res.json(await db.getUserStatsByID(userId));
-  } catch (err) {
-    res.status(400).json({ msg: err });
-  }
-});
-
-router.put('/', async (req, res) => {
-  try {
-    // const userObj = req.body;
-    // userObj.
-    res.json(await db.insertNewUser(req.body));
-  } catch (err) {
-    console.log(err);
-    res.status(400).json(err);
+    res.json(await dbUser.getUserStats(req.user.id));
+  } catch (e) {
+    console.error(e);
+    res.status(400).json({
+      msg: e,
+    });
   }
 });
 

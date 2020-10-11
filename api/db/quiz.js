@@ -1,15 +1,12 @@
 const pool = require('./index');
 
-const insertAnswer = (quizId, correct) => ({ category, text }) =>
+const insertAnswer = (quizId) => ({ category, text, correct }) =>
   pool.query(
     'INSERT INTO "Answer" (quiz_id, category, text, correct) VALUES($1, $2, $3, $4)',
     [quizId, category, text, correct]
   );
 
-const insertNewQuiz = async (
-  uid,
-  { mode, answers: { correct, incorrect } }
-) => {
+const insertNewQuiz = async (uid, { mode, answers }) => {
   const {
     rows: [quiz],
   } = await pool.query(
@@ -17,10 +14,9 @@ const insertNewQuiz = async (
     [uid, mode]
   );
 
-  await Promise.all([
-    Promise.all(correct.map(insertAnswer(quiz.id, true))),
-    Promise.all(incorrect.map(insertAnswer(quiz.id, false))),
-  ]);
+  await Promise.all(answers.map(insertAnswer(quiz.id)));
+
+  return quiz.id;
 };
 
 const getAll = async () => {
@@ -28,15 +24,7 @@ const getAll = async () => {
   return val.rows;
 };
 
-const getStatsByID = async (quizID) => {
-  const val = await pool.query('SELECT * FROM "Answer" WHERE quiz_id = $1', [
-    quizID,
-  ]);
-  return val.rows;
-};
-
 module.exports = {
   insertNewQuiz,
   getAll,
-  getStatsByID,
 };
