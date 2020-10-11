@@ -82,10 +82,6 @@ export default {
       progress: 0,
       tileOrder: tiles,
       animating: false,
-      answers: {
-        correct: [],
-        incorrect: [],
-      },
       audioCache: {},
     };
   },
@@ -146,6 +142,7 @@ export default {
       const audio = audioCache[ql_audio];
       audio.play();
     },
+
     shuffle() {
       const tiles = shuffle(this.localTiles);
       const requiredTileIndex = tiles.findIndex(
@@ -177,12 +174,12 @@ export default {
     onTileClick(tile) {
       if (this.disabled || this.animating) return;
       const isCorrect = this.currentTileText === tile.text;
-      this.answers[isCorrect ? 'correct' : 'incorrect'].push({
+
+      this.$emit('answered', {
         text: this.currentTileText,
         category: this.currentTile.type,
+        correct: isCorrect,
       });
-
-      this.$emit('answered');
 
       if (isCorrect) {
         this.animateTile(tile.el);
@@ -198,16 +195,17 @@ export default {
 
       setTimeout(() => {
         this.progress++;
-        this.$emit('next');
+
         if (!this.currentTileText) {
-          return this.$emit('complete', this.answers);
+          return this.$emit('complete');
         }
 
         correctEl && correctEl.classList.remove('pulse-success');
         incorrectEl && incorrectEl.classList.remove('pulse-danger');
+        this.animating = false;
 
         this.shuffle();
-        this.animating = false;
+        this.$emit('next');
         this.playAudio();
       }, 1000);
     },

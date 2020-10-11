@@ -16,7 +16,7 @@
     </client-only>
     <TileGrid
       ref="quiz"
-      :mode="modeIndex + 1"
+      :mode="modeId"
       size="lg"
       :tiles="tiles"
       @complete="onComplete"
@@ -76,12 +76,16 @@ export default {
       timer: TIME_PER_TILE,
       pauseTimer: true,
       isOverlayOpen: true,
+      answers: [],
     };
   },
   computed: {
     modeIndex() {
       const { mode } = this.$route.params;
       return this.modeSlugs.indexOf(mode);
+    },
+    modeId() {
+      return this.modeIndex + 1;
     },
     mode() {
       return this.modes[this.modeIndex];
@@ -99,22 +103,32 @@ export default {
       this.timer = TIME_PER_TILE;
       this.pauseTimer = true;
       const { quiz } = this.$refs;
+      const { type, text } = quiz.currentTile;
+      this.answers.push({
+        text,
+        category: type,
+        correct: false,
+      });
       quiz.animateTile(null, quiz.currentTileEl);
     },
     replayAudio() {
       this.$refs.quiz.playAudio();
     },
-    onAnswered() {
+    onAnswered(answer) {
       this.timer = TIME_PER_TILE;
       this.pauseTimer = true;
+      this.answers.push(answer);
     },
     onNext() {
       this.pauseTimer = false;
     },
-    async onComplete(answers) {
+    async onComplete() {
       const loading = this.$loader(this.$refs.quiz.$el);
       try {
-        await this.$axios.put('/api/quiz', answers);
+        await this.$axios.put('/api/quiz', {
+          mode: this.modeId,
+          answers: this.answers,
+        });
       } catch (e) {
         // TODO: notify the user that the quiz failed to save
         // TODO: save to local storage and upload later?
