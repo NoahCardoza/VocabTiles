@@ -5,9 +5,10 @@
         v-if="!disabled"
         title="Are you ready?"
         :active.sync="isOverlayOpen"
+        button-close-hidden
       >
         <div class="flex justify-center items-center h-100">
-          <vs-button style="width: 300px" @click="closeOverlay">
+          <vs-button style="width: 300px" @click="isOverlayOpen = false">
             Begin
           </vs-button>
         </div>
@@ -130,10 +131,15 @@ export default {
       return (tile && tile.text) || null;
     },
   },
+  created() {
+    const unwatchIsOverlayOpen = this.$watch('isOverlayOpen', () => {
+      unwatchIsOverlayOpen();
+      this.playAudio();
+    });
+  },
   methods: {
     closeOverlay() {
       this.isOverlayOpen = false;
-      this.playAudio();
     },
     playAudio() {
       // eslint-disable-next-line camelcase
