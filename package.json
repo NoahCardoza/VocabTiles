@@ -38,6 +38,7 @@
     "core-js": "^3.6.5",
     "dotenv-cli": "^4.0.0",
     "express": "^4.17.1",
+    "express-joi-validation": "^4.0.4-beta.0",
     "firebase": "^7.22.1",
     "firebase-admin": "^9.2.0",
     "joi": "^17.2.1",

@@ -10,10 +10,7 @@ const QuestionsSchema = Joi.array().items(QuestionSchema);
 const QuizSchema = Joi.object({
   // TODO: sould max be dynaically looked up from the config file?
   mode: Joi.number().integer().min(1).max(4),
-  answers: Joi.object({
-    correct: QuestionsSchema,
-    incorrect: QuestionsSchema,
-  }),
+  answers: QuestionsSchema,
 });
 
 module.exports = {
