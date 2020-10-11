@@ -86,6 +86,7 @@ export default {
         correct: [],
         incorrect: [],
       },
+      audioCache: {},
     };
   },
   computed: {
@@ -115,7 +116,27 @@ export default {
       return (tile && tile.text) || null;
     },
   },
+  mounted() {
+    if (!this.disabled) {
+      this.playAudio();
+    }
+  },
   methods: {
+    playAudio() {
+      // eslint-disable-next-line camelcase
+      const { ql_audio } = this.currentTile;
+      const { audioCache } = this;
+
+      if (!audioCache[ql_audio]) {
+        audioCache[ql_audio] = new Audio(this.currentTile.ql_audio);
+      }
+
+      const audio = audioCache[ql_audio];
+      audio.autoplay = true;
+      audio.muted = true;
+      audio.play();
+      audio.muted = false;
+    },
     shuffle() {
       const tiles = shuffle(this.localTiles);
       const requiredTileIndex = tiles.findIndex(
@@ -151,9 +172,10 @@ export default {
         if (!this.currentTileText) {
           return this.$emit('complete', this.answers);
         }
-        this.shuffle();
         target.parentElement.classList.remove(animationClass);
+        this.shuffle();
         this.animating = false;
+        this.playAudio();
       }, 1300);
     },
   },
