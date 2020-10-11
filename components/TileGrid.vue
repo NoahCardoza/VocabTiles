@@ -5,7 +5,8 @@
         v-for="col in columns"
         :key="col"
         ref="tiles"
-        class="flex ma1 justify-center items-center tile-box"
+        class="flex justify-center items-center tile-box"
+        style="margin: 0.5vw"
         :disabled="!tile(row, col)"
         :style="{
           width: boxScale + '%',
@@ -28,9 +29,8 @@ import cloneDeep from 'lodash/cloneDeep';
 
 const SIZE_OPTIONS = ['sm', 'md', 'lg'];
 const SIZE_MULTIPLIERS = {
-  sm: 5,
-  md: 2,
-  lg: 1,
+  sm: 2.5,
+  lg: 0.8,
 };
 
 export default {
@@ -78,8 +78,8 @@ export default {
     }
 
     return {
-      localTiles: tiles,
       progress: 0,
+      localTiles: tiles,
       tileOrder: tiles,
       animating: false,
       audioCache: {},
