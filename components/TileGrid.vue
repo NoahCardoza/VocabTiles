@@ -1,29 +1,16 @@
 <template>
   <div :disabled="disabled">
-    <client-only>
-      <vs-popup
-        v-if="!disabled"
-        title="Are you ready?"
-        :active.sync="isOverlayOpen"
-        button-close-hidden
-      >
-        <div class="flex justify-center items-center h-100">
-          <vs-button style="width: 300px" @click="isOverlayOpen = false">
-            Begin
-          </vs-button>
-        </div>
-      </vs-popup>
-    </client-only>
     <div v-for="row in rows" :key="row" class="flex justify-center">
       <div
         v-for="col in columns"
         :key="col"
+        ref="tiles"
         class="flex ma1 justify-center items-center tile-box"
         :disabled="!tile(row, col)"
         :style="{
           width: boxScale + '%',
         }"
-        @click="onTileClick($event, tile(row, col))"
+        @click="onTileClick(tile(row, col))"
       >
         <component
           :is="`vt-${tile(row, col).type}`"
@@ -91,8 +78,6 @@ export default {
     }
 
     return {
-      isOverlayOpen: true,
-      type: 'color',
       localTiles: tiles,
       progress: 0,
       tileOrder: tiles,
@@ -124,23 +109,31 @@ export default {
       return 100 / this.sizeMultiplyer / this.mode;
     },
     currentTile() {
-      return (this.tileOrder && this.tileOrder[this.progress]) || null;
+      return (
+        (this.tileOrder && {
+          el: this.$refs.tiles[this.progress],
+          ...this.tileOrder[this.progress],
+        }) ||
+        null
+      );
     },
     currentTileText() {
       const tile = this.currentTile;
       return (tile && tile.text) || null;
     },
-  },
-  created() {
-    const unwatchIsOverlayOpen = this.$watch('isOverlayOpen', () => {
-      unwatchIsOverlayOpen();
-      this.playAudio();
-    });
+    currentTileEl() {
+      const tile = this.currentTile;
+      if (tile) {
+        const index = this.localTiles.findIndex(
+          ({ text }) => text === tile.text
+        );
+        return this.$refs.tiles[index];
+      }
+
+      return null;
+    },
   },
   methods: {
-    closeOverlay() {
-      this.isOverlayOpen = false;
-    },
     playAudio() {
       // eslint-disable-next-line camelcase
       const { ql_audio } = this.currentTile;
@@ -170,29 +163,53 @@ export default {
 
     tile(row, col) {
       const start = (row - 1) * this.columns;
-      return (this.localTiles && this.localTiles[start + col - 1]) || null;
+      const index = start + col - 1;
+
+      return (
+        (this.localTiles && {
+          el: this.$refs.tiles && this.$refs.tiles[index],
+          ...this.localTiles[index],
+        }) ||
+        null
+      );
     },
 
-    onTileClick({ target }, tile) {
+    onTileClick(tile) {
       if (this.disabled || this.animating) return;
       const isCorrect = this.currentTileText === tile.text;
-      const animationClass = isCorrect ? 'pulse-success' : 'pulse-danger';
       this.answers[isCorrect ? 'correct' : 'incorrect'].push({
         text: this.currentTileText,
         category: this.currentTile.type,
       });
+
+      this.$emit('answered');
+
+      if (isCorrect) {
+        this.animateTile(tile.el);
+      } else {
+        this.animateTile(this.currentTileEl, tile.el);
+      }
+    },
+
+    animateTile(correctEl, incorrectEl) {
       this.animating = true;
-      target.parentElement.classList.add(animationClass);
+      correctEl && correctEl.classList.add('pulse-success');
+      incorrectEl && incorrectEl.classList.add('pulse-danger');
+
       setTimeout(() => {
         this.progress++;
+        this.$emit('next');
         if (!this.currentTileText) {
           return this.$emit('complete', this.answers);
         }
-        target.parentElement.classList.remove(animationClass);
+
+        correctEl && correctEl.classList.remove('pulse-success');
+        incorrectEl && incorrectEl.classList.remove('pulse-danger');
+
         this.shuffle();
         this.animating = false;
         this.playAudio();
-      }, 1300);
+      }, 1000);
     },
   },
 };
