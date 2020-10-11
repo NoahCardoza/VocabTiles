@@ -6,6 +6,11 @@
 export default {
   name: 'QuizResults',
   components: {},
+  async asyncData({ $axios, params }) {
+    return {
+      quiz: await $axios.$get(`/api/user/quiz/${params.id}`),
+    };
+  },
   methods: {},
 };
 </script>
