@@ -163,10 +163,11 @@ export default {
       const index = start + col - 1;
 
       return (
-        (this.localTiles && {
-          el: this.$refs.tiles && this.$refs.tiles[index],
-          ...this.localTiles[index],
-        }) ||
+        (this.localTiles &&
+          this.localTiles[index] && {
+            el: this.$refs.tiles && this.$refs.tiles[index],
+            ...this.localTiles[index],
+          }) ||
         null
       );
     },
