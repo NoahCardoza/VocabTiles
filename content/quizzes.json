@@ -89,75 +89,75 @@
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cmVjdGFuZ2xl&s=y4yOfL4y"
         },
         {
-          "audio": "/assets/audio/shapes/arrow.wav",
+          "audio": "/audio/shapes/arrow.wav",
           "text": "arrow",
-          "image": "/assets/images/shapes/arrow.png",
+          "image": "/images/shapes/arrow.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YXJyb3c&s=wLctKZXD"
         },
         {
-          "audio": "/assets/audio/shapes/star.wav",
+          "audio": "/audio/shapes/star.wav",
           "text": "star",
-          "image": "/assets/images/shapes/star.png",
+          "image": "/images/shapes/star.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3Rhcg&s=BSvD2FuO"
         },
         {
-          "audio": "/assets/audio/shapes/cross.wav",
+          "audio": "/audio/shapes/cross.wav",
           "text": "cross",
-          "image": "/assets/images/shapes/cross.png",
+          "image": "/images/shapes/cross.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Y3Jvc3M&s=.JvPMUvm"
         },
         {
-          "audio": "/assets/audio/shapes/diamond.wav",
+          "audio": "/audio/shapes/diamond.wav",
           "text": "diamond",
-          "image": "/assets/images/shapes/diamond.png",
+          "image": "/images/shapes/diamond.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ZGlhbW9uZA&s=GLZBf5.Y"
         },
         {
-          "audio": "/assets/audio/shapes/heart.wav",
+          "audio": "/audio/shapes/heart.wav",
           "text": "heart",
-          "image": "/assets/images/shapes/heart.png",
+          "image": "/images/shapes/heart.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=aGVhcnQ&s=3zVIiLMS"
         },
         {
-          "audio": "/assets/audio/shapes/hexagon.wav",
+          "audio": "/audio/shapes/hexagon.wav",
           "text": "hexagon",
-          "image": "/assets/images/shapes/hexagon.png",
+          "image": "/images/shapes/hexagon.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=aGV4YWdvbg&s=Nsjenk0r"
         },
         {
-          "audio": "/assets/audio/shapes/moon.wav",
+          "audio": "/audio/shapes/moon.wav",
           "text": "moon",
-          "image": "/assets/images/shapes/moon.png",
+          "image": "/images/shapes/moon.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bW9vbg&s=U.QJVNj4"
         },
         {
-          "audio": "/assets/audio/shapes/pentagon.wav",
+          "audio": "/audio/shapes/pentagon.wav",
           "text": "pentagon",
-          "image": "/assets/images/shapes/pentagon.png",
+          "image": "/images/shapes/pentagon.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cGVudGFnb24&s=kB3cbKd6"
         },
         {
-          "audio": "/assets/audio/shapes/octagon.wav",
+          "audio": "/audio/shapes/octagon.wav",
           "text": "octagon",
-          "image": "/assets/images/shapes/octagon.png",
+          "image": "/images/shapes/octagon.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=b2N0YWdvbg&s=BrOK2MPY"
         },
         {
-          "audio": "/assets/audio/shapes/oval.wav",
+          "audio": "/audio/shapes/oval.wav",
           "text": "oval",
-          "image": "/assets/images/shapes/oval.png",
+          "image": "/images/shapes/oval.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=b3ZhbA&s=-rV.mYXS"
         },
         {
-          "audio": "/assets/audio/shapes/parallelogram.wav",
+          "audio": "/audio/shapes/parallelogram.wav",
           "text": "parallelogram",
-          "image": "/assets/images/shapes/parallelogram.png",
+          "image": "/images/shapes/parallelogram.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cGFyYWxsZWxvZ3JhbQ&s=uCftiSN1"
         },
         {
-          "audio": "/assets/audio/shapes/trapezoid.wav",
+          "audio": "/audio/shapes/trapezoid.wav",
           "text": "trapezoid",
-          "image": "/assets/images/shapes/trapezoid.png",
+          "image": "/images/shapes/trapezoid.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=dHJhcGV6b2lk&s=53ehoxzl"
         }
       ]
