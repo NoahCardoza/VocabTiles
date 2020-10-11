@@ -1,6 +1,27 @@
 <template>
   <div :disabled="disabled">
-    <div v-for="row in rows" :key="row" class="flex justify-center">
+    <overlay v-show="!disabled && isOverlayOpen">
+      <div class="flex justify-center items-center h-100">
+        <div
+          style="
+            height: 100px;
+            background-color: white;
+            box-shadow: 0px 0px 19px 0px #00000070;
+          "
+          class="w-100 flex justify-center items-center"
+        >
+          <vs-button style="width: 300px" @click="closeOverlay">
+            Begin
+          </vs-button>
+        </div>
+      </div>
+    </overlay>
+    <div
+      v-for="row in rows"
+      v-show="disabled || !isOverlayOpen"
+      :key="row"
+      class="flex justify-center"
+    >
       <div
         v-for="col in columns"
         :key="col"
@@ -34,6 +55,7 @@ const SIZE_MULTIPLIERS = {
 
 export default {
   components: {
+    overlay: () => import('@/components/Overlay'),
     'vt-color': () => import('@/components/tiles/Color'),
     'vt-text': () => import('@/components/tiles/Text'),
     'vt-image': () => import('@/components/tiles/Image'),
@@ -76,6 +98,7 @@ export default {
     }
 
     return {
+      isOverlayOpen: true,
       type: 'color',
       localTiles: tiles,
       progress: 0,
@@ -115,12 +138,11 @@ export default {
       return (tile && tile.text) || null;
     },
   },
-  mounted() {
-    if (!this.disabled) {
-      this.playAudio();
-    }
-  },
   methods: {
+    closeOverlay() {
+      this.isOverlayOpen = false;
+      this.playAudio();
+    },
     playAudio() {
       // eslint-disable-next-line camelcase
       const { ql_audio } = this.currentTile;
