@@ -1,6 +1,19 @@
 <template>
   <div :disabled="disabled">
-    <div>{{ currentTileText }}</div>
+    <client-only>
+      <vs-popup
+        v-if="!disabled"
+        title="Are you ready?"
+        :active.sync="isOverlayOpen"
+        button-close-hidden
+      >
+        <div class="flex justify-center items-center h-100">
+          <vs-button style="width: 300px" @click="isOverlayOpen = false">
+            Begin
+          </vs-button>
+        </div>
+      </vs-popup>
+    </client-only>
     <div v-for="row in rows" :key="row" class="flex justify-center">
       <div
         v-for="col in columns"
@@ -35,6 +48,7 @@ const SIZE_MULTIPLIERS = {
 
 export default {
   components: {
+    overlay: () => import('@/components/Overlay'),
     'vt-color': () => import('@/components/tiles/Color'),
     'vt-text': () => import('@/components/tiles/Text'),
     'vt-image': () => import('@/components/tiles/Image'),
@@ -77,6 +91,7 @@ export default {
     }
 
     return {
+      isOverlayOpen: true,
       type: 'color',
       localTiles: tiles,
       progress: 0,
@@ -86,6 +101,7 @@ export default {
         correct: [],
         incorrect: [],
       },
+      audioCache: {},
     };
   },
   computed: {
@@ -115,7 +131,28 @@ export default {
       return (tile && tile.text) || null;
     },
   },
+  created() {
+    const unwatchIsOverlayOpen = this.$watch('isOverlayOpen', () => {
+      unwatchIsOverlayOpen();
+      this.playAudio();
+    });
+  },
   methods: {
+    closeOverlay() {
+      this.isOverlayOpen = false;
+    },
+    playAudio() {
+      // eslint-disable-next-line camelcase
+      const { ql_audio } = this.currentTile;
+      const { audioCache } = this;
+
+      if (!audioCache[ql_audio]) {
+        audioCache[ql_audio] = new Audio(this.currentTile.ql_audio);
+      }
+
+      const audio = audioCache[ql_audio];
+      audio.play();
+    },
     shuffle() {
       const tiles = shuffle(this.localTiles);
       const requiredTileIndex = tiles.findIndex(
@@ -151,9 +188,10 @@ export default {
         if (!this.currentTileText) {
           return this.$emit('complete', this.answers);
         }
-        this.shuffle();
         target.parentElement.classList.remove(animationClass);
+        this.shuffle();
         this.animating = false;
+        this.playAudio();
       }, 1300);
     },
   },
