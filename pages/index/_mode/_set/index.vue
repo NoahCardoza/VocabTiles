@@ -2,7 +2,6 @@
   <div class="ph3 w-100" style="max-width: 800px">
     <client-only>
       <vs-popup
-        v-if="!disabled"
         title="Are you ready?"
         :active.sync="isOverlayOpen"
         button-close-hidden
