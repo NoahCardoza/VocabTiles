@@ -1,13 +1,11 @@
 <template>
-  <div class="flex flex-column items-center">
-    <div class="mt4">
-      <vs-avatar
-        :text="userDisplayName"
-        size="120px"
-        :src="userPhotoURL"
-        @click="$fireAuth.signOut()"
-      />
-    </div>
+  <div class="flex flex-column items-center mv2">
+    <vs-avatar
+      :text="userDisplayName"
+      size="80px"
+      :src="userPhotoURL"
+      @click="$fireAuth.signOut()"
+    />
     <h1 class="title">Vocab Tiles</h1>
     <nuxt-child />
   </div>
