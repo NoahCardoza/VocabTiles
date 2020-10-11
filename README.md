@@ -1,23 +1,13 @@
 # Vocab Tiles
 A vocabulary game/quiz app.
 
-### Menu
+## The problem: How to remotely teach basic vocabulary and simple phrases to Literacy students
 
+This app helps students to learn and practice vocabulary that may have been taught in class, but which they have not yet mastered.
 
-### Menu
+Students who are completely new to a language, and especially those whose prior knowledge differs highly from the target language, cannot read the directions in the target language. So the app plays audio of a word, and the student simply taps or clicks the tile that shows the correct word.
 
-
-#### 	10 seconds left
-
-
-#### 	3 seconds left
-
-
-#### 	1 second left
-
-
-### Hard game
-
+This app is most useful to students who can both see and hear, but the word also appears above the tiles, so deaf students can also benefit. It is also useful for teachers to see the students' progress. The app will keep track of students' average score per category as well as per quiz and display them in an admin area that only the teacher can access.
 
 # Stack
 
