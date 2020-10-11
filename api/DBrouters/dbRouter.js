@@ -1,87 +1,43 @@
-// const { Pool } = require('pg');
-let userDB = {}; // require('../schema/usersDB');
-let quizzesDB = {}; // require('../schema/quizzesDB');
-let scoreDB = {}; // require('../schema/quiz-scoresDB');
+const quizDB = require('../db/quiz');
+const { QuizSchema } = require('../schema/quiz');
+const UserSchema = require('../schema/users');
+const userDB = require('../db/user');
 
 const dbRouter = {
-  // GETTERS
-  getAllUsers() {
-    return userDB;
+  // GETs
+  getAllQuizzes: () => {
+    return quizDB.getAll();
   },
 
-  getOneUserByID(id) {
-    return userDB.filter((user) => {
-      return user.id === id;
-    });
+  getAllUsers: () => {
+    return userDB.getAllUsers();
   },
 
-  getAllQuizzes() {
-    return quizzesDB;
+  getQuizStats: (quizID) => {
+    return quizDB.getStatsByID(quizID);
   },
 
-  getOneQuizByID(id) {
-    return quizzesDB.filter((quiz) => {
-      return quiz.id === id;
-    });
+  getUserByID: (fbID) => {
+    return userDB.selectUserFromFirebaseId(fbID);
   },
 
-  getScoresByUser(id) {
-    return scoreDB.filter((score) => {
-      return score.user_id === id;
-    });
+  getUserStatsByID: (fbID) => {
+    return userDB.getUserStats(fbID);
   },
 
-  getScoresByQuiz(id) {
-    return scoreDB.filter((score) => {
-      return score.quiz_id === id;
-    });
+  // POSTs
+  insertNewUser: (userObj) => {
+    const { value, err } = UserSchema.validate(userObj);
+    if (err) {
+      throw new Error("Supplied JSON doesn't match required schema");
+    } else {
+      userDB.insertUser(value);
+    }
   },
 
-  // POSTERS
-  addUser(user) {
-    userDB.push(user);
-    // console.log(userDB);
-    return user;
-  },
+  // PUTs
 
-  addQuiz(quiz) {
-    quizzesDB.push(quiz);
-    // console.log(quizzesDB);
-    return quiz;
-  },
 
-  addScore(score) {
-    scoreDB.push(score);
-    // console.log(scoreDB);
-    return score;
-  },
-
-  // PUTTERS
-  updateUser(user) {
-    userDB = userDB.filter((oldUser) => oldUser.id !== user.id).concat(user);
-    // console.log(userDB);
-    return user;
-  },
-
-  updateQuiz(quiz) {
-    quizzesDB = quizzesDB
-      .filter((oldQuiz) => oldQuiz.id !== quiz.id)
-      .concat(quiz);
-    // console.log(quizzesDB);
-    return quiz;
-  },
-
-  updateScore(score) {
-    scoreDB = scoreDB
-      .filter(
-        (oldScore) =>
-          oldScore.user_id !== score.user_id &&
-          oldScore.quiz_id !== score.quiz_id
-      )
-      .concat(score);
-    // console.log(scoreDB);
-    return score;
-  },
 };
 
 module.exports = dbRouter;

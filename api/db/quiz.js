@@ -23,6 +23,20 @@ const insertNewQuiz = async (
   ]);
 };
 
+const getAll = async () => {
+  const val = await pool.query('SELECT * FROM "Quiz";', []);
+  return val.rows;
+};
+
+const getStatsByID = async (quizID) => {
+  const val = await pool.query('SELECT * FROM "Answer" WHERE quiz_id = $1', [
+    quizID,
+  ]);
+  return val.rows;
+};
+
 module.exports = {
   insertNewQuiz,
+  getAll,
+  getStatsByID,
 };
