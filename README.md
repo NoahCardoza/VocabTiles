@@ -27,6 +27,8 @@ This app is most useful to students who can both see and hear, but the word also
   into to setup a REST API.
 + [Axios](https://github.com/axios/axios):
   A promise based HTTP client for the browser and node.js
++ [Vuesax](https://lusaxweb.github.io/vuesax/development/):
+  Component library for for Vue.js 2.
 + [Tachyons](https://tachyons.io/docs/):
   Rapid CSS prototyping. For the hackathon this is great, but we'll probably remove it in prod and
   hand write the custom CSS
