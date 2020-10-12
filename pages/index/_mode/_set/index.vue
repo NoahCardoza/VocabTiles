@@ -36,7 +36,6 @@
 </template>
 
 <script>
-import pick from 'lodash/pick';
 import TileGrid from '@/components/TileGrid';
 import CountDown from '@/components/CountDown';
 import toSlug from '@/utils/toSlug';
@@ -48,23 +47,26 @@ export default {
   name: 'Game',
   components: { TileGrid, CountDown },
   mixins: [loaderMixin],
-  async asyncData({ route, $content }) {
+  async asyncData({ params, $content, $axios }) {
     const { modes } = await $content('/modes').fetch();
-    const { quizzes } = await $content('/quizzes').fetch();
-    const selection = route.params.set.split(',');
-    const categories = quizzes.filter(({ category }) =>
-      selection.includes(toSlug(category))
-    );
-    const tiles = categories.reduce(
-      (collecter, { category, type, tiles }) => [
-        ...collecter,
-        ...tiles.map((tile) => ({ type, category, ...tile })),
-      ],
-      []
-    );
+    // const { quizzes } = await $content('/quizzes').fetch();
+    // const selection = route.params.set.split(',');
+    // const categories = quizzes.filter(({ category }) =>
+    //   selection.includes(toSlug(category))
+    // );
+    // const tiles = categories.reduce(
+    //   (collecter, { category, type, tiles }) => [
+    //     ...collecter,
+    //     ...tiles.map((tile) => ({ type, category, ...tile })),
+    //   ],
+    //   []
+    // );
+
+    const categories = await $axios.$get(`/api/quiz/${params.set}`);
+    const tiles = categories.flatMap((c) => c.tiles);
+    console.log(tiles);
     return {
       modes,
-      categories: categories.map((s) => s.category),
       modeSlugs: modes.map(toSlug),
       tiles,
     };
@@ -104,7 +106,7 @@ export default {
       const { quiz } = this.$refs;
 
       this.answers.push({
-        ...pick(quiz.currentTile, 'type', 'category', 'text'),
+        question_id: quiz.currentTile.id,
         correct: false,
       });
 
@@ -113,10 +115,10 @@ export default {
     replayAudio() {
       this.$refs.quiz.playAudio();
     },
-    onAnswered(answer) {
+    onAnswered({ id, correct }) {
       this.timer = TIME_PER_TILE;
       this.pauseTimer = true;
-      this.answers.push(answer);
+      this.answers.push({ question_id: id, correct });
     },
     onNext() {
       this.pauseTimer = false;

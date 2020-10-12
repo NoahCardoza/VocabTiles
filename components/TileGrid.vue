@@ -25,7 +25,6 @@
 <script>
 import shuffle from 'lodash/shuffle';
 import cloneDeep from 'lodash/cloneDeep';
-import pick from 'lodash/pick';
 
 const SIZE_OPTIONS = ['sm', 'md', 'lg'];
 const SIZE_MULTIPLIERS = {
@@ -131,15 +130,7 @@ export default {
   },
   methods: {
     playAudio() {
-      // eslint-disable-next-line camelcase
-      const { ql_audio } = this.currentTile;
-      const { audioCache } = this;
-
-      if (!audioCache[ql_audio]) {
-        audioCache[ql_audio] = new Audio(this.currentTile.ql_audio);
-      }
-
-      const audio = audioCache[ql_audio];
+      const audio = new Audio(this.currentTile.audio);
       audio.play();
     },
 
@@ -177,7 +168,7 @@ export default {
       const isCorrect = this.currentTileText === tile.text;
 
       this.$emit('answered', {
-        ...pick(this.currentTile, 'type', 'category', 'text'),
+        ...this.currentTile,
         correct: isCorrect,
       });
 
