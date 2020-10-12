@@ -49,18 +49,6 @@ export default {
   mixins: [loaderMixin],
   async asyncData({ params, $content, $axios }) {
     const { modes } = await $content('/modes').fetch();
-    // const { quizzes } = await $content('/quizzes').fetch();
-    // const selection = route.params.set.split(',');
-    // const categories = quizzes.filter(({ category }) =>
-    //   selection.includes(toSlug(category))
-    // );
-    // const tiles = categories.reduce(
-    //   (collecter, { category, type, tiles }) => [
-    //     ...collecter,
-    //     ...tiles.map((tile) => ({ type, category, ...tile })),
-    //   ],
-    //   []
-    // );
 
     const categories = await $axios.$get(`/api/quiz/${params.set}`);
     const tiles = categories.flatMap((c) => c.tiles);
