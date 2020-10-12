@@ -2,7 +2,7 @@
   "quizzes": [
     {
       "type": "color",
-      "title": "Colors",
+      "category": "Colors",
       "tiles": [
         {
           "audio": "/audio/colors/black.wav",
@@ -62,7 +62,7 @@
     },
     {
       "type": "image",
-      "title": "Shapes",
+      "category": "Shapes",
       "tiles": [
         {
           "audio": "/audio/shapes/circle.wav",
@@ -164,7 +164,7 @@
     },
     {
       "type": "text",
-      "title": "Numbers",
+      "category": "Numbers",
       "tiles": [
         {
           "audio": "/audio/numbers/zero.wav",
@@ -255,7 +255,7 @@
     },
     {
       "type": "image",
-      "title": "Food: Fruit",
+      "category": "Food: Fruit",
       "tiles": [
         {
           "audio": "/audio/food/fruit/apple.wav",
@@ -303,7 +303,7 @@
     },
     {
       "type": "image",
-      "title": "Food: Vegetables",
+      "category": "Food: Vegetables",
       "tiles": [
         {
           "audio": "/audio/food/vegetables/asparagus.wav",
@@ -363,7 +363,7 @@
     },
     {
       "type": "image",
-      "title": "Activities",
+      "category": "Activities",
       "tiles": [
         {
           "audio": "/audio/activities/sleep.wav",
@@ -435,7 +435,7 @@
     },
     {
       "type": "text",
-      "title": "Days",
+      "category": "Days",
       "tiles": [
         {
           "audio": "/audio/days/Sunday.wav",
@@ -476,7 +476,7 @@
     },
     {
       "type": "text",
-      "title": "Months",
+      "category": "Months",
       "tiles": [
         {
           "audio": "/audio/months/January.wav",
@@ -542,7 +542,7 @@
     },
     {
       "type": "text",
-      "title": "Seasons",
+      "category": "Seasons",
       "tiles": [
         {
           "audio": "/audio/seasons-temp-weather/spring.wav",
@@ -568,7 +568,7 @@
     },
     {
       "type": "text",
-      "title": "Weather",
+      "category": "Weather",
       "tiles": [
         {
           "audio": "/audio/seasons-temp-weather/sunny.wav",
@@ -609,7 +609,7 @@
     },
     {
       "type": "text",
-      "title": "Temperature",
+      "category": "Temperature",
       "tiles": [
         {
           "audio": "/audio/seasons-temp-weather/hot.wav",
@@ -635,7 +635,7 @@
     },
     {
       "type": "text",
-      "title": "Math",
+      "category": "Math",
       "tiles": [
         {
           "audio": "/audio/math/2plus3.wav",
@@ -726,7 +726,7 @@
     },
     {
       "type": "image",
-      "title": "Money",
+      "category": "Money",
       "tiles": [
         {
           "audio": "/audio/money/penny.wav",
@@ -774,7 +774,7 @@
     },
     {
       "type": "text",
-      "title": "The Alphabet: Capital Letters",
+      "category": "The Alphabet: Capital Letters",
       "tiles": [
         {
           "audio": "/audio/alphabet/CapA.wav",
@@ -910,7 +910,7 @@
     },
     {
       "type": "text",
-      "title": "The Alphabet: Small Letters",
+      "category": "The Alphabet: Small Letters",
       "tiles": [
         {
           "audio": "/audio/alphabet/smalla.wav",
