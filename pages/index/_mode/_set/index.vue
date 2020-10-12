@@ -52,11 +52,10 @@ export default {
     const { modes } = await $content('/modes').fetch();
     const { quizzes } = await $content('/quizzes').fetch();
     const selection = route.params.set.split(',');
-    const sections = quizzes.filter(({ category }) =>
+    const categories = quizzes.filter(({ category }) =>
       selection.includes(toSlug(category))
     );
-    const quizSets = sections.map((s) => s.category);
-    const tiles = sections.reduce(
+    const tiles = categories.reduce(
       (collecter, { category, type, tiles }) => [
         ...collecter,
         ...tiles.map((tile) => ({ type, category, ...tile })),
@@ -65,7 +64,7 @@ export default {
     );
     return {
       modes,
-      quizSets,
+      categories: categories.map((s) => s.category),
       modeSlugs: modes.map(toSlug),
       tiles,
     };
