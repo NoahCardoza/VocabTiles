@@ -12,4 +12,4 @@ INSERT INTO "Quiz" (user_id, mode) VALUES('lOnkGGFvdkbAOtG6ZjdZjF7NZtV2', 4);
 INSERT INTO "Quiz" (user_id, mode) VALUES('lOnkGGFvdkbAOtG6ZjdZjF7NZtV2', 4);
 INSERT INTO "Quiz" (user_id, mode) VALUES('lOnkGGFvdkbAOtG6ZjdZjF7NZtV2', 1);
 INSERT INTO "Quiz" (user_id, mode) VALUES('lOnkGGFvdkbAOtG6ZjdZjF7NZtV2', 2);
-INSERT INTO "Quiz" (user_id, mode) VALUES('lOnkGGFvdkbAOtG6ZjdZjF7NZtV2', 3);
+INSERT INTO "Quiz" (user_id, mode) VALUES('thiswillbeinaccessible', 3);
