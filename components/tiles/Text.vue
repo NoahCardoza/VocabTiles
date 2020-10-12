@@ -2,7 +2,7 @@
   <div
     v-resize-text="{
       maxFontSize: 200,
-      minFontSize: 10,
+      minFontSize: 5,
       delay: 100,
     }"
     class="flex justify-center items-center w-100 h-100 tile--text"
