@@ -20,13 +20,20 @@ const getQuizStatsByID = async (userID, quizID, modeProvided) => {
     return { title, slug: slugify(title), total: 0, correct: 0 };
   };
 
-  const belongsToUser = (await pool.query('SELECT id FROM "Quiz" WHERE id = $1 AND user_id = $2', [quizID, userID])).rows.length !== 0;
+  const belongsToUser =
+    (
+      await pool.query('SELECT id FROM "Quiz" WHERE id = $1 AND user_id = $2', [
+        quizID,
+        userID,
+      ])
+    ).rows.length !== 0;
 
   if (belongsToUser) {
     let mode;
     if (modeProvided === undefined) {
-      mode = (await pool.query('SELECT mode from "Quiz" WHERE id = $1', [quizID]))
-        .rows[0].mode;
+      mode = (
+        await pool.query('SELECT mode from "Quiz" WHERE id = $1', [quizID])
+      ).rows[0].mode;
     } else {
       mode = modeProvided;
     }
@@ -43,7 +50,10 @@ const getQuizStatsByID = async (userID, quizID, modeProvided) => {
       const { id, category, text, correct } = ans;
 
       if (!encounteredCategories.has(category)) {
-        encounteredCategories.set(category, createEmptyCategoryObject(category));
+        encounteredCategories.set(
+          category,
+          createEmptyCategoryObject(category)
+        );
       }
 
       encounteredCategories.get(category).total += 1;
@@ -61,10 +71,12 @@ const getQuizStatsByID = async (userID, quizID, modeProvided) => {
       answers,
     };
   } else {
-    throw new Error({status: 403, msg: {msg: "Unauthorized Quiz Access, quiz does not belong this user"}});
+    throw new Error({
+      status: 403,
+      msg: { msg: 'Unauthorized Quiz Access, quiz does not belong this user' },
+    });
   }
 };
-
 
 const getAllUsers = async () => {
   const res = await pool.query('SELECT * FROM "User;', []);
