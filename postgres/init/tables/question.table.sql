@@ -3,6 +3,7 @@ CREATE TABLE IF NOT EXISTS "Question" (
   "category_id" integer,
   "text" text,
   "audio" text,
+  "color" text,
   "image" text,
   PRIMARY KEY( id )
 );
