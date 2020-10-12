@@ -1,23 +1,16 @@
 <template>
   <div :disabled="disabled">
     <div v-for="row in rows" :key="row" class="tile-row">
-      <div
+      <Tile
         v-for="col in columns"
         :key="col"
         ref="tiles"
-        class="tile-box"
-        :disabled="!tile(row, col)"
         :style="{
           width: boxScale + '%',
         }"
-        @click="onTileClick(tile(row, col))"
-      >
-        <component
-          :is="`vt-${tile(row, col).type}`"
-          v-if="!disabled && tile(row, col)"
-          v-bind="tile(row, col)"
-        />
-      </div>
+        :tile="tile(row, col)"
+        @click="onTileClick"
+      />
     </div>
   </div>
 </template>
@@ -25,7 +18,7 @@
 <script>
 import shuffle from 'lodash/shuffle';
 import cloneDeep from 'lodash/cloneDeep';
-import pick from 'lodash/pick';
+import Tile from '@/components/tiles/Tile';
 
 const SIZE_OPTIONS = ['sm', 'md', 'lg'];
 const SIZE_MULTIPLIERS = {
@@ -35,10 +28,7 @@ const SIZE_MULTIPLIERS = {
 
 export default {
   components: {
-    overlay: () => import('@/components/Overlay'),
-    'vt-color': () => import('@/components/tiles/Color'),
-    'vt-text': () => import('@/components/tiles/Text'),
-    'vt-image': () => import('@/components/tiles/Image'),
+    Tile,
   },
   props: {
     mode: {
@@ -123,7 +113,7 @@ export default {
         const index = this.localTiles.findIndex(
           ({ text }) => text === tile.text
         );
-        return this.$refs.tiles[index];
+        return this.$refs.tiles[index].$el;
       }
 
       return null;
@@ -131,15 +121,7 @@ export default {
   },
   methods: {
     playAudio() {
-      // eslint-disable-next-line camelcase
-      const { ql_audio } = this.currentTile;
-      const { audioCache } = this;
-
-      if (!audioCache[ql_audio]) {
-        audioCache[ql_audio] = new Audio(this.currentTile.ql_audio);
-      }
-
-      const audio = audioCache[ql_audio];
+      const audio = new Audio(this.currentTile.audio);
       audio.play();
     },
 
@@ -161,15 +143,7 @@ export default {
     tile(row, col) {
       const start = (row - 1) * this.columns;
       const index = start + col - 1;
-
-      return (
-        (this.localTiles &&
-          this.localTiles[index] && {
-            el: this.$refs.tiles && this.$refs.tiles[index],
-            ...this.localTiles[index],
-          }) ||
-        null
-      );
+      return (this.localTiles && this.localTiles[index]) || null;
     },
 
     onTileClick(tile) {
@@ -177,7 +151,7 @@ export default {
       const isCorrect = this.currentTileText === tile.text;
 
       this.$emit('answered', {
-        ...pick(this.currentTile, 'type', 'category', 'text'),
+        ...this.currentTile,
         correct: isCorrect,
       });
 
@@ -249,33 +223,9 @@ export default {
   box-shadow: 0 0 0 0 rgba(255, 1, 13, 0.5);
   animation: pulse-danger 1.3s;
 }
+
 .tile-row {
   display: flex;
   justify-content: center;
-}
-
-.tile-box {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  cursor: pointer;
-  background-color: #fff;
-  margin: 0.5vw;
-  border-radius: 10%;
-  box-shadow: 2px 2px 2px 0px rgba(169, 169, 169, 0.74118);
-  overflow: hidden;
-}
-
-.tile-box::after {
-  content: '';
-  display: block;
-  padding-bottom: 100%;
-}
-
-.tile-box[disabled],
-[disabled] .tile-box {
-  cursor: auto;
-  background-color: rgb(0 0 0 / 10%);
-  box-shadow: 1px 1px 2px 0px rgba(169, 169, 169, 0.74118);
 }
 </style>

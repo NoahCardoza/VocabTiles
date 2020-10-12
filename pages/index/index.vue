@@ -1,5 +1,5 @@
 <template>
-  <div class="ph3" style="width: 50vh; max-width: 800px">
+  <div style="width: 100vw; max-width: 600px; margin-bottom: -0.5rem">
     <vs-popup
       title="Which sets would you like to practice?"
       :active.sync="isPopupOpen"
@@ -24,14 +24,14 @@
         </vs-button>
       </div>
     </vs-popup>
-    <div class="vs-component vs-con-table stripe vs-table-primary">
+    <div class="vs-component vs-con-table stripe vs-table-primary shadow-1">
       <table class="vs-con-table vs-table vs-table--tbody-table">
         <thead class="vs-table--thead">
           <tr>
-            <th width="auto">
+            <th width="50%">
               <div class="w-100 pa3" style="text-align: center">Mode</div>
             </th>
-            <th width="100%">
+            <th width="50%">
               <div class="w-100 pa3" style="text-align: center">Preview</div>
             </th>
           </tr>

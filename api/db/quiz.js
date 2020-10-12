@@ -1,12 +1,16 @@
 const pool = require('./index');
 
-// eslint-disable-next-line camelcase
-const insertAnswer = (quizId) => ({ category_id, correct }) =>
-  pool.query(
-    'INSERT INTO "Answer" (quiz_id, category_id, correct) VALUES($1, $2, $3)',
-    // eslint-disable-next-line camelcase
-    [quizId, category_id, correct]
-  );
+const insertAnswer = (quizId) => {
+  let index = 0;
+
+  // eslint-disable-next-line camelcase
+  return ({ question_id, correct }) =>
+    pool.query(
+      'INSERT INTO "Answer" (quiz_id, question_id, index, correct) VALUES($1, $2, $3, $4)',
+      // eslint-disable-next-line camelcase
+      [quizId, question_id, ++index, correct]
+    );
+};
 
 const insertNewQuiz = async (uid, { mode, answers }) => {
   const {

@@ -15,7 +15,12 @@ router.get('/:slugs', async (req, res) => {
       type,
       slug,
       category: title,
-      tiles: await dbQuestion.getQuestionsByCategoryId(id),
+      tiles: await dbQuestion.getQuestionsByCategoryId(id).then((tiles) =>
+        tiles.map((tile) => ({
+          type,
+          ...tile,
+        }))
+      ),
     }))
   );
 
