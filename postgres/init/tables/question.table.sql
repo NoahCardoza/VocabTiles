@@ -1,7 +1,8 @@
 CREATE TABLE IF NOT EXISTS "Question" (
-	"id" serial,
-	"text" text,
+  "id" serial,
+  "category_id" integer,
+  "text" text,
   "audio" text,
   "image" text,
-	PRIMARY KEY( id )
+  PRIMARY KEY( id )
 );
