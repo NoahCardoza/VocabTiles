@@ -6,7 +6,7 @@
       :src="userPhotoURL"
       @click="$fireAuth.signOut()"
     />
-    <h1 class="title">Vocab Tiles</h1>
+    <h1 class="title mt2 mb3">Vocab Tiles</h1>
     <nuxt-child />
   </div>
 </template>
