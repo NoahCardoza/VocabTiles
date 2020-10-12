@@ -27,10 +27,11 @@ const getUserQuizByID = async (userID, quizID) => {
   }
 
   const { rows: answers } = await pool.query(
-    `SELECT A.id AS answer_id, correct, C.id AS category_id, C.type, C.title, C.slug, Q.audio, Q.text, Q.color, Q.image FROM "Answer" A
+    `SELECT A.id AS answer_id, A.index, correct, C.id AS category_id, C.type, C.title, C.slug, Q.audio, Q.text, Q.color, Q.image FROM "Answer" A
       INNER JOIN "Question" Q on A.question_id = Q.id
       INNER JOIN "Category" C on Q.category_id = C.id
-      WHERE quiz_id = $1`,
+      WHERE quiz_id = $1
+      ORDER BY A.index`,
     [quiz.id]
   );
 
