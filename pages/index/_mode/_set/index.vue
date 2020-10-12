@@ -36,6 +36,7 @@
 </template>
 
 <script>
+import pick from 'lodash/pick';
 import TileGrid from '@/components/TileGrid';
 import CountDown from '@/components/CountDown';
 import toSlug from '@/utils/toSlug';
@@ -51,14 +52,14 @@ export default {
     const { modes } = await $content('/modes').fetch();
     const { quizzes } = await $content('/quizzes').fetch();
     const selection = route.params.set.split(',');
-    const sections = quizzes.filter(({ title }) =>
-      selection.includes(toSlug(title))
+    const sections = quizzes.filter(({ category }) =>
+      selection.includes(toSlug(category))
     );
-    const quizSets = sections.map((s) => s.title);
+    const quizSets = sections.map((s) => s.category);
     const tiles = sections.reduce(
-      (collecter, { type, tiles }) => [
+      (collecter, { category, type, tiles }) => [
         ...collecter,
-        ...tiles.map((tile) => ({ type, ...tile })),
+        ...tiles.map((tile) => ({ type, category, ...tile })),
       ],
       []
     );
@@ -102,12 +103,12 @@ export default {
       this.timer = TIME_PER_TILE;
       this.pauseTimer = true;
       const { quiz } = this.$refs;
-      const { type, text } = quiz.currentTile;
+
       this.answers.push({
-        text,
-        category: type,
+        ...pick(quiz.currentTile, 'type', 'category', 'text'),
         correct: false,
       });
+
       quiz.animateTile(null, quiz.currentTileEl);
     },
     replayAudio() {
