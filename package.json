@@ -36,6 +36,7 @@
     "@nuxtjs/pwa": "^3.0.2",
     "@types/md5": "^2.2.0",
     "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
     "dotenv-cli": "^4.0.0",
     "express": "^4.17.1",
     "express-joi-validation": "^4.0.4-beta.0",
