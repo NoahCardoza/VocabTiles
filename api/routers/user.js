@@ -1,17 +1,28 @@
 const express = require('express');
 const validator = require('express-joi-validation').createValidator({});
-
-const { handleAPIError } = require('../APIError');
-const { QuizSchema } = require('../schema/quiz');
-const { getUserQuizByID, getAllUserQuizzes } = require('../db/user');
-const { insertNewQuiz } = require('../db/quiz');
+const {
+  handleAPIError
+} = require('../APIError');
+const {
+  QuizSchema
+} = require('../schema/quiz');
+const {
+  getUserQuizByID,
+  getAllUserQuizzes,
+  getUserHomePageInfo,
+} = require('../db/user');
+const {
+  insertNewQuiz
+} = require('../db/quiz');
 
 const router = express.Router();
 
 router.post('/quiz', validator.query(QuizSchema), async (req, res) => {
   try {
     const id = await insertNewQuiz(await req.user.id, req.body);
-    res.status(201).send({ id });
+    res.status(201).send({
+      id,
+    });
   } catch (e) {
     handleAPIError(res, e);
   }
@@ -36,6 +47,14 @@ router.get('/quiz/:id', async (req, res) => {
 router.get('/stats', async (req, res) => {
   try {
     res.json(await getAllUserQuizzes(req.user.id));
+  } catch (e) {
+    handleAPIError(res, e);
+  }
+});
+
+router.get('/home', async (req, res) => {
+  try {
+    res.json(await getUserHomePageInfo(req.user.id));
   } catch (e) {
     handleAPIError(res, e);
   }
