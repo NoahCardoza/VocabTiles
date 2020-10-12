@@ -12,7 +12,7 @@ quizzes = json.load(open('../content/quizzes.json', 'r'))['quizzes']
 
 # SELECT MAX(id)
 Category = """INSERT INTO "Category" (type, title, slug) VALUES('{type}', '{title}', '{slug}') RETURNING id INTO CategoryID;"""
-Question = """INSERT INTO "Question" (category_id, text, audio, image) VALUES(CategoryID, '{text}', '{audio}', {image});"""
+Question = """INSERT INTO "Question" (category_id, text, audio, color, image) VALUES(CategoryID, '{text}', '{audio}', {color}, {image});"""
 
 print('DO $$')
 print('DECLARE CategoryID integer;')
@@ -24,8 +24,10 @@ for quiz in quizzes:
                           slug=slugify(quiz['category'])))
     for tile in quiz['tiles']:
         image = f"'{tile['image']}'" if 'image' in tile else 'NULL'
+        color = f"'{tile['color']}'" if 'color' in tile else 'NULL'
         print(Question.format(
               text=tile['text'],
               audio=tile['ql_audio'],
+              color=color,
               image=image))
 print('END $$')
