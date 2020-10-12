@@ -27,7 +27,7 @@
                 <vs-checkbox
                   v-model="data[i].correct"
                   color="success"
-                  @click.native="() => false"
+                  style="pointer-events: none"
                 ></vs-checkbox>
               </vs-td>
               <vs-td :data="data[i].id"></vs-td>
