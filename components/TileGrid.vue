@@ -25,6 +25,7 @@
 <script>
 import shuffle from 'lodash/shuffle';
 import cloneDeep from 'lodash/cloneDeep';
+import pick from 'lodash/pick';
 
 const SIZE_OPTIONS = ['sm', 'md', 'lg'];
 const SIZE_MULTIPLIERS = {
@@ -176,8 +177,7 @@ export default {
       const isCorrect = this.currentTileText === tile.text;
 
       this.$emit('answered', {
-        text: this.currentTileText,
-        category: this.currentTile.type,
+        ...pick(this.currentTile, 'type', 'category', 'text'),
         correct: isCorrect,
       });
 

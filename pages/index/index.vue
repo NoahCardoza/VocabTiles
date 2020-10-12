@@ -75,7 +75,7 @@ export default {
 
     return {
       modes,
-      quizSets: quizzes.map(({ title }) => title),
+      quizSets: quizzes.map(({ category }) => category),
     };
   },
   data() {

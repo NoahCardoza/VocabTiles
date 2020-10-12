@@ -17,8 +17,13 @@ router.post('/quiz', validator.query(QuizSchema), async (req, res) => {
 
 router.get('/quiz/:id', async (req, res) => {
   try {
-    res.json(await dbUser.getQuizStatsByID(parseInt(req.params.id)));
+    res.json(
+      await dbUser.getQuizStatsByID(req.user.id, parseInt(req.params.id))
+    );
   } catch (err) {
+    if (err.status !== undefined) {
+      return res.status(err.status).json(err.msg);
+    }
     console.log(err);
     return res.status(422).json({ msg: err });
   }

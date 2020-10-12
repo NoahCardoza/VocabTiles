@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "api:dev": "nodemon -w .env -w ./api --exec dotenv node ./api/index.js",
+    "api:dev": "cross-env NODE_ENV=development nodemon -w .env -w ./api --exec dotenv node ./api/index.js",
     "api:start": "dotenv node ./api/index.js",
     "ui:dev": "nuxt-ts",
     "ui:build": "nuxt-ts build",
@@ -36,6 +36,7 @@
     "@nuxtjs/pwa": "^3.0.2",
     "@types/md5": "^2.2.0",
     "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
     "dotenv-cli": "^4.0.0",
     "express": "^4.17.1",
     "express-joi-validation": "^4.0.4-beta.0",

@@ -1,9 +1,11 @@
 const pool = require('./index');
 
-const insertAnswer = (quizId) => ({ category, text, correct }) =>
+// eslint-disable-next-line camelcase
+const insertAnswer = (quizId) => ({ category_id, correct }) =>
   pool.query(
-    'INSERT INTO "Answer" (quiz_id, category, text, correct) VALUES($1, $2, $3, $4)',
-    [quizId, category, text, correct]
+    'INSERT INTO "Answer" (quiz_id, category_id, correct) VALUES($1, $2, $3)',
+    // eslint-disable-next-line camelcase
+    [quizId, category_id, correct]
   );
 
 const insertNewQuiz = async (uid, { mode, answers }) => {
