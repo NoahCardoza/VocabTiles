@@ -23,7 +23,9 @@
       @next="onNext"
     />
     <div class="flex items-center justify-between w-100 mt3">
-      <vs-button icon="navigate_before" @click="$router.go(-1)">Back</vs-button>
+      <vs-button icon="navigate_before" @click="$router.go({ path: '/' })">
+        Back
+      </vs-button>
       <CountDown
         v-model="timer"
         :total="timeout"
@@ -52,7 +54,7 @@ export default {
 
     const categories = await $axios.$get(`/api/quiz/${params.set}`);
     const tiles = categories.flatMap((c) => c.tiles);
-    console.log(tiles);
+
     return {
       modes,
       modeSlugs: modes.map(toSlug),
