@@ -420,40 +420,16 @@
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bG9vaw&s=wlCzfAFT"
         },
         {
-          "audio": "/audio/activities/see.wav",
-          "text": "see",
-          "image": "/images/activities/look-see.png",
-          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c2Vl&s=uRpsdK4-"
-        },
-        {
           "audio": "/audio/activities/listen.wav",
           "text": "listen",
           "image": "/images/activities/listen-hear.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bGlzdGVu&s=pop5czcY"
         },
         {
-          "audio": "/audio/activities/hear.wav",
-          "text": "hear",
-          "image": "/images/activities/listen-hear.png",
-          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=aGVhcg&s=VQ.w7.1u"
-        },
-        {
           "audio": "/audio/activities/speak.wav",
           "text": "speak",
           "image": "/images/activities/speak-talk-say.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3BlYWs&s=P2w9fYFx"
-        },
-        {
-          "audio": "/audio/activities/talk.wav",
-          "text": "talk",
-          "image": "/images/activities/speak-talk-say.png",
-          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=dGFsaw&s=xVKzmR9U"
-        },
-        {
-          "audio": "/audio/activities/say.wav",
-          "text": "say",
-          "image": "/images/activities/speak-talk-say.png",
-          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c2F5&s=jjDb0x0l"
         }
       ]
     },
