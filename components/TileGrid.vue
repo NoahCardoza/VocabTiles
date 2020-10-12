@@ -1,12 +1,11 @@
 <template>
   <div :disabled="disabled">
-    <div v-for="row in rows" :key="row" class="flex justify-center">
+    <div v-for="row in rows" :key="row" class="tile-row">
       <div
         v-for="col in columns"
         :key="col"
         ref="tiles"
-        class="flex justify-center items-center tile-box"
-        style="margin: 0.5vw"
+        class="tile-box"
         :disabled="!tile(row, col)"
         :style="{
           width: boxScale + '%',
@@ -250,10 +249,18 @@ export default {
   box-shadow: 0 0 0 0 rgba(255, 1, 13, 0.5);
   animation: pulse-danger 1.3s;
 }
+.tile-row {
+  display: flex;
+  justify-content: center;
+}
 
 .tile-box {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
   cursor: pointer;
   background-color: #fff;
+  margin: 0.5vw;
   border-radius: 10%;
   box-shadow: 2px 2px 2px 0px rgba(169, 169, 169, 0.74118);
   overflow: hidden;

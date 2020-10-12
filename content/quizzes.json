@@ -260,43 +260,43 @@
         {
           "audio": "/audio/food/fruit/apple.wav",
           "text": "apple",
-          "image": "/images/food/fruit/apple.jpg",
+          "image": "/images/food/fruit/apple.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YXBwbGU&s=d6IjXeYj"
         },
         {
           "audio": "/audio/food/fruit/banana.wav",
           "text": "banana",
-          "image": "/images/food/fruit/banana.jpg",
+          "image": "/images/food/fruit/banana.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YmFuYW5h&s=WIhF3CEa"
         },
         {
           "audio": "/audio/food/fruit/coconut.wav",
           "text": "coconut",
-          "image": "/images/food/fruit/coconut.jpg",
+          "image": "/images/food/fruit/coconut.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Y29jb251dA&s=WpDKH9qm"
         },
         {
           "audio": "/audio/food/fruit/lemon.wav",
           "text": "lemon",
-          "image": "/images/food/fruit/lemon.jpg",
+          "image": "/images/food/fruit/lemon.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bGVtb24&s=Wa-UppdA"
         },
         {
           "audio": "/audio/food/fruit/pineapple.wav",
           "text": "pineapple",
-          "image": "/images/food/fruit/pineapple.jpg",
+          "image": "/images/food/fruit/pineapple.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cGluZWFwcGxl&s=SwEBlJaL"
         },
         {
           "audio": "/audio/food/fruit/strawberry.wav",
           "text": "strawberry",
-          "image": "/images/food/fruit/strawberry.jpg",
+          "image": "/images/food/fruit/strawberry.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3RyYXdiZXJyeQ&s=Te6cvv.z"
         },
         {
           "audio": "/audio/food/fruit/watermelon.wav",
           "text": "watermelon",
-          "image": "/images/food/fruit/watermelon.jpg",
+          "image": "/images/food/fruit/watermelon.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=d2F0ZXJtZWxvbg&s=ShkWBAT1"
         }
       ]
@@ -308,55 +308,55 @@
         {
           "audio": "/audio/food/vegetables/asparagus.wav",
           "text": "asparagus",
-          "image": "/images/food/vegetables/asparagus.jpg",
+          "image": "/images/food/vegetables/asparagus.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YXNwYXJhZ3Vz&s=31rWPo08"
         },
         {
           "audio": "/audio/food/vegetables/bellpepper.wav",
           "text": "bellpepper",
-          "image": "/images/food/vegetables/bellpepper.jpg",
+          "image": "/images/food/vegetables/bellpepper.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YmVsbHBlcHBlcg&s=r-1OYAex"
         },
         {
           "audio": "/audio/food/vegetables/broccoli.wav",
           "text": "broccoli",
-          "image": "/images/food/vegetables/broccoli.jpg",
+          "image": "/images/food/vegetables/broccoli.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=YnJvY2NvbGk&s=-QoMO-jq"
         },
         {
           "audio": "/audio/food/vegetables/cabbage.wav",
           "text": "cabbage",
-          "image": "/images/food/vegetables/cabbage.jpg",
+          "image": "/images/food/vegetables/cabbage.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Y2FiYmFnZQ&s=4Gxb2sFp"
         },
         {
           "audio": "/audio/food/vegetables/cauliflower.wav",
           "text": "cauliflower",
-          "image": "/images/food/vegetables/cauliflower.jpg",
+          "image": "/images/food/vegetables/cauliflower.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Y2F1bGlmbG93ZXI&s=5k7RjF4l"
         },
         {
           "audio": "/audio/food/vegetables/greenbeans.wav",
           "text": "greenbeans",
-          "image": "/images/food/vegetables/greenbeans.jpg",
+          "image": "/images/food/vegetables/greenbeans.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=Z3JlZW5iZWFucw&s=C2CYvSSV"
         },
         {
           "audio": "/audio/food/vegetables/onion.wav",
           "text": "onion",
-          "image": "/images/food/vegetables/onion.jpg",
+          "image": "/images/food/vegetables/onion.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=b25pb24&s=GPu7jBJG"
         },
         {
           "audio": "/audio/food/vegetables/spinach.wav",
           "text": "spinach",
-          "image": "/images/food/vegetables/spinach.jpg",
+          "image": "/images/food/vegetables/spinach.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3BpbmFjaA&s=.UQnZMXs"
         },
         {
           "audio": "/audio/food/vegetables/tomato.wav",
           "text": "tomato",
-          "image": "/images/food/vegetables/tomato.jpg",
+          "image": "/images/food/vegetables/tomato.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=dG9tYXRv&s=KAP5pe2u"
         }
       ]
@@ -368,92 +368,68 @@
         {
           "audio": "/audio/activities/sleep.wav",
           "text": "sleep",
-          "image": "/images/activities/sleep.jpg",
+          "image": "/images/activities/sleep.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c2xlZXA&s=l4T9yviX"
         },
         {
           "audio": "/audio/activities/eat.wav",
           "text": "eat",
-          "image": "/images/activities/eat.jpg",
+          "image": "/images/activities/eat.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ZWF0&s=UkzGFhxq"
         },
         {
           "audio": "/audio/activities/drink.wav",
           "text": "drink",
-          "image": "/images/activities/drink.jpg",
+          "image": "/images/activities/drink.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ZHJpbms&s=smeFxjAk"
         },
         {
           "audio": "/audio/activities/walk.wav",
           "text": "walk",
-          "image": "/images/activities/walk.jpg",
+          "image": "/images/activities/walk.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=d2Fsaw&s=jy7cK6Bl"
         },
         {
           "audio": "/audio/activities/run.wav",
           "text": "run",
-          "image": "/images/activities/run.jpg",
+          "image": "/images/activities/run.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cnVu&s=-G8dlTFn"
         },
         {
           "audio": "/audio/activities/jump.wav",
           "text": "jump",
-          "image": "/images/activities/jump.jpg",
+          "image": "/images/activities/jump.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=anVtcA&s=1c5uKNzC"
         },
         {
           "audio": "/audio/activities/sit.wav",
           "text": "sit",
-          "image": "/images/activities/sit.jpg",
+          "image": "/images/activities/sit.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c2l0&s=74h.97.B"
         },
         {
           "audio": "/audio/activities/stand.wav",
           "text": "stand",
-          "image": "/images/activities/stand.jpg",
+          "image": "/images/activities/stand.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3RhbmQ&s=3nyvriLN"
         },
         {
           "audio": "/audio/activities/look.wav",
           "text": "look",
-          "image": "/images/activities/look-see.jpg",
+          "image": "/images/activities/look-see.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bG9vaw&s=wlCzfAFT"
-        },
-        {
-          "audio": "/audio/activities/see.wav",
-          "text": "see",
-          "image": "/images/activities/look-see.jpg",
-          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c2Vl&s=uRpsdK4-"
         },
         {
           "audio": "/audio/activities/listen.wav",
           "text": "listen",
-          "image": "/images/activities/listen-hear.jpg",
+          "image": "/images/activities/listen-hear.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bGlzdGVu&s=pop5czcY"
-        },
-        {
-          "audio": "/audio/activities/hear.wav",
-          "text": "hear",
-          "image": "/images/activities/listen-hear.jpg",
-          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=aGVhcg&s=VQ.w7.1u"
         },
         {
           "audio": "/audio/activities/speak.wav",
           "text": "speak",
-          "image": "/images/activities/speak-talk-say.jpg",
+          "image": "/images/activities/speak-talk-say.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c3BlYWs&s=P2w9fYFx"
-        },
-        {
-          "audio": "/audio/activities/talk.wav",
-          "text": "talk",
-          "image": "/images/activities/speak-talk-say.jpg",
-          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=dGFsaw&s=xVKzmR9U"
-        },
-        {
-          "audio": "/audio/activities/say.wav",
-          "text": "say",
-          "image": "/images/activities/speak-talk-say.jpg",
-          "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=c2F5&s=jjDb0x0l"
         }
       ]
     },
@@ -755,43 +731,43 @@
         {
           "audio": "/audio/money/penny.wav",
           "text": "penny",
-          "image": "/images/money/penny.jpg",
+          "image": "/images/money/penny.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cGVubnk&s=brfm9YZ6"
         },
         {
           "audio": "/audio/money/nickel.wav",
           "text": "nickel",
-          "image": "/images/money/nickel.jpg",
+          "image": "/images/money/nickel.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=bmlja2Vs&s=Im9lXDzf"
         },
         {
           "audio": "/audio/money/dime.wav",
           "text": "dime",
-          "image": "/images/money/dime.jpg",
+          "image": "/images/money/dime.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ZGltZQ&s=b6ckrkfM"
         },
         {
           "audio": "/audio/money/quarter.wav",
           "text": "quarter",
-          "image": "/images/money/quarter.jpg",
+          "image": "/images/money/quarter.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=cXVhcnRlcg&s=RkhWAA.S"
         },
         {
           "audio": "/audio/money/halfdollar.wav",
           "text": "half-dollar",
-          "image": "/images/money/halfdollar.jpg",
+          "image": "/images/money/halfdollar.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=aGFsZi1kb2xsYXI&s=q5TMUwsw"
         },
         {
           "audio": "/audio/money/dollarcoins.wav",
           "text": "dollar coins",
-          "image": "/images/money/dollarcoins.jpg",
+          "image": "/images/money/dollarcoins.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ZG9sbGFyIGNvaW5z&s=mzZHahAp"
         },
         {
           "audio": "/audio/money/dollarbill.wav",
           "text": "dollar bill",
-          "image": "/images/money/dollarbill.jpg",
+          "image": "/images/money/dollarbill.png",
           "ql_audio": "https://quizlet.com/tts/en.mp3?v=14&b=ZG9sbGFyIGJpbGw&s=SZeZt3.6"
         }
       ]
