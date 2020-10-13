@@ -7,15 +7,34 @@
       class="shadow-1"
     >
       <template slot="header">
-        <h3 class="ma3">Quiz Results</h3>
-        <div class="ma3">
-          {{ correct }}/{{ total }} ({{ percentage }}%) Correct
+        <div style="width: 33.33%">
+          <vs-button
+            class="ml3"
+            icon="navigate_before"
+            radius
+            size="small"
+            @click="$router.push({ path: '/' })"
+          ></vs-button>
+        </div>
+        <h3 style="width: 33.33%; text-align: center" class="ma3">
+          Quiz Results
+        </h3>
+        <div
+          v-resize-text="{
+            maxFontSize: 100,
+            minFontSize: 10,
+            delay: 100,
+          }"
+          style="width: 33.33%; text-align: right"
+          class="ma3"
+        >
+          {{ correct }}/{{ total }} ({{ percentage }}%)
         </div>
       </template>
       <template slot="thead">
-        <vs-th>Category</vs-th>
-        <vs-th width="auto" class="justify-left">Question</vs-th>
-        <vs-th>Tile</vs-th>
+        <vs-th width="25%">Category</vs-th>
+        <vs-th width="50%" class="justify-left">Question</vs-th>
+        <vs-th width="25%">Tile</vs-th>
       </template>
 
       <template slot-scope="{ data }">
@@ -33,7 +52,10 @@
               style="color: rgba(0, 0, 0, 0.7); justify-content: space-between"
             >
               <vs-avatar icon="volume_up" @click="playAudio(data[i])" />
-              {{ data[i].text }}
+              <div>
+                {{ data[i].text }}
+              </div>
+
               <button
                 type="button"
                 class="btn-close vs-chip--close"

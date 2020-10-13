@@ -23,16 +23,19 @@
       @next="onNext"
     />
     <div class="flex items-center justify-between w-100 mt3">
-      <vs-button icon="navigate_before" @click="$router.go({ path: '/' })">
-        Back
-      </vs-button>
+      <vs-button
+        class="ml3"
+        icon="navigate_before"
+        radius
+        @click="$router.push({ path: '/' })"
+      />
       <CountDown
         v-model="timer"
         :total="timeout"
         :pause="pauseTimer"
         @timeout="onTimeout"
       />
-      <vs-button icon="replay" @click="replayAudio">Replay</vs-button>
+      <vs-button class="ml3" icon="replay" radius @click="replayAudio" />
     </div>
   </div>
 </template>
