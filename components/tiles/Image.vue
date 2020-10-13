@@ -23,6 +23,7 @@ export default {
 
 <style lang="css" scoped>
 .tile--image {
+  background: white;
   padding: 0.5vw;
   width: 100%;
   height: 100%;
@@ -33,6 +34,7 @@ export default {
 }
 
 .tile--image-inner {
+  z-index: 1000;
   width: 100%;
   height: 100%;
   background-image: var(--image-url);
