@@ -1,5 +1,6 @@
 # Vocab Tiles
-A vocabulary game/quiz app.
+
+A vocabulary tool for ESL teachers to increase student's audible/reading comprehension.
 
 ## The problem: How to remotely teach basic vocabulary and simple phrases to Literacy students
 
@@ -10,6 +11,8 @@ Students who are completely new to a language, and especially those whose prior 
 This app is most useful to students who can both see and hear, but the word also appears above the tiles, so deaf students can also benefit. It is also useful for teachers to see the students' progress. The app will keep track of students' average score per category as well as per quiz and display them in an admin area that only the teacher can access.
 
 # Stack
+
+We used Vue.js are the UI frameworks with Nuxt for SSR. We use Express to write the REST API which connect to the PostgrSQL database running in a Docker instance. We used Google's Firebase to handle user authentication and implemented a QR scanner to make logins simpler for illiterate students. 
 
 + [VueJS](https://vuejs.org/):
   A progressive, incrementally-adoptable JavaScript framework for building UI on the web.
@@ -31,4 +34,4 @@ This app is most useful to students who can both see and hear, but the word also
   Component library for for Vue.js 2.
 + [Tachyons](https://tachyons.io/docs/):
   Rapid CSS prototyping. For the hackathon this is great, but we'll probably remove it in prod and
-  hand write the custom CSS
+  hand write the custom CSS+
