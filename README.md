@@ -35,3 +35,30 @@ We used Vue.js are the UI frameworks with Nuxt for SSR. We use Express to write 
 + [Tachyons](https://tachyons.io/docs/):
   Rapid CSS prototyping. For the hackathon this is great, but we'll probably remove it in prod and
   hand write the custom CSS+
+
+
+
+  
+# Demo
+
+## Youtube
+<p align="center">
+  
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/bTMQIstdbt0/0.jpg)](https://www.youtube.com/watch?v=bTMQIstdbt0)
+
+</p>
+
+## Screenshots
+<p align="center">
+  
+![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/844/datas/gallery.jpg)
+![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/839/datas/gallery.jpg)
+![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/847/datas/gallery.jpg)
+![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/841/datas/gallery.jpg)
+![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/846/datas/gallery.jpg)
+![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/842/datas/gallery.jpg)
+![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/843/datas/gallery.jpg)
+![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/840/datas/gallery.jpg)
+![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/845/datas/gallery.jpg)
+
+</p>
