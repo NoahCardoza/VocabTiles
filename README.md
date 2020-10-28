@@ -44,21 +44,23 @@ We used Vue.js are the UI frameworks with Nuxt for SSR. We use Express to write 
 ## Youtube
 <p align="center">
   
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/bTMQIstdbt0/0.jpg)](https://www.youtube.com/watch?v=bTMQIstdbt0)
+<a href="https://www.youtube.com/watch?v=bTMQIstdbt0" target="_blank">
+  <img src="https://img.youtube.com/vi/bTMQIstdbt0/0.jpg" />
+</a>
 
 </p>
 
 ## Screenshots
 <p align="center">
   
-![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/844/datas/gallery.jpg)
-![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/839/datas/gallery.jpg)
-![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/847/datas/gallery.jpg)
-![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/841/datas/gallery.jpg)
-![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/846/datas/gallery.jpg)
-![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/842/datas/gallery.jpg)
-![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/843/datas/gallery.jpg)
-![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/840/datas/gallery.jpg)
-![Preview](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/845/datas/gallery.jpg)
+<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/844/datas/gallery.jpg" />
+<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/839/datas/gallery.jpg" />
+<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/847/datas/gallery.jpg" />
+<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/841/datas/gallery.jpg" />
+<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/846/datas/gallery.jpg" />
+<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/842/datas/gallery.jpg" />
+<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/843/datas/gallery.jpg" />
+<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/840/datas/gallery.jpg" />
+<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/248/845/datas/gallery.jpg" />
 
 </p>
